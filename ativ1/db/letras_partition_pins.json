@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "OUT6",
+					"strict" : false
+				},
+				{
+					"name" : "OUT5",
+					"strict" : false
+				},
+				{
+					"name" : "OUT4",
+					"strict" : false
+				},
+				{
+					"name" : "OUT3",
+					"strict" : false
+				},
+				{
+					"name" : "OUT2",
+					"strict" : false
+				},
+				{
+					"name" : "OUT1",
+					"strict" : false
+				},
+				{
+					"name" : "OUT0",
+					"strict" : false
+				},
+				{
+					"name" : "BIT6",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "BIT5",
+					"strict" : false
+				},
+				{
+					"name" : "BIT4",
+					"strict" : false
+				},
+				{
+					"name" : "BIT3",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

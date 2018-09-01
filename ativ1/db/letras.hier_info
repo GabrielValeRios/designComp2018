@@ -1,0 +1,27 @@
+|letras
+OUT6 <= dff0.DB_MAX_OUTPUT_PORT_TYPE
+CLK => dff0.CLK
+CLK => dff1.CLK
+CLK => dff2.CLK
+CLK => dff3.CLK
+CLK => dff4.CLK
+CLK => dff8.CLK
+CLK => dff7.CLK
+CLK => dff5.CLK
+CLK => dff6.CLK
+BIT6 => dff0.DATAIN
+OUT5 <= dff1.DB_MAX_OUTPUT_PORT_TYPE
+BIT5 => dff1.DATAIN
+OUT4 <= dff2.DB_MAX_OUTPUT_PORT_TYPE
+BIT4 => dff2.DATAIN
+OUT3 <= dff3.DB_MAX_OUTPUT_PORT_TYPE
+BIT3 => dff3.DATAIN
+OUT2 <= dff4.DB_MAX_OUTPUT_PORT_TYPE
+Entrada => not7.IN0
+Entrada => and1.IN2
+Entrada => not10.IN0
+Entrada => and3.IN2
+OUT1 <= dff5.DB_MAX_OUTPUT_PORT_TYPE
+OUT0 <= dff6.DB_MAX_OUTPUT_PORT_TYPE
+
+
