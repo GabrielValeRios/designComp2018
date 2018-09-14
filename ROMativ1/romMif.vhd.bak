@@ -1,0 +1,48 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity romMif is
+
+    generic
+    (
+        DATA_WIDTH : natural := 8;
+        ADDR_WIDTH : natural := 8
+    );
+
+    port (
+        clk: in std_logic;
+        addr: in natural range 0 to 2**ADDR_WIDTH-1;
+        q: out std_logic_vector (DATA_WIDTH-1 downto 0)
+    );
+end entity;
+
+architecture inLineInitROM of romMif is
+
+type memory_t is array (2**ADDR_WIDTH-1 downto 0) of std_logic_vector (DATA_WIDTH-1 downto 0);
+
+    function init_rom
+        return memory_t is
+        variable tmp : memory_t := (others => (others => '0'));
+        begin
+        tmp(0) := x"49";
+        tmp(1) := x"6e";
+        tmp(2) := x"73";
+        tmp(3) := x"70";
+        tmp(4) := x"65";
+        tmp(5) := x"72";
+        tmp(6) := x"20";
+        tmp(7) := x"21";
+        return tmp;
+    end init_rom;
+
+signal content: memory_t := init_rom;
+
+begin
+    process(clk)
+    begin
+        if (RISING_EDGE(clk)) then
+            q <= content(addr);
+        end if;
+    end process;
+end architecture;

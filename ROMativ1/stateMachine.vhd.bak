@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity stateMachine is
+	 
+	 port(
+		 -- input
+		 d   : IN STD_LOGIC_VECTOR(DATA_WIDTH-1 DOWNTO 0);
+		 enable  : IN STD_LOGIC; 
+		 clr : IN STD_LOGIC;
+		 clk : IN STD_LOGIC;
+		 -- output
+		 q   : OUT STD_LOGIC_VECTOR(DATA_WIDTH-1 DOWNTO 0)
+		 
+	);
+
+end reg;
+
+architecture comportamento of stateMachine is
+
+
+end architecture;

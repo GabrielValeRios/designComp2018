@@ -1,0 +1,36 @@
+|stateMachine
+A => rommif:rom.addr[2]
+clk => reg:reg.clk
+saida[0] <= rommif:rom.q[0]
+saida[1] <= rommif:rom.q[1]
+saida[2] <= rommif:rom.q[2]
+saida[3] <= rommif:rom.q[3]
+saida[4] <= rommif:rom.q[4]
+saida[5] <= rommif:rom.q[5]
+saida[6] <= rommif:rom.q[6]
+
+
+|stateMachine|reg:reg
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stateMachine|romMif:rom
+addr[0] => content.RADDR
+addr[1] => content.RADDR1
+addr[2] => content.RADDR2
+q[0] <= content.DATAOUT
+q[1] <= content.DATAOUT1
+q[2] <= content.DATAOUT2
+q[3] <= content.DATAOUT3
+q[4] <= content.DATAOUT4
+q[5] <= content.DATAOUT5
+q[6] <= content.DATAOUT6
+q[7] <= content.DATAOUT7
+q[8] <= content.DATAOUT8
+
+

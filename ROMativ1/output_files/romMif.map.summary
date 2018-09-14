@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Sep 13 20:25:20 2018
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : romMif
+Top-level Entity Name : stateMachine
+Family : Cyclone IV E
+Total logic elements : 5
+    Total combinational functions : 5
+    Dedicated logic registers : 2
+Total registers : 2
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
