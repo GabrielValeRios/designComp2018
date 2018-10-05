@@ -1,6 +1,15 @@
 
-State Machine - |Relogio|SM:maqEstados|fstate
-Name fstate.state2 fstate.state1 fstate.state0 
-fstate.state0 0 0 0 
-fstate.state1 0 1 1 
-fstate.state2 1 0 1 
+State Machine - |Relogio|SMUC:SMUC1|fstate
+Name fstate.us fstate.UhDh10 fstate.DmUh6 fstate.UmDm10 fstate.DsUm6 fstate.UsDs10 fstate.dh fstate.uh fstate.dm fstate.um fstate.ds fstate.waitState 
+fstate.waitState 0 0 0 0 0 0 0 0 0 0 0 0 
+fstate.ds 0 0 0 0 0 0 0 0 0 0 1 1 
+fstate.um 0 0 0 0 0 0 0 0 0 1 0 1 
+fstate.dm 0 0 0 0 0 0 0 0 1 0 0 1 
+fstate.uh 0 0 0 0 0 0 0 1 0 0 0 1 
+fstate.dh 0 0 0 0 0 0 1 0 0 0 0 1 
+fstate.UsDs10 0 0 0 0 0 1 0 0 0 0 0 1 
+fstate.DsUm6 0 0 0 0 1 0 0 0 0 0 0 1 
+fstate.UmDm10 0 0 0 1 0 0 0 0 0 0 0 1 
+fstate.DmUh6 0 0 1 0 0 0 0 0 0 0 0 1 
+fstate.UhDh10 0 1 0 0 0 0 0 0 0 0 0 1 
+fstate.us 1 0 0 0 0 0 0 0 0 0 0 1 

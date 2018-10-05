@@ -6,7 +6,9 @@ ENTITY ULA IS
 	PORT (
 		 Sel : IN STD_LOGIC_VECTOR (2 DOWNTO 0);
 		 A, B : IN STD_LOGIC_VECTOR (3 DOWNTO 0);
-		 C : OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
+		 C : OUT STD_LOGIC_VECTOR (3 DOWNTO 0);
+		 Z : OUT STD_LOGIC
+
 	);
 END ULA;
 
@@ -24,5 +26,10 @@ ARCHITECTURE comportamento OF ULA IS
 					 WHEN "110" => C <= not(A);
 					 WHEN OTHERS => C <= "1111";
 				END CASE;
+				
+				if (C = 0) then
+					Z <= '1';
+				else Z <= '0';
+				end if;
 END PROCESS;
 END comportamento;
