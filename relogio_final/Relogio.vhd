@@ -157,66 +157,6 @@ process(CLOCK_50)
 		end if;	
 end process;
 	
---process(auxClock)   --period of clk is 1 second.
---	begin
---		
---		case state is
---				when "0001" => compare_clk <= 25000000/96;
---				when others => compare_clk <= 25000000;
---		end case;
---		
---		case state is
---				when "0010" => set <= '1'; 
---				when others => set <= '0';
---		end case;
---	
-----		case state is 
-----				when others => blink <= '1';
-----		end case;
---
---		if(set = '1') then
---
---			--blink <= not blink;
---			
---			LEDR(17) <= '1';
---			LEDR(16) <= '1';
---			LEDR(14) <= '1';
---			LEDR(13) <= '1';
---			
---			if(KEY(3) = '0') then
---
---				if(SW(13) = '1') then
---					auxeC <= '1';
---					auxFuncaoMUX 	<= "010";
---					auxFuncaoULA 	<= "001";
---				
---				elsif(SW(14) = '1') then
---					auxeD <= '1';
---					auxFuncaoMUX 	<= "011";
---					auxFuncaoULA 	<= "001";
---				
---				elsif(SW(16) = '1') then
---					auxeE <= '1';
---					auxFuncaoMUX 	<= "100";
---					auxFuncaoULA 	<= "001";
---		
---				elsif(SW(17) = '1') then
---					auxeF <= '1';
---					auxFuncaoMUX 	<= "101";
---					auxFuncaoULA 	<= "001";
---				end if;
---
---			end if;
---
---			else
---				LEDR(17) <= '0';
---				LEDR(16) <= '0';
---				LEDR(14) <= '0';
---				LEDR(13) <= '0';
---		
---		end if;
---
---end process;
 
 HEX0 <= useg_out;
 HEX1 <= dseg_out;

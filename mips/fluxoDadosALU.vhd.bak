@@ -1,0 +1,50 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity fluxoDadosALU is
+    Port ( 
+			
+		  -- in's
+		  entradaA, entradaB 							: in std_logic_vector(31 downto 0);
+		  SEL_Inverte_SinalA,SEL_Inverte_SinalB	: in std_logic;
+		  first_Cin 					 					: in std_logic;
+		  SEL_ULA            		 					: in std_logic_vector(3 downto 0);	 
+
+		  -- out's
+		  last_Cout                 : out std_logic;
+		  resposta 						 : out std_logic_vector (31 downto 0);
+	 );
+	
+end entity;
+
+architecture simples of fluxoDadosALU is
+	
+  -- Saida Mux's genericos e Fulladder
+  signal SaidaAMG,SaidaBMG : std_logic_vector(31 downto 0);
+  -- FullAdder
+  signal overflow 			: std_logic_vector(1 downto 0);
+  signal soma 					: std_logic_vector(31 downto 0);
+  signal carryOUT 			: std_logic;
+  -- Resultado ALU
+  signal ResultadoALU 		: std_logic_vector(31 downto 0);
+  -- Temp
+  signal slt            	: std_logic_vector(31 downto 0);
+  
+begin
+
+
+	MuxGenA     : entity work.muxGenerico 		Port map(A => entradaA, B => not entradaA, SEL => SEL_ULA(3), X => SaidaAMG);
+	MuxGenB     : entity work.muxGenerico 		Port map(A => entradaB, B => not entradaB, SEL => SEL_ULA(2), X => SaidaBMG);
+	Fulladder   : entity work.fulladd32   		Port map(x => SaidaAMG, y => SaidaBMG, Cin => SEL_ULA(2), Cout => carryOUT, soma => soma, overflowCaculation => overflow);
+	
+	slt 			<= "0000000000000000000000000000000" & (soma(31) xor (overflow(0) xor overflow(1)));
+	
+	MuxAlu	   : entity work.muxALU Port map(A => SaidaAMG and SaidaBMG, B => SaidaAMG or SaidaBMG, C => soma, D => slt , SEL => SEL_ULA(1 downto 0) , X => ResultadoALU);  
+	
+	
+	overflowOUT <= carryOUT;
+	resposta 	<= ResultadoALU;
+	 
+end architecture;

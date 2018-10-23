@@ -1,0 +1,138 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity fluxoDados is
+	port(
+		clk:   in std_logic
+		dataMemory_out, ALU_out, REG1_out, REG2_out, MUX1_d, PC_out   : out std_logic_vector(31 downto 0);
+		rs,rt,rd  : out std_logic_vector(4 downto 0);
+		opcode:   out std_logic_vector(5 downto 0);
+		word :   in std_logic_vector(9 downto 0);
+		MUX1_Sel : out std_logic;
+
+	);
+end entity;
+
+
+architecture behaviour of fluxoGeral is
+
+	-- FIOS PARA CONEXÕES
+	signal MUX1_W, MUX3_w, MUX4_w, MUX5_w, ALU_w, data_reg1, data_reg2, dataMemory, ProgCount, instrucao, PC_S1, PC_S2: std_logic_vector(31 downto 0);
+	signal ALU_sel : std_logic_vector(3 downto 0);
+	signal MUX2_w : std_logic_vector(4 downto 0);
+	signal zero  : std_logic;
+
+begin
+
+-- CONEXÃO DOS COMPONENTES DO FLUXO DE DADOS
+
+
+	-- Multiplexs
+		
+	MUX1 : entity work.muxGenerico 
+	port map (
+		A => MUX5_w, B => PC_S1(31 downto 28) & instrucao(25 downto 0) & "00", SEL => word(9), X => MUX1_w
+	);
+	
+	MUX2 : entity work.muxGenerico 
+	generic map (DATA_WIDTH => 5)
+	port map (
+		A => instrucao(20 downto 16), B => instrucao(15 downto 11), SEL => word(8), X => MUX2_w
+	);
+		
+	MUX3 : entity work.muxGenerico 
+	port map (
+		A => data_reg2, B => "0000000000000000" & instrucao(15 downto 0), SEL => word(6), X => MUX3_w
+	);
+	
+	MUX4 : entity work.muxgenerico 
+	port map (
+		A => ALU_w, B => dataMemory, SEL => word(5), X => MUX4_w
+	);
+		
+	MUX5 : entity work.muxgenerico 
+	port map (
+		A => PC_S1, B => PC_S2, SEL => zero and word(4), x => MUX5_w
+	);
+
+
+	-- Unidade de Controle da ULA
+	UC_ULA : entity work.unidadeControleALU
+	port map (
+		ulaOP => word(1 downto 0), funct => instrucao(5 downto 0), instr => ALU_sel
+	);
+	-- ULA
+	ULA: entity work.fluxoDadosALU
+	port map (
+		entradaA => data_reg1, entradaB => MUX3_w, SEL_ULA  => ALU_sel, resposta => ALU_w
+	);
+	
+	
+		-- Memória de Dados (RAM)
+	DATA_MEM : entity work.data_memory 
+	port map (
+		data => data_reg2, addr => to_integer(unsigned(ALU_w)), we => word(2), re => word(3), clk => clk, q => dataMemory
+		
+	);		
+	-- Memória de Instruções (ROM)
+	INST_MEM : entity work.instruction_memory 
+	port map (
+		addr	=> to_integer(unsigned(ProgCount)),	q	=> instrucao
+	);
+	
+	
+	-- Program Counter
+	PC : entity work.UnidadeRegistrador 
+	port map (
+		d => MUX1_w,we => '1',clr => '0',clk => clk,q =>ProgCount
+	);
+	-- contador pc
+		INCREMENTER : entity work.fulladd32 
+	port map (
+		soma => PC_S1, overflowCaculation(0) => open, overflowCaculation(1) => open, Cout => open, y =>ProgCount, Cin => '0',x => x"00000100"
+	);	
+	
+	
+	
+	-- Banco de Registradores
+	REG_BANK : entity work.register_bank 
+	port map (
+		clk => clk, r1_address => to_integer(unsigned(instrucao(25 downto 21))), 
+		r2_address => to_integer(unsigned(instrucao(20 downto 16))), r3_address => to_integer(unsigned(MUX2_w)), 
+		r3_data => MUX4_w,r3_we => word(7),
+		r1_read => data_reg1, r2_read => data_reg2
+	);
+
+	
+
+	NOR32 : entity work.Nor32Way
+	port map (
+		in_a => ALU_w, output => zero
+	);
+	
+	F_ADDER32 : entity work.fulladd32 
+	port map (
+		x => PC_S1, y => "00000000000000" & instrucao(15 downto 0) & "00", Cin => '0', soma => PC_S2, 
+		overflowCaculation(0) => open, overflowCaculation(1) => open
+	);
+	
+	
+	-- p/ top level
+	dataMemory_out <= dataMemory;
+	ALU_out <= ALU_w;
+	REG1_out <= data_reg1;
+	REG2_out <= data_reg2;
+	MUX1_d <= MUX1_w;
+	PC_out <= ProgCount;
+	MUX1_Sel <= word(9);
+	
+	
+	-- construção da instrução
+	opcode <= instrucao(31 downto 26);
+	rs <= instrucao(25 downto 21);
+	rt <= instrucao(20 downto 16);
+   rd <= instrucao(15 downto 11);
+	
+end architecture;
