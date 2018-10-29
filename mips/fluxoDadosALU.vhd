@@ -7,11 +7,10 @@ entity fluxoDadosALU is
     Port ( 
 			
 		  -- in's
-		  entradaA, entradaB 							: in std_logic_vector(31 downto 0);
-		  SEL_ULA            		 					: in std_logic_vector(3 downto 0);	 
+		  entradaA, entradaB 		 : in std_logic_vector(31 downto 0);
+		  SEL_ULA            		 : in std_logic_vector(3 downto 0);	 
 
 		  -- out's
-		  last_Cout                 : out std_logic;
 		  resposta 						 : out std_logic_vector (31 downto 0);
 		  Z								 : out std_logic
 	 );
@@ -47,7 +46,6 @@ begin
 	MuxAlu	   : entity work.muxALU Port map(andIN => SaidaMIA and SaidaMIB, orIn => SaidaMIA or SaidaMIB, SumSubIn => saidaULA, sltIN => saidaSLT , SEL => SEL_ULA(1 downto 0) , X => saidaMuxULA, Z => saida_Z);  
 	
 	
-   last_Cout <= saida_last_Cout;
    resposta  <= saidaMuxULA;
    Z         <= saida_Z;
 	 

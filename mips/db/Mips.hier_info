@@ -1,4 +1,845 @@
-|fluxoDadosALU
+|mips
+clk => fluxodados:FD.clk
+fio1[0] <= fluxodados:FD.DM_out[0]
+fio1[1] <= fluxodados:FD.DM_out[1]
+fio1[2] <= fluxodados:FD.DM_out[2]
+fio1[3] <= fluxodados:FD.DM_out[3]
+fio1[4] <= fluxodados:FD.DM_out[4]
+fio1[5] <= fluxodados:FD.DM_out[5]
+fio1[6] <= fluxodados:FD.DM_out[6]
+fio1[7] <= fluxodados:FD.DM_out[7]
+fio1[8] <= fluxodados:FD.DM_out[8]
+fio1[9] <= fluxodados:FD.DM_out[9]
+fio1[10] <= fluxodados:FD.DM_out[10]
+fio1[11] <= fluxodados:FD.DM_out[11]
+fio1[12] <= fluxodados:FD.DM_out[12]
+fio1[13] <= fluxodados:FD.DM_out[13]
+fio1[14] <= fluxodados:FD.DM_out[14]
+fio1[15] <= fluxodados:FD.DM_out[15]
+fio1[16] <= fluxodados:FD.DM_out[16]
+fio1[17] <= fluxodados:FD.DM_out[17]
+fio1[18] <= fluxodados:FD.DM_out[18]
+fio1[19] <= fluxodados:FD.DM_out[19]
+fio1[20] <= fluxodados:FD.DM_out[20]
+fio1[21] <= fluxodados:FD.DM_out[21]
+fio1[22] <= fluxodados:FD.DM_out[22]
+fio1[23] <= fluxodados:FD.DM_out[23]
+fio1[24] <= fluxodados:FD.DM_out[24]
+fio1[25] <= fluxodados:FD.DM_out[25]
+fio1[26] <= fluxodados:FD.DM_out[26]
+fio1[27] <= fluxodados:FD.DM_out[27]
+fio1[28] <= fluxodados:FD.DM_out[28]
+fio1[29] <= fluxodados:FD.DM_out[29]
+fio1[30] <= fluxodados:FD.DM_out[30]
+fio1[31] <= fluxodados:FD.DM_out[31]
+fio2[0] <= fluxodados:FD.REG1_OUT[0]
+fio2[1] <= fluxodados:FD.REG1_OUT[1]
+fio2[2] <= fluxodados:FD.REG1_OUT[2]
+fio2[3] <= fluxodados:FD.REG1_OUT[3]
+fio2[4] <= fluxodados:FD.REG1_OUT[4]
+fio2[5] <= fluxodados:FD.REG1_OUT[5]
+fio2[6] <= fluxodados:FD.REG1_OUT[6]
+fio2[7] <= fluxodados:FD.REG1_OUT[7]
+fio2[8] <= fluxodados:FD.REG1_OUT[8]
+fio2[9] <= fluxodados:FD.REG1_OUT[9]
+fio2[10] <= fluxodados:FD.REG1_OUT[10]
+fio2[11] <= fluxodados:FD.REG1_OUT[11]
+fio2[12] <= fluxodados:FD.REG1_OUT[12]
+fio2[13] <= fluxodados:FD.REG1_OUT[13]
+fio2[14] <= fluxodados:FD.REG1_OUT[14]
+fio2[15] <= fluxodados:FD.REG1_OUT[15]
+fio2[16] <= fluxodados:FD.REG1_OUT[16]
+fio2[17] <= fluxodados:FD.REG1_OUT[17]
+fio2[18] <= fluxodados:FD.REG1_OUT[18]
+fio2[19] <= fluxodados:FD.REG1_OUT[19]
+fio2[20] <= fluxodados:FD.REG1_OUT[20]
+fio2[21] <= fluxodados:FD.REG1_OUT[21]
+fio2[22] <= fluxodados:FD.REG1_OUT[22]
+fio2[23] <= fluxodados:FD.REG1_OUT[23]
+fio2[24] <= fluxodados:FD.REG1_OUT[24]
+fio2[25] <= fluxodados:FD.REG1_OUT[25]
+fio2[26] <= fluxodados:FD.REG1_OUT[26]
+fio2[27] <= fluxodados:FD.REG1_OUT[27]
+fio2[28] <= fluxodados:FD.REG1_OUT[28]
+fio2[29] <= fluxodados:FD.REG1_OUT[29]
+fio2[30] <= fluxodados:FD.REG1_OUT[30]
+fio2[31] <= fluxodados:FD.REG1_OUT[31]
+fio3[0] <= fluxodados:FD.REG2_OUT[0]
+fio3[1] <= fluxodados:FD.REG2_OUT[1]
+fio3[2] <= fluxodados:FD.REG2_OUT[2]
+fio3[3] <= fluxodados:FD.REG2_OUT[3]
+fio3[4] <= fluxodados:FD.REG2_OUT[4]
+fio3[5] <= fluxodados:FD.REG2_OUT[5]
+fio3[6] <= fluxodados:FD.REG2_OUT[6]
+fio3[7] <= fluxodados:FD.REG2_OUT[7]
+fio3[8] <= fluxodados:FD.REG2_OUT[8]
+fio3[9] <= fluxodados:FD.REG2_OUT[9]
+fio3[10] <= fluxodados:FD.REG2_OUT[10]
+fio3[11] <= fluxodados:FD.REG2_OUT[11]
+fio3[12] <= fluxodados:FD.REG2_OUT[12]
+fio3[13] <= fluxodados:FD.REG2_OUT[13]
+fio3[14] <= fluxodados:FD.REG2_OUT[14]
+fio3[15] <= fluxodados:FD.REG2_OUT[15]
+fio3[16] <= fluxodados:FD.REG2_OUT[16]
+fio3[17] <= fluxodados:FD.REG2_OUT[17]
+fio3[18] <= fluxodados:FD.REG2_OUT[18]
+fio3[19] <= fluxodados:FD.REG2_OUT[19]
+fio3[20] <= fluxodados:FD.REG2_OUT[20]
+fio3[21] <= fluxodados:FD.REG2_OUT[21]
+fio3[22] <= fluxodados:FD.REG2_OUT[22]
+fio3[23] <= fluxodados:FD.REG2_OUT[23]
+fio3[24] <= fluxodados:FD.REG2_OUT[24]
+fio3[25] <= fluxodados:FD.REG2_OUT[25]
+fio3[26] <= fluxodados:FD.REG2_OUT[26]
+fio3[27] <= fluxodados:FD.REG2_OUT[27]
+fio3[28] <= fluxodados:FD.REG2_OUT[28]
+fio3[29] <= fluxodados:FD.REG2_OUT[29]
+fio3[30] <= fluxodados:FD.REG2_OUT[30]
+fio3[31] <= fluxodados:FD.REG2_OUT[31]
+
+
+|mips|unidadeControle:UC
+opcode[0] => Equal0.IN4
+opcode[0] => Equal1.IN4
+opcode[0] => Equal2.IN5
+opcode[0] => Equal3.IN5
+opcode[0] => Equal4.IN5
+opcode[1] => Equal0.IN5
+opcode[1] => Equal1.IN3
+opcode[1] => Equal2.IN4
+opcode[1] => Equal3.IN4
+opcode[1] => Equal4.IN4
+opcode[2] => Equal0.IN3
+opcode[2] => Equal1.IN5
+opcode[2] => Equal2.IN1
+opcode[2] => Equal3.IN2
+opcode[2] => Equal4.IN3
+opcode[3] => Equal0.IN2
+opcode[3] => Equal1.IN2
+opcode[3] => Equal2.IN3
+opcode[3] => Equal3.IN1
+opcode[3] => Equal4.IN2
+opcode[4] => Equal0.IN1
+opcode[4] => Equal1.IN1
+opcode[4] => Equal2.IN0
+opcode[4] => Equal3.IN0
+opcode[4] => Equal4.IN1
+opcode[5] => Equal0.IN0
+opcode[5] => Equal1.IN0
+opcode[5] => Equal2.IN2
+opcode[5] => Equal3.IN3
+opcode[5] => Equal4.IN0
+cntrlWord[0] <= cntrlWord[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cntrlWord[1] <= cntrlWord[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cntrlWord[2] <= cntrlWord[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cntrlWord[3] <= cntrlWord[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cntrlWord[4] <= cntrlWord[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cntrlWord[5] <= cntrlWord[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cntrlWord[6] <= cntrlWord[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cntrlWord[7] <= cntrlWord[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cntrlWord[8] <= cntrlWord[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cntrlWord[9] <= cntrlWord[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips|fluxoDados:FD
+clk => pc:PC.clk
+clk => bankregister:BR.clk
+clk => data_memory:DM.clk
+MuxPc => mux2way:MuxProxPC.SEL
+MuxBR => mux2way:MBR.SEL
+EscritaBR => bankregister:BR.habilitaEscrita
+MuxALU => mux2way:MALU.SEL
+MuxMD => mux2way:MDM.SEL
+BEQ => comb.IN1
+LerMD => data_memory:DM.we
+EscreverMD => data_memory:DM.re
+ULAOp[0] => unidadecontrolealu:UCALU.ulaOP[0]
+ULAOp[1] => unidadecontrolealu:UCALU.ulaOP[1]
+opcode[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+opcode[1] <= opcode[1].DB_MAX_OUTPUT_PORT_TYPE
+opcode[2] <= opcode[2].DB_MAX_OUTPUT_PORT_TYPE
+opcode[3] <= opcode[3].DB_MAX_OUTPUT_PORT_TYPE
+opcode[4] <= opcode[4].DB_MAX_OUTPUT_PORT_TYPE
+opcode[5] <= opcode[5].DB_MAX_OUTPUT_PORT_TYPE
+DM_out[0] <= data_memory:DM.q[0]
+DM_out[1] <= data_memory:DM.q[1]
+DM_out[2] <= data_memory:DM.q[2]
+DM_out[3] <= data_memory:DM.q[3]
+DM_out[4] <= data_memory:DM.q[4]
+DM_out[5] <= data_memory:DM.q[5]
+DM_out[6] <= data_memory:DM.q[6]
+DM_out[7] <= data_memory:DM.q[7]
+DM_out[8] <= data_memory:DM.q[8]
+DM_out[9] <= data_memory:DM.q[9]
+DM_out[10] <= data_memory:DM.q[10]
+DM_out[11] <= data_memory:DM.q[11]
+DM_out[12] <= data_memory:DM.q[12]
+DM_out[13] <= data_memory:DM.q[13]
+DM_out[14] <= data_memory:DM.q[14]
+DM_out[15] <= data_memory:DM.q[15]
+DM_out[16] <= data_memory:DM.q[16]
+DM_out[17] <= data_memory:DM.q[17]
+DM_out[18] <= data_memory:DM.q[18]
+DM_out[19] <= data_memory:DM.q[19]
+DM_out[20] <= data_memory:DM.q[20]
+DM_out[21] <= data_memory:DM.q[21]
+DM_out[22] <= data_memory:DM.q[22]
+DM_out[23] <= data_memory:DM.q[23]
+DM_out[24] <= data_memory:DM.q[24]
+DM_out[25] <= data_memory:DM.q[25]
+DM_out[26] <= data_memory:DM.q[26]
+DM_out[27] <= data_memory:DM.q[27]
+DM_out[28] <= data_memory:DM.q[28]
+DM_out[29] <= data_memory:DM.q[29]
+DM_out[30] <= data_memory:DM.q[30]
+DM_out[31] <= data_memory:DM.q[31]
+REG1_OUT[0] <= bankregister:BR.Dado1[0]
+REG1_OUT[1] <= bankregister:BR.Dado1[1]
+REG1_OUT[2] <= bankregister:BR.Dado1[2]
+REG1_OUT[3] <= bankregister:BR.Dado1[3]
+REG1_OUT[4] <= bankregister:BR.Dado1[4]
+REG1_OUT[5] <= bankregister:BR.Dado1[5]
+REG1_OUT[6] <= bankregister:BR.Dado1[6]
+REG1_OUT[7] <= bankregister:BR.Dado1[7]
+REG1_OUT[8] <= bankregister:BR.Dado1[8]
+REG1_OUT[9] <= bankregister:BR.Dado1[9]
+REG1_OUT[10] <= bankregister:BR.Dado1[10]
+REG1_OUT[11] <= bankregister:BR.Dado1[11]
+REG1_OUT[12] <= bankregister:BR.Dado1[12]
+REG1_OUT[13] <= bankregister:BR.Dado1[13]
+REG1_OUT[14] <= bankregister:BR.Dado1[14]
+REG1_OUT[15] <= bankregister:BR.Dado1[15]
+REG1_OUT[16] <= bankregister:BR.Dado1[16]
+REG1_OUT[17] <= bankregister:BR.Dado1[17]
+REG1_OUT[18] <= bankregister:BR.Dado1[18]
+REG1_OUT[19] <= bankregister:BR.Dado1[19]
+REG1_OUT[20] <= bankregister:BR.Dado1[20]
+REG1_OUT[21] <= bankregister:BR.Dado1[21]
+REG1_OUT[22] <= bankregister:BR.Dado1[22]
+REG1_OUT[23] <= bankregister:BR.Dado1[23]
+REG1_OUT[24] <= bankregister:BR.Dado1[24]
+REG1_OUT[25] <= bankregister:BR.Dado1[25]
+REG1_OUT[26] <= bankregister:BR.Dado1[26]
+REG1_OUT[27] <= bankregister:BR.Dado1[27]
+REG1_OUT[28] <= bankregister:BR.Dado1[28]
+REG1_OUT[29] <= bankregister:BR.Dado1[29]
+REG1_OUT[30] <= bankregister:BR.Dado1[30]
+REG1_OUT[31] <= bankregister:BR.Dado1[31]
+REG2_OUT[0] <= bankregister:BR.Dado2[0]
+REG2_OUT[1] <= bankregister:BR.Dado2[1]
+REG2_OUT[2] <= bankregister:BR.Dado2[2]
+REG2_OUT[3] <= bankregister:BR.Dado2[3]
+REG2_OUT[4] <= bankregister:BR.Dado2[4]
+REG2_OUT[5] <= bankregister:BR.Dado2[5]
+REG2_OUT[6] <= bankregister:BR.Dado2[6]
+REG2_OUT[7] <= bankregister:BR.Dado2[7]
+REG2_OUT[8] <= bankregister:BR.Dado2[8]
+REG2_OUT[9] <= bankregister:BR.Dado2[9]
+REG2_OUT[10] <= bankregister:BR.Dado2[10]
+REG2_OUT[11] <= bankregister:BR.Dado2[11]
+REG2_OUT[12] <= bankregister:BR.Dado2[12]
+REG2_OUT[13] <= bankregister:BR.Dado2[13]
+REG2_OUT[14] <= bankregister:BR.Dado2[14]
+REG2_OUT[15] <= bankregister:BR.Dado2[15]
+REG2_OUT[16] <= bankregister:BR.Dado2[16]
+REG2_OUT[17] <= bankregister:BR.Dado2[17]
+REG2_OUT[18] <= bankregister:BR.Dado2[18]
+REG2_OUT[19] <= bankregister:BR.Dado2[19]
+REG2_OUT[20] <= bankregister:BR.Dado2[20]
+REG2_OUT[21] <= bankregister:BR.Dado2[21]
+REG2_OUT[22] <= bankregister:BR.Dado2[22]
+REG2_OUT[23] <= bankregister:BR.Dado2[23]
+REG2_OUT[24] <= bankregister:BR.Dado2[24]
+REG2_OUT[25] <= bankregister:BR.Dado2[25]
+REG2_OUT[26] <= bankregister:BR.Dado2[26]
+REG2_OUT[27] <= bankregister:BR.Dado2[27]
+REG2_OUT[28] <= bankregister:BR.Dado2[28]
+REG2_OUT[29] <= bankregister:BR.Dado2[29]
+REG2_OUT[30] <= bankregister:BR.Dado2[30]
+REG2_OUT[31] <= bankregister:BR.Dado2[31]
+
+
+|mips|fluxoDados:FD|pc:PC
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+clk => q[8]~reg0.CLK
+clk => q[9]~reg0.CLK
+clk => q[10]~reg0.CLK
+clk => q[11]~reg0.CLK
+clk => q[12]~reg0.CLK
+clk => q[13]~reg0.CLK
+clk => q[14]~reg0.CLK
+clk => q[15]~reg0.CLK
+clk => q[16]~reg0.CLK
+clk => q[17]~reg0.CLK
+clk => q[18]~reg0.CLK
+clk => q[19]~reg0.CLK
+clk => q[20]~reg0.CLK
+clk => q[21]~reg0.CLK
+clk => q[22]~reg0.CLK
+clk => q[23]~reg0.CLK
+clk => q[24]~reg0.CLK
+clk => q[25]~reg0.CLK
+clk => q[26]~reg0.CLK
+clk => q[27]~reg0.CLK
+clk => q[28]~reg0.CLK
+clk => q[29]~reg0.CLK
+clk => q[30]~reg0.CLK
+clk => q[31]~reg0.CLK
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+d[4] => q[4]~reg0.DATAIN
+d[5] => q[5]~reg0.DATAIN
+d[6] => q[6]~reg0.DATAIN
+d[7] => q[7]~reg0.DATAIN
+d[8] => q[8]~reg0.DATAIN
+d[9] => q[9]~reg0.DATAIN
+d[10] => q[10]~reg0.DATAIN
+d[11] => q[11]~reg0.DATAIN
+d[12] => q[12]~reg0.DATAIN
+d[13] => q[13]~reg0.DATAIN
+d[14] => q[14]~reg0.DATAIN
+d[15] => q[15]~reg0.DATAIN
+d[16] => q[16]~reg0.DATAIN
+d[17] => q[17]~reg0.DATAIN
+d[18] => q[18]~reg0.DATAIN
+d[19] => q[19]~reg0.DATAIN
+d[20] => q[20]~reg0.DATAIN
+d[21] => q[21]~reg0.DATAIN
+d[22] => q[22]~reg0.DATAIN
+d[23] => q[23]~reg0.DATAIN
+d[24] => q[24]~reg0.DATAIN
+d[25] => q[25]~reg0.DATAIN
+d[26] => q[26]~reg0.DATAIN
+d[27] => q[27]~reg0.DATAIN
+d[28] => q[28]~reg0.DATAIN
+d[29] => q[29]~reg0.DATAIN
+d[30] => q[30]~reg0.DATAIN
+d[31] => q[31]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= q[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= q[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= q[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= q[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[20] <= q[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[21] <= q[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[22] <= q[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[23] <= q[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[24] <= q[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[25] <= q[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[26] <= q[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[27] <= q[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[28] <= q[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[29] <= q[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[30] <= q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[31] <= q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips|fluxoDados:FD|instruction_memory:MI
+addr[0] => ~NO_FANOUT~
+addr[1] => ~NO_FANOUT~
+addr[2] => q[13].DATAIN
+addr[2] => q[12].DATAIN
+addr[2] => q[11].DATAIN
+addr[2] => q[1].DATAIN
+q[0] <= <GND>
+q[1] <= addr[2].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= <GND>
+q[3] <= <GND>
+q[4] <= <GND>
+q[5] <= <VCC>
+q[6] <= <GND>
+q[7] <= <GND>
+q[8] <= <GND>
+q[9] <= <GND>
+q[10] <= <GND>
+q[11] <= addr[2].DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= addr[2].DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= addr[2].DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= <GND>
+q[15] <= <GND>
+q[16] <= <VCC>
+q[17] <= <GND>
+q[18] <= <GND>
+q[19] <= <GND>
+q[20] <= <GND>
+q[21] <= <GND>
+q[22] <= <GND>
+q[23] <= <GND>
+q[24] <= <GND>
+q[25] <= <GND>
+q[26] <= <GND>
+q[27] <= <GND>
+q[28] <= <GND>
+q[29] <= <GND>
+q[30] <= <GND>
+q[31] <= <GND>
+
+
+|mips|fluxoDados:FD|mux2way:MBR
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+A[0] => X.DATAB
+A[1] => X.DATAB
+A[2] => X.DATAB
+A[3] => X.DATAB
+A[4] => X.DATAB
+B[0] => X.DATAA
+B[1] => X.DATAA
+B[2] => X.DATAA
+B[3] => X.DATAA
+B[4] => X.DATAA
+X[0] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[1] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[2] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[3] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[4] <= X.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips|fluxoDados:FD|bankregister:BR
+clk => registers~37.CLK
+clk => registers~0.CLK
+clk => registers~1.CLK
+clk => registers~2.CLK
+clk => registers~3.CLK
+clk => registers~4.CLK
+clk => registers~5.CLK
+clk => registers~6.CLK
+clk => registers~7.CLK
+clk => registers~8.CLK
+clk => registers~9.CLK
+clk => registers~10.CLK
+clk => registers~11.CLK
+clk => registers~12.CLK
+clk => registers~13.CLK
+clk => registers~14.CLK
+clk => registers~15.CLK
+clk => registers~16.CLK
+clk => registers~17.CLK
+clk => registers~18.CLK
+clk => registers~19.CLK
+clk => registers~20.CLK
+clk => registers~21.CLK
+clk => registers~22.CLK
+clk => registers~23.CLK
+clk => registers~24.CLK
+clk => registers~25.CLK
+clk => registers~26.CLK
+clk => registers~27.CLK
+clk => registers~28.CLK
+clk => registers~29.CLK
+clk => registers~30.CLK
+clk => registers~31.CLK
+clk => registers~32.CLK
+clk => registers~33.CLK
+clk => registers~34.CLK
+clk => registers~35.CLK
+clk => registers~36.CLK
+clk => registers.CLK0
+EReg1[0] => registers.RADDR
+EReg1[1] => registers.RADDR1
+EReg1[2] => registers.RADDR2
+EReg1[3] => registers.RADDR3
+EReg1[4] => registers.RADDR4
+EReg2[0] => registers.PORTBRADDR
+EReg2[1] => registers.PORTBRADDR1
+EReg2[2] => registers.PORTBRADDR2
+EReg2[3] => registers.PORTBRADDR3
+EReg2[4] => registers.PORTBRADDR4
+EReg3[0] => registers~4.DATAIN
+EReg3[0] => registers.WADDR
+EReg3[1] => registers~3.DATAIN
+EReg3[1] => registers.WADDR1
+EReg3[2] => registers~2.DATAIN
+EReg3[2] => registers.WADDR2
+EReg3[3] => registers~1.DATAIN
+EReg3[3] => registers.WADDR3
+EReg3[4] => registers~0.DATAIN
+EReg3[4] => registers.WADDR4
+DEReg3[0] => registers~36.DATAIN
+DEReg3[0] => registers.DATAIN
+DEReg3[1] => registers~35.DATAIN
+DEReg3[1] => registers.DATAIN1
+DEReg3[2] => registers~34.DATAIN
+DEReg3[2] => registers.DATAIN2
+DEReg3[3] => registers~33.DATAIN
+DEReg3[3] => registers.DATAIN3
+DEReg3[4] => registers~32.DATAIN
+DEReg3[4] => registers.DATAIN4
+DEReg3[5] => registers~31.DATAIN
+DEReg3[5] => registers.DATAIN5
+DEReg3[6] => registers~30.DATAIN
+DEReg3[6] => registers.DATAIN6
+DEReg3[7] => registers~29.DATAIN
+DEReg3[7] => registers.DATAIN7
+DEReg3[8] => registers~28.DATAIN
+DEReg3[8] => registers.DATAIN8
+DEReg3[9] => registers~27.DATAIN
+DEReg3[9] => registers.DATAIN9
+DEReg3[10] => registers~26.DATAIN
+DEReg3[10] => registers.DATAIN10
+DEReg3[11] => registers~25.DATAIN
+DEReg3[11] => registers.DATAIN11
+DEReg3[12] => registers~24.DATAIN
+DEReg3[12] => registers.DATAIN12
+DEReg3[13] => registers~23.DATAIN
+DEReg3[13] => registers.DATAIN13
+DEReg3[14] => registers~22.DATAIN
+DEReg3[14] => registers.DATAIN14
+DEReg3[15] => registers~21.DATAIN
+DEReg3[15] => registers.DATAIN15
+DEReg3[16] => registers~20.DATAIN
+DEReg3[16] => registers.DATAIN16
+DEReg3[17] => registers~19.DATAIN
+DEReg3[17] => registers.DATAIN17
+DEReg3[18] => registers~18.DATAIN
+DEReg3[18] => registers.DATAIN18
+DEReg3[19] => registers~17.DATAIN
+DEReg3[19] => registers.DATAIN19
+DEReg3[20] => registers~16.DATAIN
+DEReg3[20] => registers.DATAIN20
+DEReg3[21] => registers~15.DATAIN
+DEReg3[21] => registers.DATAIN21
+DEReg3[22] => registers~14.DATAIN
+DEReg3[22] => registers.DATAIN22
+DEReg3[23] => registers~13.DATAIN
+DEReg3[23] => registers.DATAIN23
+DEReg3[24] => registers~12.DATAIN
+DEReg3[24] => registers.DATAIN24
+DEReg3[25] => registers~11.DATAIN
+DEReg3[25] => registers.DATAIN25
+DEReg3[26] => registers~10.DATAIN
+DEReg3[26] => registers.DATAIN26
+DEReg3[27] => registers~9.DATAIN
+DEReg3[27] => registers.DATAIN27
+DEReg3[28] => registers~8.DATAIN
+DEReg3[28] => registers.DATAIN28
+DEReg3[29] => registers~7.DATAIN
+DEReg3[29] => registers.DATAIN29
+DEReg3[30] => registers~6.DATAIN
+DEReg3[30] => registers.DATAIN30
+DEReg3[31] => registers~5.DATAIN
+DEReg3[31] => registers.DATAIN31
+habilitaEscrita => registers~37.DATAIN
+habilitaEscrita => registers.WE
+Dado1[0] <= registers.DATAOUT
+Dado1[1] <= registers.DATAOUT1
+Dado1[2] <= registers.DATAOUT2
+Dado1[3] <= registers.DATAOUT3
+Dado1[4] <= registers.DATAOUT4
+Dado1[5] <= registers.DATAOUT5
+Dado1[6] <= registers.DATAOUT6
+Dado1[7] <= registers.DATAOUT7
+Dado1[8] <= registers.DATAOUT8
+Dado1[9] <= registers.DATAOUT9
+Dado1[10] <= registers.DATAOUT10
+Dado1[11] <= registers.DATAOUT11
+Dado1[12] <= registers.DATAOUT12
+Dado1[13] <= registers.DATAOUT13
+Dado1[14] <= registers.DATAOUT14
+Dado1[15] <= registers.DATAOUT15
+Dado1[16] <= registers.DATAOUT16
+Dado1[17] <= registers.DATAOUT17
+Dado1[18] <= registers.DATAOUT18
+Dado1[19] <= registers.DATAOUT19
+Dado1[20] <= registers.DATAOUT20
+Dado1[21] <= registers.DATAOUT21
+Dado1[22] <= registers.DATAOUT22
+Dado1[23] <= registers.DATAOUT23
+Dado1[24] <= registers.DATAOUT24
+Dado1[25] <= registers.DATAOUT25
+Dado1[26] <= registers.DATAOUT26
+Dado1[27] <= registers.DATAOUT27
+Dado1[28] <= registers.DATAOUT28
+Dado1[29] <= registers.DATAOUT29
+Dado1[30] <= registers.DATAOUT30
+Dado1[31] <= registers.DATAOUT31
+Dado2[0] <= registers.PORTBDATAOUT
+Dado2[1] <= registers.PORTBDATAOUT1
+Dado2[2] <= registers.PORTBDATAOUT2
+Dado2[3] <= registers.PORTBDATAOUT3
+Dado2[4] <= registers.PORTBDATAOUT4
+Dado2[5] <= registers.PORTBDATAOUT5
+Dado2[6] <= registers.PORTBDATAOUT6
+Dado2[7] <= registers.PORTBDATAOUT7
+Dado2[8] <= registers.PORTBDATAOUT8
+Dado2[9] <= registers.PORTBDATAOUT9
+Dado2[10] <= registers.PORTBDATAOUT10
+Dado2[11] <= registers.PORTBDATAOUT11
+Dado2[12] <= registers.PORTBDATAOUT12
+Dado2[13] <= registers.PORTBDATAOUT13
+Dado2[14] <= registers.PORTBDATAOUT14
+Dado2[15] <= registers.PORTBDATAOUT15
+Dado2[16] <= registers.PORTBDATAOUT16
+Dado2[17] <= registers.PORTBDATAOUT17
+Dado2[18] <= registers.PORTBDATAOUT18
+Dado2[19] <= registers.PORTBDATAOUT19
+Dado2[20] <= registers.PORTBDATAOUT20
+Dado2[21] <= registers.PORTBDATAOUT21
+Dado2[22] <= registers.PORTBDATAOUT22
+Dado2[23] <= registers.PORTBDATAOUT23
+Dado2[24] <= registers.PORTBDATAOUT24
+Dado2[25] <= registers.PORTBDATAOUT25
+Dado2[26] <= registers.PORTBDATAOUT26
+Dado2[27] <= registers.PORTBDATAOUT27
+Dado2[28] <= registers.PORTBDATAOUT28
+Dado2[29] <= registers.PORTBDATAOUT29
+Dado2[30] <= registers.PORTBDATAOUT30
+Dado2[31] <= registers.PORTBDATAOUT31
+
+
+|mips|fluxoDados:FD|extensor:Ext
+s16[0] => s32[0].DATAIN
+s16[1] => s32[1].DATAIN
+s16[2] => s32[2].DATAIN
+s16[3] => s32[3].DATAIN
+s16[4] => s32[4].DATAIN
+s16[5] => s32[5].DATAIN
+s16[6] => s32[6].DATAIN
+s16[7] => s32[7].DATAIN
+s16[8] => s32[8].DATAIN
+s16[9] => s32[9].DATAIN
+s16[10] => s32[10].DATAIN
+s16[11] => s32[11].DATAIN
+s16[12] => s32[12].DATAIN
+s16[13] => s32[13].DATAIN
+s16[14] => s32[14].DATAIN
+s16[15] => s32[15].DATAIN
+s32[0] <= s16[0].DB_MAX_OUTPUT_PORT_TYPE
+s32[1] <= s16[1].DB_MAX_OUTPUT_PORT_TYPE
+s32[2] <= s16[2].DB_MAX_OUTPUT_PORT_TYPE
+s32[3] <= s16[3].DB_MAX_OUTPUT_PORT_TYPE
+s32[4] <= s16[4].DB_MAX_OUTPUT_PORT_TYPE
+s32[5] <= s16[5].DB_MAX_OUTPUT_PORT_TYPE
+s32[6] <= s16[6].DB_MAX_OUTPUT_PORT_TYPE
+s32[7] <= s16[7].DB_MAX_OUTPUT_PORT_TYPE
+s32[8] <= s16[8].DB_MAX_OUTPUT_PORT_TYPE
+s32[9] <= s16[9].DB_MAX_OUTPUT_PORT_TYPE
+s32[10] <= s16[10].DB_MAX_OUTPUT_PORT_TYPE
+s32[11] <= s16[11].DB_MAX_OUTPUT_PORT_TYPE
+s32[12] <= s16[12].DB_MAX_OUTPUT_PORT_TYPE
+s32[13] <= s16[13].DB_MAX_OUTPUT_PORT_TYPE
+s32[14] <= s16[14].DB_MAX_OUTPUT_PORT_TYPE
+s32[15] <= s16[15].DB_MAX_OUTPUT_PORT_TYPE
+s32[16] <= <GND>
+s32[17] <= <GND>
+s32[18] <= <GND>
+s32[19] <= <GND>
+s32[20] <= <GND>
+s32[21] <= <GND>
+s32[22] <= <GND>
+s32[23] <= <GND>
+s32[24] <= <GND>
+s32[25] <= <GND>
+s32[26] <= <GND>
+s32[27] <= <GND>
+s32[28] <= <GND>
+s32[29] <= <GND>
+s32[30] <= <GND>
+s32[31] <= <GND>
+
+
+|mips|fluxoDados:FD|mux2way:MALU
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+A[0] => X.DATAB
+A[1] => X.DATAB
+A[2] => X.DATAB
+A[3] => X.DATAB
+A[4] => X.DATAB
+A[5] => X.DATAB
+A[6] => X.DATAB
+A[7] => X.DATAB
+A[8] => X.DATAB
+A[9] => X.DATAB
+A[10] => X.DATAB
+A[11] => X.DATAB
+A[12] => X.DATAB
+A[13] => X.DATAB
+A[14] => X.DATAB
+A[15] => X.DATAB
+A[16] => X.DATAB
+A[17] => X.DATAB
+A[18] => X.DATAB
+A[19] => X.DATAB
+A[20] => X.DATAB
+A[21] => X.DATAB
+A[22] => X.DATAB
+A[23] => X.DATAB
+A[24] => X.DATAB
+A[25] => X.DATAB
+A[26] => X.DATAB
+A[27] => X.DATAB
+A[28] => X.DATAB
+A[29] => X.DATAB
+A[30] => X.DATAB
+A[31] => X.DATAB
+B[0] => X.DATAA
+B[1] => X.DATAA
+B[2] => X.DATAA
+B[3] => X.DATAA
+B[4] => X.DATAA
+B[5] => X.DATAA
+B[6] => X.DATAA
+B[7] => X.DATAA
+B[8] => X.DATAA
+B[9] => X.DATAA
+B[10] => X.DATAA
+B[11] => X.DATAA
+B[12] => X.DATAA
+B[13] => X.DATAA
+B[14] => X.DATAA
+B[15] => X.DATAA
+B[16] => X.DATAA
+B[17] => X.DATAA
+B[18] => X.DATAA
+B[19] => X.DATAA
+B[20] => X.DATAA
+B[21] => X.DATAA
+B[22] => X.DATAA
+B[23] => X.DATAA
+B[24] => X.DATAA
+B[25] => X.DATAA
+B[26] => X.DATAA
+B[27] => X.DATAA
+B[28] => X.DATAA
+B[29] => X.DATAA
+B[30] => X.DATAA
+B[31] => X.DATAA
+X[0] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[1] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[2] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[3] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[4] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[5] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[6] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[7] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[8] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[9] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[10] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[11] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[12] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[13] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[14] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[15] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[16] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[17] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[18] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[19] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[20] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[21] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[22] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[23] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[24] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[25] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[26] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[27] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[28] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[29] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[30] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[31] <= X.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips|fluxoDados:FD|unidadeControleALU:UCALU
+funct[0] => Equal0.IN2
+funct[0] => Equal1.IN5
+funct[0] => Equal2.IN3
+funct[0] => Equal3.IN3
+funct[0] => Equal5.IN4
+funct[1] => Equal0.IN5
+funct[1] => Equal1.IN2
+funct[1] => Equal2.IN2
+funct[1] => Equal3.IN5
+funct[1] => Equal5.IN3
+funct[2] => Equal0.IN1
+funct[2] => Equal1.IN4
+funct[2] => Equal2.IN5
+funct[2] => Equal3.IN2
+funct[2] => Equal5.IN2
+funct[3] => Equal0.IN4
+funct[3] => Equal1.IN1
+funct[3] => Equal2.IN1
+funct[3] => Equal3.IN1
+funct[3] => Equal5.IN1
+funct[4] => Equal0.IN0
+funct[4] => Equal1.IN0
+funct[4] => Equal2.IN0
+funct[4] => Equal3.IN0
+funct[4] => Equal5.IN0
+funct[5] => Equal0.IN3
+funct[5] => Equal1.IN3
+funct[5] => Equal2.IN4
+funct[5] => Equal3.IN4
+funct[5] => Equal5.IN5
+ulaOP[0] => Equal4.IN0
+ulaOP[0] => Equal6.IN1
+ulaOP[0] => Equal7.IN1
+ulaOP[1] => Equal4.IN1
+ulaOP[1] => Equal6.IN0
+ulaOP[1] => Equal7.IN0
+instr[0] <= instr[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+instr[1] <= instr[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+instr[2] <= instr[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+instr[3] <= <GND>
+
+
+|mips|fluxoDados:FD|fluxoDadosALU:ALU
 entradaA[0] => muxiverteentrada:MuxGenA.A[0]
 entradaA[0] => muxiverteentrada:MuxGenA.B[0]
 entradaA[1] => muxiverteentrada:MuxGenA.A[1]
@@ -134,43 +975,42 @@ SEL_ULA[1] => fulladder32:Fulladder32.Cin
 SEL_ULA[1] => muxalu:MuxAlu.SEL[1]
 SEL_ULA[2] => ~NO_FANOUT~
 SEL_ULA[3] => ~NO_FANOUT~
-last_Cout << fulladder32:Fulladder32.Cout
-resposta[0] << muxalu:MuxAlu.X[0]
-resposta[1] << muxalu:MuxAlu.X[1]
-resposta[2] << muxalu:MuxAlu.X[2]
-resposta[3] << muxalu:MuxAlu.X[3]
-resposta[4] << muxalu:MuxAlu.X[4]
-resposta[5] << muxalu:MuxAlu.X[5]
-resposta[6] << muxalu:MuxAlu.X[6]
-resposta[7] << muxalu:MuxAlu.X[7]
-resposta[8] << muxalu:MuxAlu.X[8]
-resposta[9] << muxalu:MuxAlu.X[9]
-resposta[10] << muxalu:MuxAlu.X[10]
-resposta[11] << muxalu:MuxAlu.X[11]
-resposta[12] << muxalu:MuxAlu.X[12]
-resposta[13] << muxalu:MuxAlu.X[13]
-resposta[14] << muxalu:MuxAlu.X[14]
-resposta[15] << muxalu:MuxAlu.X[15]
-resposta[16] << muxalu:MuxAlu.X[16]
-resposta[17] << muxalu:MuxAlu.X[17]
-resposta[18] << muxalu:MuxAlu.X[18]
-resposta[19] << muxalu:MuxAlu.X[19]
-resposta[20] << muxalu:MuxAlu.X[20]
-resposta[21] << muxalu:MuxAlu.X[21]
-resposta[22] << muxalu:MuxAlu.X[22]
-resposta[23] << muxalu:MuxAlu.X[23]
-resposta[24] << muxalu:MuxAlu.X[24]
-resposta[25] << muxalu:MuxAlu.X[25]
-resposta[26] << muxalu:MuxAlu.X[26]
-resposta[27] << muxalu:MuxAlu.X[27]
-resposta[28] << muxalu:MuxAlu.X[28]
-resposta[29] << muxalu:MuxAlu.X[29]
-resposta[30] << muxalu:MuxAlu.X[30]
-resposta[31] << muxalu:MuxAlu.X[31]
-Z << muxalu:MuxAlu.Z
+resposta[0] <= muxalu:MuxAlu.X[0]
+resposta[1] <= muxalu:MuxAlu.X[1]
+resposta[2] <= muxalu:MuxAlu.X[2]
+resposta[3] <= muxalu:MuxAlu.X[3]
+resposta[4] <= muxalu:MuxAlu.X[4]
+resposta[5] <= muxalu:MuxAlu.X[5]
+resposta[6] <= muxalu:MuxAlu.X[6]
+resposta[7] <= muxalu:MuxAlu.X[7]
+resposta[8] <= muxalu:MuxAlu.X[8]
+resposta[9] <= muxalu:MuxAlu.X[9]
+resposta[10] <= muxalu:MuxAlu.X[10]
+resposta[11] <= muxalu:MuxAlu.X[11]
+resposta[12] <= muxalu:MuxAlu.X[12]
+resposta[13] <= muxalu:MuxAlu.X[13]
+resposta[14] <= muxalu:MuxAlu.X[14]
+resposta[15] <= muxalu:MuxAlu.X[15]
+resposta[16] <= muxalu:MuxAlu.X[16]
+resposta[17] <= muxalu:MuxAlu.X[17]
+resposta[18] <= muxalu:MuxAlu.X[18]
+resposta[19] <= muxalu:MuxAlu.X[19]
+resposta[20] <= muxalu:MuxAlu.X[20]
+resposta[21] <= muxalu:MuxAlu.X[21]
+resposta[22] <= muxalu:MuxAlu.X[22]
+resposta[23] <= muxalu:MuxAlu.X[23]
+resposta[24] <= muxalu:MuxAlu.X[24]
+resposta[25] <= muxalu:MuxAlu.X[25]
+resposta[26] <= muxalu:MuxAlu.X[26]
+resposta[27] <= muxalu:MuxAlu.X[27]
+resposta[28] <= muxalu:MuxAlu.X[28]
+resposta[29] <= muxalu:MuxAlu.X[29]
+resposta[30] <= muxalu:MuxAlu.X[30]
+resposta[31] <= muxalu:MuxAlu.X[31]
+Z <= muxalu:MuxAlu.Z
 
 
-|fluxoDadosALU|muxIverteEntrada:MuxGenA
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|muxIverteEntrada:MuxGenA
 SEL => X.OUTPUTSELECT
 SEL => X.OUTPUTSELECT
 SEL => X.OUTPUTSELECT
@@ -301,7 +1141,7 @@ X[30] <= X.DB_MAX_OUTPUT_PORT_TYPE
 X[31] <= X.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|muxIverteEntrada:MuxGenB
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|muxIverteEntrada:MuxGenB
 SEL => X.OUTPUTSELECT
 SEL => X.OUTPUTSELECT
 SEL => X.OUTPUTSELECT
@@ -432,7 +1272,7 @@ X[30] <= X.DB_MAX_OUTPUT_PORT_TYPE
 X[31] <= X.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32
 x[0] => fulladder:fulladder0.x
 x[1] => fulladder:fulladder1.x
 x[2] => fulladder:fulladder2.x
@@ -534,7 +1374,7 @@ Cout <= fulladder:fulladder31.Cout
 overflowCalculation <= overflowCalculation.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder0
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder0
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -548,7 +1388,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder1
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder1
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -562,7 +1402,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder2
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder2
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -576,7 +1416,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder3
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder3
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -590,7 +1430,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder4
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder4
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -604,7 +1444,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder5
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder5
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -618,7 +1458,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder6
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder6
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -632,7 +1472,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder7
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder7
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -646,7 +1486,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder8
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder8
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -660,7 +1500,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder9
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder9
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -674,7 +1514,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder10
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder10
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -688,7 +1528,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder11
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder11
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -702,7 +1542,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder12
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder12
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -716,7 +1556,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder13
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder13
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -730,7 +1570,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder14
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder14
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -744,7 +1584,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder15
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder15
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -758,7 +1598,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder16
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder16
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -772,7 +1612,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder17
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder17
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -786,7 +1626,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder18
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder18
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -800,7 +1640,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder19
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder19
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -814,7 +1654,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder20
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder20
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -828,7 +1668,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder21
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder21
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -842,7 +1682,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder22
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder22
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -856,7 +1696,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder23
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder23
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -870,7 +1710,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder24
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder24
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -884,7 +1724,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder25
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder25
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -898,7 +1738,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder26
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder26
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -912,7 +1752,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder27
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder27
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -926,7 +1766,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder28
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder28
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -940,7 +1780,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder29
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder29
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -954,7 +1794,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder30
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder30
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -968,7 +1808,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|fullAdder32:Fulladder32|fullAdder:fulladder31
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder31
 Cin => soma.IN0
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -982,7 +1822,7 @@ soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fluxoDadosALU|muxALU:MuxAlu
+|mips|fluxoDados:FD|fluxoDadosALU:ALU|muxALU:MuxAlu
 SEL[0] => Mux0.IN1
 SEL[0] => Mux1.IN1
 SEL[0] => Mux2.IN1
@@ -1208,5 +2048,788 @@ X[29] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 X[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 X[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Z <= result.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips|fluxoDados:FD|data_memory:DM
+clk => ram~37.CLK
+clk => ram~0.CLK
+clk => ram~1.CLK
+clk => ram~2.CLK
+clk => ram~3.CLK
+clk => ram~4.CLK
+clk => ram~5.CLK
+clk => ram~6.CLK
+clk => ram~7.CLK
+clk => ram~8.CLK
+clk => ram~9.CLK
+clk => ram~10.CLK
+clk => ram~11.CLK
+clk => ram~12.CLK
+clk => ram~13.CLK
+clk => ram~14.CLK
+clk => ram~15.CLK
+clk => ram~16.CLK
+clk => ram~17.CLK
+clk => ram~18.CLK
+clk => ram~19.CLK
+clk => ram~20.CLK
+clk => ram~21.CLK
+clk => ram~22.CLK
+clk => ram~23.CLK
+clk => ram~24.CLK
+clk => ram~25.CLK
+clk => ram~26.CLK
+clk => ram~27.CLK
+clk => ram~28.CLK
+clk => ram~29.CLK
+clk => ram~30.CLK
+clk => ram~31.CLK
+clk => ram~32.CLK
+clk => ram~33.CLK
+clk => ram~34.CLK
+clk => ram~35.CLK
+clk => ram~36.CLK
+clk => addr_reg[0].CLK
+clk => addr_reg[1].CLK
+clk => addr_reg[2].CLK
+clk => addr_reg[3].CLK
+clk => addr_reg[4].CLK
+clk => ram.CLK0
+addr[0] => ram~4.DATAIN
+addr[0] => addr_reg[0].DATAIN
+addr[0] => ram.WADDR
+addr[1] => ram~3.DATAIN
+addr[1] => addr_reg[1].DATAIN
+addr[1] => ram.WADDR1
+addr[2] => ram~2.DATAIN
+addr[2] => addr_reg[2].DATAIN
+addr[2] => ram.WADDR2
+addr[3] => ram~1.DATAIN
+addr[3] => addr_reg[3].DATAIN
+addr[3] => ram.WADDR3
+addr[4] => ram~0.DATAIN
+addr[4] => addr_reg[4].DATAIN
+addr[4] => ram.WADDR4
+data[0] => ram~36.DATAIN
+data[0] => ram.DATAIN
+data[1] => ram~35.DATAIN
+data[1] => ram.DATAIN1
+data[2] => ram~34.DATAIN
+data[2] => ram.DATAIN2
+data[3] => ram~33.DATAIN
+data[3] => ram.DATAIN3
+data[4] => ram~32.DATAIN
+data[4] => ram.DATAIN4
+data[5] => ram~31.DATAIN
+data[5] => ram.DATAIN5
+data[6] => ram~30.DATAIN
+data[6] => ram.DATAIN6
+data[7] => ram~29.DATAIN
+data[7] => ram.DATAIN7
+data[8] => ram~28.DATAIN
+data[8] => ram.DATAIN8
+data[9] => ram~27.DATAIN
+data[9] => ram.DATAIN9
+data[10] => ram~26.DATAIN
+data[10] => ram.DATAIN10
+data[11] => ram~25.DATAIN
+data[11] => ram.DATAIN11
+data[12] => ram~24.DATAIN
+data[12] => ram.DATAIN12
+data[13] => ram~23.DATAIN
+data[13] => ram.DATAIN13
+data[14] => ram~22.DATAIN
+data[14] => ram.DATAIN14
+data[15] => ram~21.DATAIN
+data[15] => ram.DATAIN15
+data[16] => ram~20.DATAIN
+data[16] => ram.DATAIN16
+data[17] => ram~19.DATAIN
+data[17] => ram.DATAIN17
+data[18] => ram~18.DATAIN
+data[18] => ram.DATAIN18
+data[19] => ram~17.DATAIN
+data[19] => ram.DATAIN19
+data[20] => ram~16.DATAIN
+data[20] => ram.DATAIN20
+data[21] => ram~15.DATAIN
+data[21] => ram.DATAIN21
+data[22] => ram~14.DATAIN
+data[22] => ram.DATAIN22
+data[23] => ram~13.DATAIN
+data[23] => ram.DATAIN23
+data[24] => ram~12.DATAIN
+data[24] => ram.DATAIN24
+data[25] => ram~11.DATAIN
+data[25] => ram.DATAIN25
+data[26] => ram~10.DATAIN
+data[26] => ram.DATAIN26
+data[27] => ram~9.DATAIN
+data[27] => ram.DATAIN27
+data[28] => ram~8.DATAIN
+data[28] => ram.DATAIN28
+data[29] => ram~7.DATAIN
+data[29] => ram.DATAIN29
+data[30] => ram~6.DATAIN
+data[30] => ram.DATAIN30
+data[31] => ram~5.DATAIN
+data[31] => ram.DATAIN31
+we => ram~37.DATAIN
+we => ram.WE
+re => q[0]$latch.LATCH_ENABLE
+re => q[1]$latch.LATCH_ENABLE
+re => q[2]$latch.LATCH_ENABLE
+re => q[3]$latch.LATCH_ENABLE
+re => q[4]$latch.LATCH_ENABLE
+re => q[5]$latch.LATCH_ENABLE
+re => q[6]$latch.LATCH_ENABLE
+re => q[7]$latch.LATCH_ENABLE
+re => q[8]$latch.LATCH_ENABLE
+re => q[9]$latch.LATCH_ENABLE
+re => q[10]$latch.LATCH_ENABLE
+re => q[11]$latch.LATCH_ENABLE
+re => q[12]$latch.LATCH_ENABLE
+re => q[13]$latch.LATCH_ENABLE
+re => q[14]$latch.LATCH_ENABLE
+re => q[15]$latch.LATCH_ENABLE
+re => q[16]$latch.LATCH_ENABLE
+re => q[17]$latch.LATCH_ENABLE
+re => q[18]$latch.LATCH_ENABLE
+re => q[19]$latch.LATCH_ENABLE
+re => q[20]$latch.LATCH_ENABLE
+re => q[21]$latch.LATCH_ENABLE
+re => q[22]$latch.LATCH_ENABLE
+re => q[23]$latch.LATCH_ENABLE
+re => q[24]$latch.LATCH_ENABLE
+re => q[25]$latch.LATCH_ENABLE
+re => q[26]$latch.LATCH_ENABLE
+re => q[27]$latch.LATCH_ENABLE
+re => q[28]$latch.LATCH_ENABLE
+re => q[29]$latch.LATCH_ENABLE
+re => q[30]$latch.LATCH_ENABLE
+re => q[31]$latch.LATCH_ENABLE
+q[0] <= q[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= q[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= q[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= q[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= q[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= q[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= q[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= q[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= q[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= q[16]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= q[17]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= q[18]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= q[19]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[20] <= q[20]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[21] <= q[21]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[22] <= q[22]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[23] <= q[23]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[24] <= q[24]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[25] <= q[25]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[26] <= q[26]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[27] <= q[27]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[28] <= q[28]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[29] <= q[29]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[30] <= q[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[31] <= q[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips|fluxoDados:FD|mux2way:MDM
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+A[0] => X.DATAB
+A[1] => X.DATAB
+A[2] => X.DATAB
+A[3] => X.DATAB
+A[4] => X.DATAB
+A[5] => X.DATAB
+A[6] => X.DATAB
+A[7] => X.DATAB
+A[8] => X.DATAB
+A[9] => X.DATAB
+A[10] => X.DATAB
+A[11] => X.DATAB
+A[12] => X.DATAB
+A[13] => X.DATAB
+A[14] => X.DATAB
+A[15] => X.DATAB
+A[16] => X.DATAB
+A[17] => X.DATAB
+A[18] => X.DATAB
+A[19] => X.DATAB
+A[20] => X.DATAB
+A[21] => X.DATAB
+A[22] => X.DATAB
+A[23] => X.DATAB
+A[24] => X.DATAB
+A[25] => X.DATAB
+A[26] => X.DATAB
+A[27] => X.DATAB
+A[28] => X.DATAB
+A[29] => X.DATAB
+A[30] => X.DATAB
+A[31] => X.DATAB
+B[0] => X.DATAA
+B[1] => X.DATAA
+B[2] => X.DATAA
+B[3] => X.DATAA
+B[4] => X.DATAA
+B[5] => X.DATAA
+B[6] => X.DATAA
+B[7] => X.DATAA
+B[8] => X.DATAA
+B[9] => X.DATAA
+B[10] => X.DATAA
+B[11] => X.DATAA
+B[12] => X.DATAA
+B[13] => X.DATAA
+B[14] => X.DATAA
+B[15] => X.DATAA
+B[16] => X.DATAA
+B[17] => X.DATAA
+B[18] => X.DATAA
+B[19] => X.DATAA
+B[20] => X.DATAA
+B[21] => X.DATAA
+B[22] => X.DATAA
+B[23] => X.DATAA
+B[24] => X.DATAA
+B[25] => X.DATAA
+B[26] => X.DATAA
+B[27] => X.DATAA
+B[28] => X.DATAA
+B[29] => X.DATAA
+B[30] => X.DATAA
+B[31] => X.DATAA
+X[0] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[1] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[2] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[3] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[4] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[5] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[6] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[7] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[8] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[9] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[10] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[11] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[12] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[13] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[14] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[15] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[16] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[17] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[18] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[19] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[20] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[21] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[22] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[23] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[24] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[25] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[26] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[27] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[28] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[29] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[30] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[31] <= X.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips|fluxoDados:FD|somador_simples:PCAdder
+A[0] => Add0.IN32
+A[1] => Add0.IN31
+A[2] => Add0.IN30
+A[3] => Add0.IN29
+A[4] => Add0.IN28
+A[5] => Add0.IN27
+A[6] => Add0.IN26
+A[7] => Add0.IN25
+A[8] => Add0.IN24
+A[9] => Add0.IN23
+A[10] => Add0.IN22
+A[11] => Add0.IN21
+A[12] => Add0.IN20
+A[13] => Add0.IN19
+A[14] => Add0.IN18
+A[15] => Add0.IN17
+A[16] => Add0.IN16
+A[17] => Add0.IN15
+A[18] => Add0.IN14
+A[19] => Add0.IN13
+A[20] => Add0.IN12
+A[21] => Add0.IN11
+A[22] => Add0.IN10
+A[23] => Add0.IN9
+A[24] => Add0.IN8
+A[25] => Add0.IN7
+A[26] => Add0.IN6
+A[27] => Add0.IN5
+A[28] => Add0.IN4
+A[29] => Add0.IN3
+A[30] => Add0.IN2
+A[31] => Add0.IN1
+B[0] => Add0.IN64
+B[1] => Add0.IN63
+B[2] => Add0.IN62
+B[3] => Add0.IN61
+B[4] => Add0.IN60
+B[5] => Add0.IN59
+B[6] => Add0.IN58
+B[7] => Add0.IN57
+B[8] => Add0.IN56
+B[9] => Add0.IN55
+B[10] => Add0.IN54
+B[11] => Add0.IN53
+B[12] => Add0.IN52
+B[13] => Add0.IN51
+B[14] => Add0.IN50
+B[15] => Add0.IN49
+B[16] => Add0.IN48
+B[17] => Add0.IN47
+B[18] => Add0.IN46
+B[19] => Add0.IN45
+B[20] => Add0.IN44
+B[21] => Add0.IN43
+B[22] => Add0.IN42
+B[23] => Add0.IN41
+B[24] => Add0.IN40
+B[25] => Add0.IN39
+B[26] => Add0.IN38
+B[27] => Add0.IN37
+B[28] => Add0.IN36
+B[29] => Add0.IN35
+B[30] => Add0.IN34
+B[31] => Add0.IN33
+C[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[8] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[9] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[10] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[11] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[12] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[13] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[14] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[16] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[17] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[18] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[19] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[20] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[21] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[22] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[23] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[24] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[25] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[26] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[27] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[28] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[29] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips|fluxoDados:FD|somador_simples:BEQAdder
+A[0] => Add0.IN32
+A[1] => Add0.IN31
+A[2] => Add0.IN30
+A[3] => Add0.IN29
+A[4] => Add0.IN28
+A[5] => Add0.IN27
+A[6] => Add0.IN26
+A[7] => Add0.IN25
+A[8] => Add0.IN24
+A[9] => Add0.IN23
+A[10] => Add0.IN22
+A[11] => Add0.IN21
+A[12] => Add0.IN20
+A[13] => Add0.IN19
+A[14] => Add0.IN18
+A[15] => Add0.IN17
+A[16] => Add0.IN16
+A[17] => Add0.IN15
+A[18] => Add0.IN14
+A[19] => Add0.IN13
+A[20] => Add0.IN12
+A[21] => Add0.IN11
+A[22] => Add0.IN10
+A[23] => Add0.IN9
+A[24] => Add0.IN8
+A[25] => Add0.IN7
+A[26] => Add0.IN6
+A[27] => Add0.IN5
+A[28] => Add0.IN4
+A[29] => Add0.IN3
+A[30] => Add0.IN2
+A[31] => Add0.IN1
+B[0] => Add0.IN64
+B[1] => Add0.IN63
+B[2] => Add0.IN62
+B[3] => Add0.IN61
+B[4] => Add0.IN60
+B[5] => Add0.IN59
+B[6] => Add0.IN58
+B[7] => Add0.IN57
+B[8] => Add0.IN56
+B[9] => Add0.IN55
+B[10] => Add0.IN54
+B[11] => Add0.IN53
+B[12] => Add0.IN52
+B[13] => Add0.IN51
+B[14] => Add0.IN50
+B[15] => Add0.IN49
+B[16] => Add0.IN48
+B[17] => Add0.IN47
+B[18] => Add0.IN46
+B[19] => Add0.IN45
+B[20] => Add0.IN44
+B[21] => Add0.IN43
+B[22] => Add0.IN42
+B[23] => Add0.IN41
+B[24] => Add0.IN40
+B[25] => Add0.IN39
+B[26] => Add0.IN38
+B[27] => Add0.IN37
+B[28] => Add0.IN36
+B[29] => Add0.IN35
+B[30] => Add0.IN34
+B[31] => Add0.IN33
+C[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[8] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[9] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[10] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[11] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[12] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[13] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[14] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[16] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[17] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[18] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[19] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[20] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[21] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[22] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[23] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[24] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[25] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[26] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[27] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[28] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[29] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips|fluxoDados:FD|mux2way:MuxBEQ
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+A[0] => X.DATAB
+A[1] => X.DATAB
+A[2] => X.DATAB
+A[3] => X.DATAB
+A[4] => X.DATAB
+A[5] => X.DATAB
+A[6] => X.DATAB
+A[7] => X.DATAB
+A[8] => X.DATAB
+A[9] => X.DATAB
+A[10] => X.DATAB
+A[11] => X.DATAB
+A[12] => X.DATAB
+A[13] => X.DATAB
+A[14] => X.DATAB
+A[15] => X.DATAB
+A[16] => X.DATAB
+A[17] => X.DATAB
+A[18] => X.DATAB
+A[19] => X.DATAB
+A[20] => X.DATAB
+A[21] => X.DATAB
+A[22] => X.DATAB
+A[23] => X.DATAB
+A[24] => X.DATAB
+A[25] => X.DATAB
+A[26] => X.DATAB
+A[27] => X.DATAB
+A[28] => X.DATAB
+A[29] => X.DATAB
+A[30] => X.DATAB
+A[31] => X.DATAB
+B[0] => X.DATAA
+B[1] => X.DATAA
+B[2] => X.DATAA
+B[3] => X.DATAA
+B[4] => X.DATAA
+B[5] => X.DATAA
+B[6] => X.DATAA
+B[7] => X.DATAA
+B[8] => X.DATAA
+B[9] => X.DATAA
+B[10] => X.DATAA
+B[11] => X.DATAA
+B[12] => X.DATAA
+B[13] => X.DATAA
+B[14] => X.DATAA
+B[15] => X.DATAA
+B[16] => X.DATAA
+B[17] => X.DATAA
+B[18] => X.DATAA
+B[19] => X.DATAA
+B[20] => X.DATAA
+B[21] => X.DATAA
+B[22] => X.DATAA
+B[23] => X.DATAA
+B[24] => X.DATAA
+B[25] => X.DATAA
+B[26] => X.DATAA
+B[27] => X.DATAA
+B[28] => X.DATAA
+B[29] => X.DATAA
+B[30] => X.DATAA
+B[31] => X.DATAA
+X[0] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[1] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[2] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[3] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[4] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[5] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[6] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[7] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[8] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[9] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[10] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[11] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[12] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[13] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[14] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[15] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[16] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[17] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[18] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[19] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[20] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[21] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[22] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[23] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[24] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[25] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[26] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[27] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[28] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[29] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[30] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[31] <= X.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips|fluxoDados:FD|mux2way:MuxProxPC
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+SEL => X.OUTPUTSELECT
+A[0] => X.DATAB
+A[1] => X.DATAB
+A[2] => X.DATAB
+A[3] => X.DATAB
+A[4] => X.DATAB
+A[5] => X.DATAB
+A[6] => X.DATAB
+A[7] => X.DATAB
+A[8] => X.DATAB
+A[9] => X.DATAB
+A[10] => X.DATAB
+A[11] => X.DATAB
+A[12] => X.DATAB
+A[13] => X.DATAB
+A[14] => X.DATAB
+A[15] => X.DATAB
+A[16] => X.DATAB
+A[17] => X.DATAB
+A[18] => X.DATAB
+A[19] => X.DATAB
+A[20] => X.DATAB
+A[21] => X.DATAB
+A[22] => X.DATAB
+A[23] => X.DATAB
+A[24] => X.DATAB
+A[25] => X.DATAB
+A[26] => X.DATAB
+A[27] => X.DATAB
+A[28] => X.DATAB
+A[29] => X.DATAB
+A[30] => X.DATAB
+A[31] => X.DATAB
+B[0] => X.DATAA
+B[1] => X.DATAA
+B[2] => X.DATAA
+B[3] => X.DATAA
+B[4] => X.DATAA
+B[5] => X.DATAA
+B[6] => X.DATAA
+B[7] => X.DATAA
+B[8] => X.DATAA
+B[9] => X.DATAA
+B[10] => X.DATAA
+B[11] => X.DATAA
+B[12] => X.DATAA
+B[13] => X.DATAA
+B[14] => X.DATAA
+B[15] => X.DATAA
+B[16] => X.DATAA
+B[17] => X.DATAA
+B[18] => X.DATAA
+B[19] => X.DATAA
+B[20] => X.DATAA
+B[21] => X.DATAA
+B[22] => X.DATAA
+B[23] => X.DATAA
+B[24] => X.DATAA
+B[25] => X.DATAA
+B[26] => X.DATAA
+B[27] => X.DATAA
+B[28] => X.DATAA
+B[29] => X.DATAA
+B[30] => X.DATAA
+B[31] => X.DATAA
+X[0] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[1] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[2] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[3] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[4] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[5] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[6] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[7] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[8] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[9] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[10] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[11] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[12] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[13] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[14] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[15] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[16] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[17] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[18] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[19] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[20] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[21] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[22] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[23] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[24] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[25] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[26] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[27] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[28] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[29] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[30] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[31] <= X.DB_MAX_OUTPUT_PORT_TYPE
 
 

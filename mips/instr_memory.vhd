@@ -69,8 +69,4 @@ begin
 	-- jump para loop de soma
 	rom(7) <= "00001000000000000000000000000000";
 	
-   
-	
-
-
 end bhv;

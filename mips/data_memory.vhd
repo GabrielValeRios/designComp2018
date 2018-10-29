@@ -20,6 +20,7 @@ entity data_memory is
 		we		: in std_logic;
 		re    : in std_logic;
 		q		: out std_logic_vector((DATA_WIDTH -1) downto 0)
+
 	);
 
 end entity;
@@ -51,6 +52,7 @@ begin
 	
 	if(re = '1') then
 		q <= ram(addr_reg);
+
 	end if;
 	
 	end process;

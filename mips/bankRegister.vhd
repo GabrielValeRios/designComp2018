@@ -31,9 +31,8 @@ begin
 			if(habilitaEscrita = '1') then
 				 registers(to_integer(unsigned(EReg3))) <= DEReg3;
 			end if;
-			Dado1 <= registers(to_integer(unsigned(EReg1)));
-			Dado2 <= registers(to_integer(unsigned(EReg2)));
 		end if;
 	end process;
-		
+	Dado1 <= registers(to_integer(unsigned(EReg1)));
+	Dado2 <= registers(to_integer(unsigned(EReg2)));
 end architecture;
