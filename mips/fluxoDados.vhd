@@ -10,7 +10,8 @@ entity fluxoDados is
 		ULAOp : in std_logic_vector(1 downto 0);
 		opcode:   out std_logic_vector(5 downto 0);
 		
-		DM_out,REG1_OUT,REG2_OUT : out std_logic_vector(31 downto 0)
+		DM_out,REG1_OUT,REG2_OUT : out std_logic_vector(31 downto 0);
+		instrCntrl : out std_logic_vector(3 downto 0)
 
 	);
 end entity;
@@ -77,8 +78,12 @@ begin
 	FioShiftLeftMI <= shift_left(unsigned(FioInstrMemory(25 downto 0)),2);
 	FioPCMuxBConc <= FioAdderPc(31 downto 28) & std_logic_vector(FioShiftLeftMI) & "00";
 	MuxProxPC : entity work.mux2way port map(SEL=>MuxPc,A=>FioMuxBEQ,B=>FioPCMuxBConc,X=>FioToPc);
+	-- opcode out
+	opcode <= FioInstrMemory(31 downto 26);
 	
-	DM_out <= FioDadoLidoMemoria;
+	
+	DM_out <= FioALU;
+	instrCntrl <= FioULACntrl;
 	REG1_OUT <= FioDadoLido1;
 	REG2_OUT <= FioDadoLido2;
 	end architecture;

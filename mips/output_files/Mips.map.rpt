@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Mips
-Mon Oct 29 19:33:22 2018
+Tue Oct 30 19:39:07 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -16,27 +16,21 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   8. Registers Removed During Synthesis
   9. Removed Registers Triggering Further Register Optimizations
  10. General Register Statistics
- 11. Registers Packed Into Inferred Megafunctions
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated
- 14. Parameter Settings for User Entity Instance: fluxoDados:FD|instruction_memory:MI
- 15. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MBR
- 16. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MALU
- 17. Parameter Settings for User Entity Instance: fluxoDados:FD|data_memory:DM
- 18. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MDM
- 19. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MuxBEQ
- 20. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MuxProxPC
- 21. Parameter Settings for Inferred Entity Instance: fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0
- 22. altsyncram Parameter Settings by Entity Instance
- 23. Port Connectivity Checks: "fluxoDados:FD|mux2way:MuxProxPC"
- 24. Port Connectivity Checks: "fluxoDados:FD|somador_simples:BEQAdder"
- 25. Port Connectivity Checks: "fluxoDados:FD|somador_simples:PCAdder"
- 26. Port Connectivity Checks: "fluxoDados:FD|fluxoDadosALU:ALU|muxALU:MuxAlu"
- 27. Port Connectivity Checks: "fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32"
- 28. Port Connectivity Checks: "fluxoDados:FD|instruction_memory:MI"
- 29. Post-Synthesis Netlist Statistics for Top Partition
- 30. Elapsed Time Per Partition
- 31. Analysis & Synthesis Messages
+ 11. Parameter Settings for User Entity Instance: fluxoDados:FD|instruction_memory:MI
+ 12. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MBR
+ 13. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MALU
+ 14. Parameter Settings for User Entity Instance: fluxoDados:FD|data_memory:DM
+ 15. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MDM
+ 16. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MuxBEQ
+ 17. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MuxProxPC
+ 18. Port Connectivity Checks: "fluxoDados:FD|mux2way:MuxProxPC"
+ 19. Port Connectivity Checks: "fluxoDados:FD|somador_simples:BEQAdder"
+ 20. Port Connectivity Checks: "fluxoDados:FD|somador_simples:PCAdder"
+ 21. Port Connectivity Checks: "fluxoDados:FD|fluxoDadosALU:ALU|muxALU:MuxAlu"
+ 22. Port Connectivity Checks: "fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32"
+ 23. Post-Synthesis Netlist Statistics for Top Partition
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
 
 
 
@@ -62,16 +56,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 29 19:33:22 2018       ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 30 19:39:07 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Mips                                        ;
 ; Top-level Entity Name              ; mips                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 97                                          ;
+; Total logic elements               ; 1                                           ;
+;     Total combinational functions  ; 1                                           ;
+;     Dedicated logic registers      ; 1                                           ;
+; Total registers                    ; 1                                           ;
+; Total pins                         ; 101                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -175,85 +169,79 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                             ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------+---------+
-; fullAdder.vhd                    ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fullAdder.vhd          ;         ;
-; fullAdder32.vhd                  ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fullAdder32.vhd        ;         ;
-; muxIverteEntrada.vhd             ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/muxIverteEntrada.vhd   ;         ;
-; muxALU.vhd                       ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/muxALU.vhd             ;         ;
-; fluxoDadosALU.vhd                ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDadosALU.vhd      ;         ;
-; unidadeControleALU.vhd           ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd ;         ;
-; instr_memory.vhd                 ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/instr_memory.vhd       ;         ;
-; data_memory.vhd                  ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd        ;         ;
-; bankregister.vhd                 ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/bankregister.vhd       ;         ;
-; mux2way.vhd                      ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mux2way.vhd            ;         ;
-; extensor.vhd                     ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/extensor.vhd           ;         ;
-; pc.vhd                           ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/pc.vhd                 ;         ;
-; fluxoDados.vhd                   ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd         ;         ;
-; somador_simples.vhd              ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/somador_simples.vhd    ;         ;
-; unidadeControle.vhd              ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd    ;         ;
-; mips.vhd                         ; yes             ; User VHDL File               ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd               ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf                                    ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc                             ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc                                       ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc                                    ;         ;
-; aglobal171.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                                    ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc                                     ;         ;
-; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc                                        ;         ;
-; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc                                        ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc                                      ;         ;
-; db/altsyncram_4e31.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                             ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+; fullAdder.vhd                    ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fullAdder.vhd          ;         ;
+; fullAdder32.vhd                  ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fullAdder32.vhd        ;         ;
+; muxIverteEntrada.vhd             ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/muxIverteEntrada.vhd   ;         ;
+; muxALU.vhd                       ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/muxALU.vhd             ;         ;
+; fluxoDadosALU.vhd                ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDadosALU.vhd      ;         ;
+; unidadeControleALU.vhd           ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd ;         ;
+; instr_memory.vhd                 ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/instr_memory.vhd       ;         ;
+; data_memory.vhd                  ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd        ;         ;
+; bankregister.vhd                 ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/bankregister.vhd       ;         ;
+; mux2way.vhd                      ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mux2way.vhd            ;         ;
+; extensor.vhd                     ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/extensor.vhd           ;         ;
+; pc.vhd                           ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/pc.vhd                 ;         ;
+; fluxoDados.vhd                   ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd         ;         ;
+; somador_simples.vhd              ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/somador_simples.vhd    ;         ;
+; unidadeControle.vhd              ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd    ;         ;
+; mips.vhd                         ; yes             ; User VHDL File  ; C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd               ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-;                                             ;                ;
-; Total combinational functions               ; 0              ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 0              ;
-;     -- 3 input functions                    ; 0              ;
-;     -- <=2 input functions                  ; 0              ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 0              ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 0              ;
-;     -- Dedicated logic registers            ; 0              ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 97             ;
-;                                             ;                ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; fio1[0]~output ;
-; Maximum fan-out                             ; 1              ;
-; Total fan-out                               ; 97             ;
-; Average fan-out                             ; 0.50           ;
-+---------------------------------------------+----------------+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimated Total logic elements              ; 1                        ;
+;                                             ;                          ;
+; Total combinational functions               ; 1                        ;
+; Logic element usage by number of LUT inputs ;                          ;
+;     -- 4 input functions                    ; 0                        ;
+;     -- 3 input functions                    ; 0                        ;
+;     -- <=2 input functions                  ; 1                        ;
+;                                             ;                          ;
+; Logic elements by mode                      ;                          ;
+;     -- normal mode                          ; 1                        ;
+;     -- arithmetic mode                      ; 0                        ;
+;                                             ;                          ;
+; Total registers                             ; 1                        ;
+;     -- Dedicated logic registers            ; 1                        ;
+;     -- I/O registers                        ; 0                        ;
+;                                             ;                          ;
+; I/O pins                                    ; 101                      ;
+;                                             ;                          ;
+; Embedded Multiplier 9-bit elements          ; 0                        ;
+;                                             ;                          ;
+; Maximum fan-out node                        ; fluxoDados:FD|pc:PC|q[2] ;
+; Maximum fan-out                             ; 32                       ;
+; Total fan-out                               ; 135                      ;
+; Average fan-out                             ; 0.66                     ;
++---------------------------------------------+--------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |mips                      ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 97   ; 0            ; |mips               ; mips        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                            ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name       ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+-------------+--------------+
+; |mips                      ; 1 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 101  ; 0            ; |mips                     ; mips        ; work         ;
+;    |fluxoDados:FD|         ; 1 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD       ; fluxoDados  ; work         ;
+;       |pc:PC|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|pc:PC ; pc          ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -262,9 +250,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+----------------------------------------+
 ; Register name                                ; Reason for Removal                     ;
 +----------------------------------------------+----------------------------------------+
+; fluxoDados:FD|data_memory:DM|addr_reg[0..4]  ; Lost fanout                            ;
 ; fluxoDados:FD|pc:PC|q[1]                     ; Merged with fluxoDados:FD|pc:PC|q[0]   ;
 ; fluxoDados:FD|pc:PC|q[0]                     ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|pc:PC|q[2..31]                 ; Lost fanout                            ;
+; fluxoDados:FD|pc:PC|q[3..31]                 ; Lost fanout                            ;
 ; fluxoDados:FD|bankregister:BR|registers~102  ; Lost fanout                            ;
 ; fluxoDados:FD|bankregister:BR|registers~103  ; Lost fanout                            ;
 ; fluxoDados:FD|bankregister:BR|registers~104  ; Lost fanout                            ;
@@ -1226,83 +1215,80 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; fluxoDados:FD|bankregister:BR|registers~1060 ; Lost fanout                            ;
 ; fluxoDados:FD|bankregister:BR|registers~1061 ; Lost fanout                            ;
 ; fluxoDados:FD|bankregister:BR|registers~38   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~39   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~40   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~41   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~42   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~43   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~44   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~45   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~46   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~47   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~48   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~49   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~50   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~51   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~52   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~53   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~54   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~55   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~56   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~57   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~58   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~59   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~60   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~61   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~62   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~63   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~64   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~65   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~66   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~67   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~68   ; Stuck at GND due to stuck port data_in ;
-; fluxoDados:FD|bankregister:BR|registers~69   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~70   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~71   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~39   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~72   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~40   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~73   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~41   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~74   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~42   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~75   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~43   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~76   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~44   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~77   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~45   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~78   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~46   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~79   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~47   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~80   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~48   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~81   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~49   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~82   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~50   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~83   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~51   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~84   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~52   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~85   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~53   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~86   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~54   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~87   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~55   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~88   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~56   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~89   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~57   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~90   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~58   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~91   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~59   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~92   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~60   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~93   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~61   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~94   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~62   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~95   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~63   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~96   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~64   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~97   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~65   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~98   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~66   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~99   ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~67   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~100  ; Stuck at GND due to stuck port data_in ;
+; fluxoDados:FD|bankregister:BR|registers~68   ; Stuck at GND due to stuck port data_in ;
 ; fluxoDados:FD|bankregister:BR|registers~101  ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 1056     ;                                        ;
+; fluxoDados:FD|bankregister:BR|registers~69   ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1060     ;                                        ;
 +----------------------------------------------+----------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                          ;
-+--------------------------+---------------------------+-------------------------------------------------------------------------------+
-; Register name            ; Reason for Removal        ; Registers Removed due to This Register                                        ;
-+--------------------------+---------------------------+-------------------------------------------------------------------------------+
-; fluxoDados:FD|pc:PC|q[2] ; Lost Fanouts              ; fluxoDados:FD|pc:PC|q[3], fluxoDados:FD|pc:PC|q[4], fluxoDados:FD|pc:PC|q[5], ;
-;                          ;                           ; fluxoDados:FD|pc:PC|q[6]                                                      ;
-; fluxoDados:FD|pc:PC|q[0] ; Stuck at GND              ; fluxoDados:FD|pc:PC|q[24], fluxoDados:FD|pc:PC|q[25]                          ;
-;                          ; due to stuck port data_in ;                                                                               ;
-+--------------------------+---------------------------+-------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                  ;
++--------------------------+--------------------+------------------------------------------------------------------------------+
+; Register name            ; Reason for Removal ; Registers Removed due to This Register                                       ;
++--------------------------+--------------------+------------------------------------------------------------------------------+
+; fluxoDados:FD|pc:PC|q[3] ; Lost Fanouts       ; fluxoDados:FD|pc:PC|q[4], fluxoDados:FD|pc:PC|q[5], fluxoDados:FD|pc:PC|q[6] ;
++--------------------------+--------------------+------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1310,7 +1296,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 1     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -1318,36 +1304,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+---------------------------------------------------------------------------------------------+
-; Registers Packed Into Inferred Megafunctions                                                ;
-+---------------------------------------------+----------------------------------------+------+
-; Register Name                               ; Megafunction                           ; Type ;
-+---------------------------------------------+----------------------------------------+------+
-; fluxoDados:FD|data_memory:DM|addr_reg[0..4] ; fluxoDados:FD|data_memory:DM|ram_rtl_0 ; RAM  ;
-+---------------------------------------------+----------------------------------------+------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |mips|fluxoDados:FD|pc:PC|q[14]       ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |mips|fluxoDados:FD|pc:PC|q[5]        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mips|unidadeControle:UC|cntrlWord[2] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |mips|unidadeControle:UC|cntrlWord[4] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------+
-; Source assignments for fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated ;
-+---------------------------------+--------------------+------+-------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                        ;
-+---------------------------------+--------------------+------+-------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                         ;
-+---------------------------------+--------------------+------+-------------------------------------------+
 
 
 +----------------------------------------------------------------------------------+
@@ -1422,87 +1378,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0 ;
-+------------------------------------+----------------------+----------------------------------------+
-; Parameter Name                     ; Value                ; Type                                   ;
-+------------------------------------+----------------------+----------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                             ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                           ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                           ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                         ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                                ;
-; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                                ;
-; WIDTH_A                            ; 32                   ; Untyped                                ;
-; WIDTHAD_A                          ; 5                    ; Untyped                                ;
-; NUMWORDS_A                         ; 32                   ; Untyped                                ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                                ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                ;
-; WIDTH_B                            ; 1                    ; Untyped                                ;
-; WIDTHAD_B                          ; 1                    ; Untyped                                ;
-; NUMWORDS_B                         ; 1                    ; Untyped                                ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                                ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                                ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                                ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                ;
-; BYTE_SIZE                          ; 8                    ; Untyped                                ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                ;
-; INIT_FILE                          ; UNUSED               ; Untyped                                ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                                ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                ;
-; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                ;
-; CBXI_PARAMETER                     ; altsyncram_4e31      ; Untyped                                ;
-+------------------------------------+----------------------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                              ;
-+-------------------------------------------+---------------------------------------------------+
-; Name                                      ; Value                                             ;
-+-------------------------------------------+---------------------------------------------------+
-; Number of entity instances                ; 1                                                 ;
-; Entity Instance                           ; fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0 ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                                       ;
-;     -- WIDTH_A                            ; 32                                                ;
-;     -- NUMWORDS_A                         ; 32                                                ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                      ;
-;     -- WIDTH_B                            ; 1                                                 ;
-;     -- NUMWORDS_B                         ; 1                                                 ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                            ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                      ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                              ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                         ;
-+-------------------------------------------+---------------------------------------------------+
-
-
 +-------------------------------------------------------------+
 ; Port Connectivity Checks: "fluxoDados:FD|mux2way:MuxProxPC" ;
 +---------+-------+----------+--------------------------------+
@@ -1550,27 +1425,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "fluxoDados:FD|instruction_memory:MI"                                                     ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; q[31..26] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 97                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
+; boundary_port         ; 101                         ;
+; cycloneiii_ff         ; 1                           ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 3                           ;
+;     normal            ; 3                           ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.40                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1579,7 +1448,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1589,7 +1458,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Oct 29 19:33:02 2018
+    Info: Processing started: Tue Oct 30 19:38:47 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mips -c Mips
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1630,7 +1499,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
     Info (12022): Found design unit 1: pc-arch File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/pc.vhd Line: 18
     Info (12023): Found entity 1: pc File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/pc.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fluxodados.vhd
-    Info (12022): Found design unit 1: fluxoDados-behaviour File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 19
+    Info (12022): Found design unit 1: fluxoDados-behaviour File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 20
     Info (12023): Found entity 1: fluxoDados File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file somador_simples.vhd
     Info (12022): Found design unit 1: somador_simples-comportamento File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/somador_simples.vhd Line: 16
@@ -1639,10 +1508,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file unidade
     Info (12022): Found design unit 1: unidadeControle-behaviour File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 14
     Info (12023): Found entity 1: unidadeControle File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mips.vhd
-    Info (12022): Found design unit 1: mips-comportamento File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 17
+    Info (12022): Found design unit 1: mips-comportamento File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
     Info (12023): Found entity 1: mips File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 5
 Info (12127): Elaborating entity "mips" for the top level hierarchy
-Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 25
+Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 27
 Info (10041): Inferred latch for "cntrlWord[0]" at unidadeControle.vhd(17) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
 Info (10041): Inferred latch for "cntrlWord[1]" at unidadeControle.vhd(17) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
 Info (10041): Inferred latch for "cntrlWord[2]" at unidadeControle.vhd(17) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
@@ -1653,26 +1522,25 @@ Info (10041): Inferred latch for "cntrlWord[6]" at unidadeControle.vhd(17) File:
 Info (10041): Inferred latch for "cntrlWord[7]" at unidadeControle.vhd(17) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
 Info (10041): Inferred latch for "cntrlWord[8]" at unidadeControle.vhd(17) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
 Info (10041): Inferred latch for "cntrlWord[9]" at unidadeControle.vhd(17) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
-Info (12128): Elaborating entity "fluxoDados" for hierarchy "fluxoDados:FD" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 26
-Warning (10541): VHDL Signal Declaration warning at fluxoDados.vhd(11): used implicit default value for signal "opcode" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 11
-Info (12128): Elaborating entity "pc" for hierarchy "fluxoDados:FD|pc:PC" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 39
-Info (12128): Elaborating entity "instruction_memory" for hierarchy "fluxoDados:FD|instruction_memory:MI" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 42
-Info (12128): Elaborating entity "mux2way" for hierarchy "fluxoDados:FD|mux2way:MBR" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 44
-Info (12128): Elaborating entity "bankregister" for hierarchy "fluxoDados:FD|bankregister:BR" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 46
-Info (12128): Elaborating entity "extensor" for hierarchy "fluxoDados:FD|extensor:Ext" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 58
-Info (12128): Elaborating entity "mux2way" for hierarchy "fluxoDados:FD|mux2way:MALU" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 59
-Info (12128): Elaborating entity "unidadeControleALU" for hierarchy "fluxoDados:FD|unidadeControleALU:UCALU" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 61
+Info (12128): Elaborating entity "fluxoDados" for hierarchy "fluxoDados:FD" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 28
+Info (12128): Elaborating entity "pc" for hierarchy "fluxoDados:FD|pc:PC" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 40
+Info (12128): Elaborating entity "instruction_memory" for hierarchy "fluxoDados:FD|instruction_memory:MI" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 43
+Info (12128): Elaborating entity "mux2way" for hierarchy "fluxoDados:FD|mux2way:MBR" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 45
+Info (12128): Elaborating entity "bankregister" for hierarchy "fluxoDados:FD|bankregister:BR" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 47
+Info (12128): Elaborating entity "extensor" for hierarchy "fluxoDados:FD|extensor:Ext" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 59
+Info (12128): Elaborating entity "mux2way" for hierarchy "fluxoDados:FD|mux2way:MALU" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 60
+Info (12128): Elaborating entity "unidadeControleALU" for hierarchy "fluxoDados:FD|unidadeControleALU:UCALU" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 62
 Info (10041): Inferred latch for "instr[0]" at unidadeControleALU.vhd(19) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd Line: 19
 Info (10041): Inferred latch for "instr[1]" at unidadeControleALU.vhd(19) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd Line: 19
 Info (10041): Inferred latch for "instr[2]" at unidadeControleALU.vhd(19) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd Line: 19
 Info (10041): Inferred latch for "instr[3]" at unidadeControleALU.vhd(19) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd Line: 19
-Info (12128): Elaborating entity "fluxoDadosALU" for hierarchy "fluxoDados:FD|fluxoDadosALU:ALU" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 63
+Info (12128): Elaborating entity "fluxoDadosALU" for hierarchy "fluxoDados:FD|fluxoDadosALU:ALU" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 64
 Warning (10036): Verilog HDL or VHDL warning at fluxoDadosALU.vhd(35): object "saida_last_Cout" assigned a value but never read File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDadosALU.vhd Line: 35
 Info (12128): Elaborating entity "muxIverteEntrada" for hierarchy "fluxoDados:FD|fluxoDadosALU:ALU|muxIverteEntrada:MuxGenA" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDadosALU.vhd Line: 40
 Info (12128): Elaborating entity "fullAdder32" for hierarchy "fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDadosALU.vhd Line: 42
 Info (12128): Elaborating entity "fullAdder" for hierarchy "fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder0" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fullAdder32.vhd Line: 25
 Info (12128): Elaborating entity "muxALU" for hierarchy "fluxoDados:FD|fluxoDadosALU:ALU|muxALU:MuxAlu" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDadosALU.vhd Line: 46
-Info (12128): Elaborating entity "data_memory" for hierarchy "fluxoDados:FD|data_memory:DM" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 66
+Info (12128): Elaborating entity "data_memory" for hierarchy "fluxoDados:FD|data_memory:DM" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 67
 Warning (10492): VHDL Process Statement warning at data_memory.vhd(53): signal "re" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 53
 Warning (10492): VHDL Process Statement warning at data_memory.vhd(54): signal "ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 54
 Warning (10492): VHDL Process Statement warning at data_memory.vhd(54): signal "addr_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 54
@@ -1709,168 +1577,17 @@ Info (10041): Inferred latch for "q[28]" at data_memory.vhd(42) File: C:/Users/c
 Info (10041): Inferred latch for "q[29]" at data_memory.vhd(42) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
 Info (10041): Inferred latch for "q[30]" at data_memory.vhd(42) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
 Info (10041): Inferred latch for "q[31]" at data_memory.vhd(42) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Info (12128): Elaborating entity "somador_simples" for hierarchy "fluxoDados:FD|somador_simples:PCAdder" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 70
-Warning (14025): LATCH primitive "fluxoDados:FD|unidadeControleALU:UCALU|instr[1]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd Line: 19
+Info (12128): Elaborating entity "somador_simples" for hierarchy "fluxoDados:FD|somador_simples:PCAdder" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 71
 Warning (14025): LATCH primitive "unidadeControle:UC|cntrlWord[7]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[1]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[2]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[3]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[4]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[5]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[6]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[7]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[8]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[9]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[10]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[11]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[12]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[13]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[14]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[15]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[16]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[17]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[18]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[19]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[20]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[21]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[22]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[23]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[24]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[25]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[26]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[27]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[28]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[29]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[30]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[31]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14026): LATCH primitive "fluxoDados:FD|data_memory:DM|q[0]" is permanently enabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
+Warning (14025): LATCH primitive "unidadeControle:UC|cntrlWord[8]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
+Warning (14025): LATCH primitive "unidadeControle:UC|cntrlWord[1]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
+Warning (14025): LATCH primitive "fluxoDados:FD|unidadeControleALU:UCALU|instr[1]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd Line: 19
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "fluxoDados:FD|bankregister:BR|registers" is uninferred due to asynchronous read logic File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/bankregister.vhd Line: 24
-Warning (14025): LATCH primitive "fluxoDados:FD|unidadeControleALU:UCALU|instr[0]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd Line: 19
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[0]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[1]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[2]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[3]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[4]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[5]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[6]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[7]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[8]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[9]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[10]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[11]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[12]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[13]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[14]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[15]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[16]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[17]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[18]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[19]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[20]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[21]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[22]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[23]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[24]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[25]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[26]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[27]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[28]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[29]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[30]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[31]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 42
-Info (19000): Inferred 1 megafunctions from design logic
-    Info (276029): Inferred altsyncram megafunction from the following design logic: "fluxoDados:FD|data_memory:DM|ram_rtl_0" 
-        Info (286033): Parameter OPERATION_MODE set to SINGLE_PORT
-        Info (286033): Parameter WIDTH_A set to 32
-        Info (286033): Parameter WIDTHAD_A set to 5
-        Info (286033): Parameter NUMWORDS_A set to 32
-        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
-        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
-        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
-        Info (286033): Parameter INDATA_ACLR_A set to NONE
-        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-Info (12130): Elaborated megafunction instantiation "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0"
-Info (12133): Instantiated megafunction "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0" with the following parameter:
-    Info (12134): Parameter "OPERATION_MODE" = "SINGLE_PORT"
-    Info (12134): Parameter "WIDTH_A" = "32"
-    Info (12134): Parameter "WIDTHAD_A" = "5"
-    Info (12134): Parameter "NUMWORDS_A" = "32"
-    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
-    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
-    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
-    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
-    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_4e31.tdf
-    Info (12023): Found entity 1: altsyncram_4e31 File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 27
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a0" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 35
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a1" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 56
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a2" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 77
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a3" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 98
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a4" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 119
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a5" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 140
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a6" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 161
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a7" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 182
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a8" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 203
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a9" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 224
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a10" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 245
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a11" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 266
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a12" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 287
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a13" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 308
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a14" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 329
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a15" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 350
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a16" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 371
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a17" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 392
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a18" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 413
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a19" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 434
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a20" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 455
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a21" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 476
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a22" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 497
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a23" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 518
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a24" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 539
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a25" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 560
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a26" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 581
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a27" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 602
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a28" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 623
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a29" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 644
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a30" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 665
-        Warning (14320): Synthesized away node "fluxoDados:FD|data_memory:DM|altsyncram:ram_rtl_0|altsyncram_4e31:auto_generated|ram_block1a31" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_4e31.tdf Line: 686
+    Info (276007): RAM logic "fluxoDados:FD|bankregister:BR|registers" is uninferred due to asynchronous read logic File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/bankregister.vhd Line: 25
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "fio1[0]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[1]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[2]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[3]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[4]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[5]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[6]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[7]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[8]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[9]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[10]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[11]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[12]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[13]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[14]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[15]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[16]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[17]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[18]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[19]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[20]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[21]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[22]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[23]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[24]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[25]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[26]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[27]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[28]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[29]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[30]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[31]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio2[0]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
+    Warning (13410): Pin "fio1[0]" is stuck at VCC File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
+    Warning (13410): Pin "fio1[1]" is stuck at VCC File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
+    Warning (13410): Pin "fio2[0]" is stuck at VCC File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
     Warning (13410): Pin "fio2[1]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
     Warning (13410): Pin "fio2[2]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
     Warning (13410): Pin "fio2[3]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
@@ -1903,7 +1620,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "fio2[30]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
     Warning (13410): Pin "fio2[31]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
     Warning (13410): Pin "fio3[0]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio3[1]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
+    Warning (13410): Pin "fio3[1]" is stuck at VCC File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
     Warning (13410): Pin "fio3[2]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
     Warning (13410): Pin "fio3[3]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
     Warning (13410): Pin "fio3[4]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
@@ -1934,18 +1651,21 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "fio3[29]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
     Warning (13410): Pin "fio3[30]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
     Warning (13410): Pin "fio3[31]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-Info (17049): 990 registers lost all their fanouts during netlist optimizations.
+    Warning (13410): Pin "fio4[0]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 13
+    Warning (13410): Pin "fio4[1]" is stuck at VCC File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 13
+    Warning (13410): Pin "fio4[3]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 13
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 994 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 9
-Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 102 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 96 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 207 warnings
-    Info: Peak virtual memory: 4830 megabytes
-    Info: Processing ended: Mon Oct 29 19:33:22 2018
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:40
+    Info (21059): Implemented 100 output pins
+    Info (21061): Implemented 1 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 80 warnings
+    Info: Peak virtual memory: 4814 megabytes
+    Info: Processing ended: Tue Oct 30 19:39:08 2018
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:42
 
 

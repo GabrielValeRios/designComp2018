@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Mips -c Mips --vector_source="C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/Waveform.vwf" --testbench_file="C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Mips -c Mips --vector_source="C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/Waveform1.vwf" --testbench_file="C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim/Waveform1.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,11 +25,18 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Oct 16 18:00:15 2018
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Mips -c Mips --vector_source=C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/Waveform.vwf --testbench_file=C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim/Waveform.vwf.vht
+    Info: Processing started: Tue Oct 30 19:41:15 2018
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Mips -c Mips --vector_source=C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/Waveform1.vwf --testbench_file=C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim/Waveform1.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-a[10]" in vector source file when writing test bench files
+(201005): Ignoring output pin "fio2[1]" in vector source file when writing test bench files
+
+designComp/entregas/designComp2018/mips/simulation/qsim/Waveform1.vwf.vht for simulation
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 105 warnings
+    Info: Peak virtual memory: 4652 megabytes
+    Info: Processing ended: Tue Oct 30 19:41:17 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
@@ -53,13 +60,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Oct 16 18:00:17 2018
+    Info: Processing started: Tue Oct 30 19:41:17 2018
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim/ Mips -c Mips
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Mips.vho in folder "C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4661 megabytes
-    Info: Processing ended: Tue Oct 16 18:00:19 2018
+    Info: Processing ended: Tue Oct 30 19:41:19 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -79,16 +86,14 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-
 # do Mips.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:00:20 on Oct 16,2018
+# Start time: 19:41:20 on Oct 30,2018
 # vcom -work work Mips.vho 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
@@ -97,57 +102,60 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package cycloneive_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
-# -- Compiling entity fluxoDadosALU
-# -- Compiling architecture structure of fluxoDadosALU
-# End time: 18:00:20 on Oct 16,2018, Elapsed time: 0:00:00
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity mips
+# -- Compiling architecture structure of mips
+
+# End time: 19:41:20 on Oct 30,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:00:20 on Oct 16,2018
-# vcom -work work Waveform.vwf.vht 
+# Start time: 19:41:20 on Oct 30,2018
+# vcom -work work Waveform1.vwf.vht 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity fluxoDadosALU_vhd_vec_tst
-# -- Compiling architecture fluxoDadosALU_arch of fluxoDadosALU_vhd_vec_tst
-# End time: 18:00:21 on Oct 16,2018, Elapsed time: 0:00:01
+# -- Compiling entity mips_vhd_vec_tst
+# -- Compiling architecture mips_arch of mips_vhd_vec_tst
+# End time: 19:41:20 on Oct 30,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.fluxoDadosALU_vhd_vec_tst 
-# Start time: 18:00:21 on Oct 16,2018
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.mips_vhd_vec_tst 
+# Start time: 19:41:20 on Oct 30,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.fluxodadosalu_vhd_vec_tst(fluxodadosalu_arch)
+# Loading work.mips_vhd_vec_tst(mips_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.fluxodadosalu(structure)
+# Loading work.mips(structure)
 # Loading work.hard_block(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
 # Loading cycloneive.cycloneive_io_ibuf(arch)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
-# ** Warning: Design size of 21553 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-# after#33
+# Loading altera.dffeas(vital_dffeas)
+# after#35
 
-# End time: 18:00:21 on Oct 16,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# End time: 19:41:21 on Oct 30,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/Waveform.vwf...
+Reading C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/Waveform1.vwf...
 
 Reading C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim/Mips.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim/Mips_20181016180022.sim.vwf
+Writing the resulting VWF to C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim/Mips_20181030194121.sim.vwf
 
 Finished VCD to VWF conversion.
 
