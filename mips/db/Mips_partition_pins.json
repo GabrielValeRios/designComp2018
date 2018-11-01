@@ -4,6 +4,14 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "fio1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[1]",
+					"strict" : false
+				},
+				{
 					"name" : "fio1[2]",
 					"strict" : false
 				},
@@ -124,7 +132,275 @@
 					"strict" : false
 				},
 				{
+					"name" : "fio2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[8]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[9]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[10]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[11]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[12]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[13]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[14]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[15]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[16]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[17]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[18]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[19]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[20]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[21]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[22]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[23]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[24]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[25]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[26]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[27]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[28]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[29]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[30]",
+					"strict" : false
+				},
+				{
+					"name" : "fio2[31]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[8]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[9]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[10]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[11]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[12]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[13]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[14]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[15]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[16]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[17]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[18]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[19]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[20]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[21]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[22]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[23]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[24]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[25]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[26]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[27]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[28]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[29]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[30]",
+					"strict" : false
+				},
+				{
+					"name" : "fio3[31]",
+					"strict" : false
+				},
+				{
+					"name" : "fio4[1]",
+					"strict" : false
+				},
+				{
 					"name" : "fio4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "fio5",
+					"strict" : false
+				},
+				{
+					"name" : "fio6[1]",
 					"strict" : false
 				},
 				{

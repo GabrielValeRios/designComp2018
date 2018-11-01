@@ -10,7 +10,9 @@ entity mips is
 		 -- outputs da plca(HEX0, ETC)
 		 
 		 fio1,fio2,fio3 : out std_logic_vector(31 downto 0);
-		 fio4 : out std_logic_vector(3 downto 0)
+		 fio4 : out std_logic_vector(3 downto 0);
+		 fio5 : out std_logic;
+		 fio6 : out std_logic_vector(1 downto 0)
 	);
 
 end entity;
@@ -21,6 +23,8 @@ architecture comportamento of mips is
 	signal w      : std_logic_vector(9 downto 0);
 	signal dmOUT,r1,r2 : std_logic_vector(31 downto 0);
 	signal instrULA : std_logic_vector(3 downto 0);
+	signal zero : std_logic;
+	signal MIADDR : natural;
   
 begin
 	
@@ -41,12 +45,15 @@ begin
 		DM_out => dmOUT,
 		instrCntrl => instrULA,
 		REG1_OUT => r1,
-		REG2_OUT => r2
+		REG2_OUT => r2,
+		zero => zero
 	);
 	
 	fio1 <= dmOUT;
 	fio2 <= r1;
 	fio3 <= r2;
 	fio4 <= instrULA;
+	fio5 <= zero;
+	fio6 <= w(1 downto 0);
 	 
 end architecture;

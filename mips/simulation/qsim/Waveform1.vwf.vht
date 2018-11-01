@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/30/2018 19:41:17"
+-- Generated on "11/01/2018 17:44:44"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          mips
 -- 
@@ -38,13 +38,17 @@ SIGNAL fio1 : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL fio2 : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL fio3 : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL fio4 : STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL fio5 : STD_LOGIC;
+SIGNAL fio6 : STD_LOGIC_VECTOR(1 DOWNTO 0);
 COMPONENT mips
 	PORT (
 	clk : IN STD_LOGIC;
 	fio1 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	fio2 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	fio3 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-	fio4 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+	fio4 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+	fio5 : OUT STD_LOGIC;
+	fio6 : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
@@ -55,7 +59,9 @@ BEGIN
 	fio1 => fio1,
 	fio2 => fio2,
 	fio3 => fio3,
-	fio4 => fio4
+	fio4 => fio4,
+	fio5 => fio5,
+	fio6 => fio6
 	);
 
 -- clk
@@ -63,9 +69,9 @@ t_prcs_clk: PROCESS
 BEGIN
 LOOP
 	clk <= '0';
-	WAIT FOR 50000 ps;
+	WAIT FOR 25000 ps;
 	clk <= '1';
-	WAIT FOR 50000 ps;
+	WAIT FOR 25000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_clk;

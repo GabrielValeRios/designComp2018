@@ -17,7 +17,7 @@ begin
 
 				
 	instr <= "0010" when ulaOP = "00" else								-- add
-				"0110" when ulaOP = "01" else								-- sub
+				"0110" when ulaOP = "01" else								-- sub beq
 				"0010" when ulaOP = "10" and funct = "100000" else -- add
 				"0110" when ulaOP = "10" and funct = "100010" else -- sub
 				"0000" when ulaOP = "10" and funct = "100100" else -- and

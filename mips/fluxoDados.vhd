@@ -11,7 +11,8 @@ entity fluxoDados is
 		opcode:   out std_logic_vector(5 downto 0);
 		
 		DM_out,REG1_OUT,REG2_OUT : out std_logic_vector(31 downto 0);
-		instrCntrl : out std_logic_vector(3 downto 0)
+		instrCntrl : out std_logic_vector(3 downto 0);
+		zero : out std_logic
 
 	);
 end entity;
@@ -86,4 +87,5 @@ begin
 	instrCntrl <= FioULACntrl;
 	REG1_OUT <= FioDadoLido1;
 	REG2_OUT <= FioDadoLido2;
+	zero <= FioZeroALU;
 	end architecture;
