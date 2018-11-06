@@ -45,25 +45,25 @@ begin
 	-- beq entre reg0 e reg1
 	--rom(0) <= "00010000000000010011100000100010";
 	-- soma reg0 + reg1 e bota em reg3
-	rom(0) <= "00000000000000010001100000100000";
+	--rom(0) <= "00000000000000010001100000100000";
 	-- subtracao
-	rom(1) <= "00000000000000010001100000100010";
-	rom(2) <= "00000000000000010100000000100100";
+	--rom(1) <= "00000000000000010001100000100010";
+	--rom(2) <= "00000000000000010100000000100100";
 	
 	-- jump para primeira instrução
-	rom(3) <= "00001000000000000000000000000000";
+	rom(1) <= "00001000000000000000000000000000";
 	
-	-- sw : Guardar no 5 o valor de reg3 
-	--rom(2) <= "10101100101000110000000000000000";
+	-- sw : Guardar no 5 o valor de reg1 
+	--rom(0) <= "10101100000000010000000000000000";
 	
 	-- lw : carregar conteudo de reg5
-	--rom(3) <= "10001100101000000000000000000000";
+	--rom(1) <= "10001100101000000000000000000000";
 	
 	--slt : "comparar valores dos registradores (1 e 2)  e armazenar result. em reg6"
-	--rom(4) <= "00000000000000010011000000101010";
+	--rom(0) <= "00000000000000010011000000101010";
 	
-	--beq ???: "ver se conteudo dos registradores  (1 e 2) sao iguais, armazenar em reg7"
-	--rom(5) <= "00010000000000010011100000100010";
+	--beq : "ver se conteudo dos registradores  (1 e 2) sao iguais, armazenar em reg7"
+	rom(0) <= "00010000000000010011100000100010";
 	
 	--AND : AND de reg0 e reg1, em reg8
 	--rom(6) <= "00000000000000010100000000100100"; 

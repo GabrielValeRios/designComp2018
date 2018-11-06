@@ -50,12 +50,8 @@ begin
 		addr_reg <= addr;
 	end if;
 	
-	if(re = '1') then
-		q <= ram(addr_reg);
-
-	end if;
-	
 	end process;
-
+		
+	q <= ram(addr_reg) when re = '1';
 
 end rtl;
