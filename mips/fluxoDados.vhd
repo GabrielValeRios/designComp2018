@@ -28,6 +28,8 @@ architecture behaviour of fluxoDados is
 	signal FioImmediate16 : std_logic_vector(15 downto 0);
 	signal FioULACntrl : std_logic_vector(3 downto 0);
 	signal FioZeroALU,FioBEQAND : std_logic;
+	--Output registrador 1 (Instruction Fetch para Instruction Decode)
+	signal FioRegPipe1 : std_logic_vector(63 DOWnTO 0);
 	
 	signal MIAddr : natural;
 	signal DMAddr : natural;
@@ -70,6 +72,8 @@ begin
 	MDM  : entity work.mux2way port map(SEL=>MuxMD,A=>FioALU,B=>FioDadoLidoMemoria,X=>FioDadoEscritoBR);
 	-- Pc+4 Adder
 	PCAdder : entity work.somador_simples port map(A=>pcSUM,B=>FioFromPc,C=>FioAdderPc);
+	--Registrado 1 pipelino
+	RegPipe1 : entity work.genregister generic map(size => 64) port map(input => FioInstrMemory & FioAdderPc, output => FioRegPipe1); 
 	-- BEQ Adder
 	FioShiftLeftExt <= shift_left(unsigned(FioExtendeSinal),2);
 	BEQAdder : entity work.somador_simples port map(A=>FioAdderPc,B=>std_logic_vector(FioShiftLeftExt),C=>FioAdderBEQ);
