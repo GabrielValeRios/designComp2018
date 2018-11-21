@@ -30,6 +30,8 @@ architecture behaviour of fluxoDados is
 	signal FioZeroALU,FioBEQAND : std_logic;
 	--Output registrador 1 (Instruction Fetch para Instruction Decode)
 	signal FioRegPipe1 : std_logic_vector(63 DOWnTO 0);
+	--Output registrador 2 (Instruction Decode/Instruction EX)
+	signal FioRegPipe2 : std_logic_vector(146 downto 0);
 	
 	signal MIAddr : natural;
 	signal DMAddr : natural;
@@ -72,8 +74,6 @@ begin
 	MDM  : entity work.mux2way port map(SEL=>MuxMD,A=>FioALU,B=>FioDadoLidoMemoria,X=>FioDadoEscritoBR);
 	-- Pc+4 Adder
 	PCAdder : entity work.somador_simples port map(A=>pcSUM,B=>FioFromPc,C=>FioAdderPc);
-	--Registrado 1 pipelino
-	RegPipe1 : entity work.genregister generic map(size => 64) port map(input => FioInstrMemory & FioAdderPc, output => FioRegPipe1); 
 	-- BEQ Adder
 	FioShiftLeftExt <= shift_left(unsigned(FioExtendeSinal),2);
 	BEQAdder : entity work.somador_simples port map(A=>FioAdderPc,B=>std_logic_vector(FioShiftLeftExt),C=>FioAdderBEQ);
@@ -86,6 +86,24 @@ begin
 	-- opcode out
 	opcode <= FioInstrMemory(31 downto 26);
 	
+	--reg1 pipeline (pc adder & instr memory)
+	Reg1 : entity work.genregister generic map(size=>64) port map(
+	input=>FioAdderPc & FioInstrMemory,
+	reset=>'0',
+	clock=>clk,
+	output=>FioRegPipe1
+	);
+	--reg2 pipeline (EX & M & WB & Pc adder & Read data1 & Read data2 & signalExt & Instr(20-16) & Instr(15-11))
+	Reg2 : entity work.genregister generic map(size => 147) port map(
+	input=>MuxBR & ULAOp & MuxALU & BEQ & EscreverMD & LerMD & EscritaBR & MuxMD & FioAdderPc & FioDadoLido1 & FioDadoLido1 & FioExtendeSinal & FioInstrMemory(25 downto 21) & FioInstrMemory(20 downto 16),
+	reset=>'0',
+	clock=>clk,
+	output=>FioRegPipe2
+	);
+	--reg3 pipeline (M & WB & AluAdder & zeroALU & ALUResult & Addr2BR & MuxAddresses(BR))
+	Reg3 : entity work.genregister generic map(size=>107) port map(
+	input=>MuxBR & 
+	);
 	
 	DM_out <= FioALU;
 	instrCntrl <= FioULACntrl;
