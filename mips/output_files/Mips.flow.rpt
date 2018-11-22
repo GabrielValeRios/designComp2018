@@ -1,5 +1,5 @@
 Flow report for Mips
-Thu Nov 22 15:17:25 2018
+Thu Nov 22 17:08:33 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov 22 15:17:25 2018       ;
+; Flow Status                        ; Successful - Thu Nov 22 17:08:33 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Mips                                        ;
 ; Top-level Entity Name              ; mips                                        ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 420 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 304 / 114,480 ( < 1 % )                     ;
-;     Dedicated logic registers      ; 368 / 114,480 ( < 1 % )                     ;
-; Total registers                    ; 368                                         ;
-; Total pins                         ; 498 / 529 ( 94 % )                          ;
+; Total logic elements               ; 500 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 374 / 114,480 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 431 / 114,480 ( < 1 % )                     ;
+; Total registers                    ; 431                                         ;
+; Total pins                         ; 504 / 529 ( 95 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 256 / 3,981,312 ( < 1 % )                   ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/22/2018 15:14:24 ;
+; Start date & time ; 11/22/2018 17:06:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Mips                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 110073158092084.154290686408484        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 110073158092084.154291359801268        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -95,13 +95,13 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 4839 MB             ; 00:00:42                           ;
-; Fitter                    ; 00:00:53     ; 1.0                     ; 5541 MB             ; 00:01:03                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 4705 MB             ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 4848 MB             ; 00:00:05                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4658 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4667 MB             ; 00:00:02                           ;
-; Total                     ; 00:01:27     ; --                      ; --                  ; 00:01:58                           ;
+; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 4839 MB             ; 00:00:42                           ;
+; Fitter                    ; 00:00:56     ; 1.0                     ; 5542 MB             ; 00:01:07                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 4708 MB             ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 4849 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4657 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4666 MB             ; 00:00:02                           ;
+; Total                     ; 00:01:30     ; --                      ; --                  ; 00:02:03                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

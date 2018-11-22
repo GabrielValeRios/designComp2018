@@ -66,7 +66,7 @@ begin
 	--rom(0) <= "00000000000000010011000000101010";
 	
 	--beq : "ver se conteudo dos registradores  (1 e 2) sao iguais, armazenar em reg7"
-	rom(0) <= "00000000001000100001100000000010";
+	rom(0) <= "00000000001000100001100000100000";
 	
 	--AND : AND de reg0 e reg1, em reg8
 	--rom(6) <= "00000000000000010100000000100100"; 

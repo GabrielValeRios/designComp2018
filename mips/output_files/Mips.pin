@@ -69,485 +69,485 @@ CHIP  "Mips"  ASSIGNED TO AN: EP4CE115F29C7
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
-fio11[3]                     : A3        : output : 2.5 V             :         : 8         : N              
-fio11[61]                    : A4        : output : 2.5 V             :         : 8         : N              
+fio10[81]                    : A3        : output : 2.5 V             :         : 8         : N              
+fio8[46]                     : A4        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
-fio11[44]                    : A6        : output : 2.5 V             :         : 8         : N              
-fio8[28]                     : A7        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A8        :        :                   :         : 8         :                
+fio9[116]                    : A6        : output : 2.5 V             :         : 8         : N              
+fio9[138]                    : A7        : output : 2.5 V             :         : 8         : N              
+fio9[1]                      : A8        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
-fio11[65]                    : A10       : output : 2.5 V             :         : 8         : N              
-fio10[70]                    : A11       : output : 2.5 V             :         : 8         : N              
-fio9[107]                    : A12       : output : 2.5 V             :         : 8         : N              
+fio10[102]                   : A10       : output : 2.5 V             :         : 8         : N              
+fio9[33]                     : A11       : output : 2.5 V             :         : 8         : N              
+fio11[38]                    : A12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
 GND+                         : A14       :        :                   :         : 8         :                
 GND+                         : A15       :        :                   :         : 7         :                
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-fio10[64]                    : A17       : output : 2.5 V             :         : 7         : N              
-fio9[42]                     : A18       : output : 2.5 V             :         : 7         : N              
-fio2[7]                      : A19       : output : 2.5 V             :         : 7         : N              
+fio10[36]                    : A17       : output : 2.5 V             :         : 7         : N              
+fio11[19]                    : A18       : output : 2.5 V             :         : 7         : N              
+fio11[41]                    : A19       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
-fio9[105]                    : A21       : output : 2.5 V             :         : 7         : N              
-fio9[91]                     : A22       : output : 2.5 V             :         : 7         : N              
-fio9[84]                     : A23       : output : 2.5 V             :         : 7         : N              
+fio9[35]                     : A21       : output : 2.5 V             :         : 7         : N              
+fio11[65]                    : A22       : output : 2.5 V             :         : 7         : N              
+fio11[64]                    : A23       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
-fio11[11]                    : A25       : output : 2.5 V             :         : 7         : N              
-fio9[49]                     : A26       : output : 2.5 V             :         : 7         : N              
+fio9[23]                     : A25       : output : 2.5 V             :         : 7         : N              
+fio8[22]                     : A26       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
 VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
 GND                          : AA2       : gnd    :                   :         :           :                
-fio9[126]                    : AA3       : output : 2.5 V             :         : 2         : N              
-fio9[133]                    : AA4       : output : 2.5 V             :         : 2         : N              
-fio9[136]                    : AA5       : output : 2.5 V             :         : 2         : N              
-fio9[134]                    : AA6       : output : 2.5 V             :         : 2         : N              
-fio8[47]                     : AA7       : output : 2.5 V             :         : 2         : N              
-fio8[33]                     : AA8       : output : 2.5 V             :         : 3         : N              
+fio1[17]                     : AA3       : output : 2.5 V             :         : 2         : N              
+fio10[55]                    : AA4       : output : 2.5 V             :         : 2         : N              
+fio10[13]                    : AA5       : output : 2.5 V             :         : 2         : N              
+fio11[35]                    : AA6       : output : 2.5 V             :         : 2         : N              
+fio10[27]                    : AA7       : output : 2.5 V             :         : 2         : N              
+fio9[67]                     : AA8       : output : 2.5 V             :         : 3         : N              
 GNDA1                        : AA9       : gnd    :                   :         :           :                
-fio1[24]                     : AA10      : output : 2.5 V             :         : 3         : N              
+fio9[73]                     : AA10      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
-fio8[5]                      : AA12      : output : 2.5 V             :         : 3         : N              
-fio11[58]                    : AA13      : output : 2.5 V             :         : 3         : N              
-fio1[0]                      : AA14      : output : 2.5 V             :         : 3         : N              
-fio8[23]                     : AA15      : output : 2.5 V             :         : 4         : N              
-fio9[140]                    : AA16      : output : 2.5 V             :         : 4         : N              
-fio11[20]                    : AA17      : output : 2.5 V             :         : 4         : N              
+fio3[20]                     : AA12      : output : 2.5 V             :         : 3         : N              
+fio10[67]                    : AA13      : output : 2.5 V             :         : 3         : N              
+fio9[62]                     : AA14      : output : 2.5 V             :         : 3         : N              
+fio9[75]                     : AA15      : output : 2.5 V             :         : 4         : N              
+fio2[2]                      : AA16      : output : 2.5 V             :         : 4         : N              
+fio2[15]                     : AA17      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
-fio10[69]                    : AA19      : output : 2.5 V             :         : 4         : N              
+fio9[57]                     : AA19      : output : 2.5 V             :         : 4         : N              
 GNDA4                        : AA20      : gnd    :                   :         :           :                
-fio3[27]                     : AA21      : output : 2.5 V             :         : 4         : N              
-fio9[70]                     : AA22      : output : 2.5 V             :         : 5         : N              
-fio3[21]                     : AA23      : output : 2.5 V             :         : 5         : N              
-fio10[24]                    : AA24      : output : 2.5 V             :         : 5         : N              
-fio10[15]                    : AA25      : output : 2.5 V             :         : 5         : N              
-fio3[2]                      : AA26      : output : 2.5 V             :         : 5         : N              
+fio10[6]                     : AA21      : output : 2.5 V             :         : 4         : N              
+fio3[12]                     : AA22      : output : 2.5 V             :         : 5         : N              
+fio11[18]                    : AA23      : output : 2.5 V             :         : 5         : N              
+fio11[16]                    : AA24      : output : 2.5 V             :         : 5         : N              
+fio1[9]                      : AA25      : output : 2.5 V             :         : 5         : N              
+fio2[8]                      : AA26      : output : 2.5 V             :         : 5         : N              
 GND                          : AA27      : gnd    :                   :         :           :                
 VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
-fio10[93]                    : AB1       : output : 2.5 V             :         : 2         : N              
-fio10[87]                    : AB2       : output : 2.5 V             :         : 2         : N              
-fio8[2]                      : AB3       : output : 2.5 V             :         : 2         : N              
-fio10[88]                    : AB4       : output : 2.5 V             :         : 2         : N              
-fio10[98]                    : AB5       : output : 2.5 V             :         : 2         : N              
-fio10[95]                    : AB6       : output : 2.5 V             :         : 2         : N              
-fio1[5]                      : AB7       : output : 2.5 V             :         : 3         : N              
-fio9[7]                      : AB8       : output : 2.5 V             :         : 3         : N              
-fio9[143]                    : AB9       : output : 2.5 V             :         : 3         : N              
-fio11[40]                    : AB10      : output : 2.5 V             :         : 3         : N              
-fio9[23]                     : AB11      : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB12      :        :                   :         : 3         :                
-fio10[104]                   : AB13      : output : 2.5 V             :         : 3         : N              
-fio9[18]                     : AB14      : output : 2.5 V             :         : 3         : N              
-fio11[43]                    : AB15      : output : 2.5 V             :         : 4         : N              
-fio1[21]                     : AB16      : output : 2.5 V             :         : 4         : N              
-fio11[5]                     : AB17      : output : 2.5 V             :         : 4         : N              
-fio2[5]                      : AB18      : output : 2.5 V             :         : 4         : N              
-fio11[9]                     : AB19      : output : 2.5 V             :         : 4         : N              
-fio2[3]                      : AB20      : output : 2.5 V             :         : 4         : N              
-fio9[83]                     : AB21      : output : 2.5 V             :         : 4         : N              
-fio10[27]                    : AB22      : output : 2.5 V             :         : 4         : N              
-fio11[15]                    : AB23      : output : 2.5 V             :         : 5         : N              
-fio10[32]                    : AB24      : output : 2.5 V             :         : 5         : N              
-fio10[56]                    : AB25      : output : 2.5 V             :         : 5         : N              
-fio10[16]                    : AB26      : output : 2.5 V             :         : 5         : N              
-fio11[26]                    : AB27      : output : 2.5 V             :         : 5         : N              
-fio9[93]                     : AB28      : output : 2.5 V             :         : 5         : N              
-fio9[130]                    : AC1       : output : 2.5 V             :         : 2         : N              
-fio10[100]                   : AC2       : output : 2.5 V             :         : 2         : N              
-fio8[0]                      : AC3       : output : 2.5 V             :         : 2         : N              
-fio10[99]                    : AC4       : output : 2.5 V             :         : 2         : N              
-fio9[137]                    : AC5       : output : 2.5 V             :         : 2         : N              
+fio9[12]                     : AB1       : output : 2.5 V             :         : 2         : N              
+fio8[0]                      : AB2       : output : 2.5 V             :         : 2         : N              
+fio9[19]                     : AB3       : output : 2.5 V             :         : 2         : N              
+fio11[2]                     : AB4       : output : 2.5 V             :         : 2         : N              
+fio8[15]                     : AB5       : output : 2.5 V             :         : 2         : N              
+fio11[68]                    : AB6       : output : 2.5 V             :         : 2         : N              
+fio9[92]                     : AB7       : output : 2.5 V             :         : 3         : N              
+fio11[27]                    : AB8       : output : 2.5 V             :         : 3         : N              
+fio2[29]                     : AB9       : output : 2.5 V             :         : 3         : N              
+fio9[52]                     : AB10      : output : 2.5 V             :         : 3         : N              
+fio3[24]                     : AB11      : output : 2.5 V             :         : 3         : N              
+fio9[65]                     : AB12      : output : 2.5 V             :         : 3         : N              
+fio10[33]                    : AB13      : output : 2.5 V             :         : 3         : N              
+fio9[94]                     : AB14      : output : 2.5 V             :         : 3         : N              
+fio9[50]                     : AB15      : output : 2.5 V             :         : 4         : N              
+fio3[0]                      : AB16      : output : 2.5 V             :         : 4         : N              
+fio1[7]                      : AB17      : output : 2.5 V             :         : 4         : N              
+fio11[17]                    : AB18      : output : 2.5 V             :         : 4         : N              
+fio1[11]                     : AB19      : output : 2.5 V             :         : 4         : N              
+fio10[51]                    : AB20      : output : 2.5 V             :         : 4         : N              
+fio10[17]                    : AB21      : output : 2.5 V             :         : 4         : N              
+fio2[5]                      : AB22      : output : 2.5 V             :         : 4         : N              
+fio10[16]                    : AB23      : output : 2.5 V             :         : 5         : N              
+fio2[27]                     : AB24      : output : 2.5 V             :         : 5         : N              
+fio2[3]                      : AB25      : output : 2.5 V             :         : 5         : N              
+fio11[20]                    : AB26      : output : 2.5 V             :         : 5         : N              
+fio10[46]                    : AB27      : output : 2.5 V             :         : 5         : N              
+fio1[13]                     : AB28      : output : 2.5 V             :         : 5         : N              
+fio4[0]                      : AC1       : output : 2.5 V             :         : 2         : N              
+fio12[3]                     : AC2       : output : 2.5 V             :         : 2         : N              
+fio9[0]                      : AC3       : output : 2.5 V             :         : 2         : N              
+fio9[107]                    : AC4       : output : 2.5 V             :         : 2         : N              
+fio11[40]                    : AC5       : output : 2.5 V             :         : 2         : N              
 GND                          : AC6       : gnd    :                   :         :           :                
-fio8[42]                     : AC7       : output : 2.5 V             :         : 3         : N              
-fio9[40]                     : AC8       : output : 2.5 V             :         : 3         : N              
+fio11[26]                    : AC7       : output : 2.5 V             :         : 3         : N              
+fio10[30]                    : AC8       : output : 2.5 V             :         : 3         : N              
 GND                          : AC9       : gnd    :                   :         :           :                
-fio9[141]                    : AC10      : output : 2.5 V             :         : 3         : N              
-fio1[15]                     : AC11      : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC12      :        :                   :         : 3         :                
+fio1[1]                      : AC10      : output : 2.5 V             :         : 3         : N              
+fio2[28]                     : AC11      : output : 2.5 V             :         : 3         : N              
+fio10[28]                    : AC12      : output : 2.5 V             :         : 3         : N              
 GND                          : AC13      : gnd    :                   :         :           :                
-fio8[4]                      : AC14      : output : 2.5 V             :         : 3         : N              
-fio9[144]                    : AC15      : output : 2.5 V             :         : 4         : N              
+fio9[97]                     : AC14      : output : 2.5 V             :         : 3         : N              
+fio2[20]                     : AC15      : output : 2.5 V             :         : 4         : N              
 GND                          : AC16      : gnd    :                   :         :           :                
-fio1[11]                     : AC17      : output : 2.5 V             :         : 4         : N              
-fio9[106]                    : AC18      : output : 2.5 V             :         : 4         : N              
-fio2[17]                     : AC19      : output : 2.5 V             :         : 4         : N              
+fio3[13]                     : AC17      : output : 2.5 V             :         : 4         : N              
+fio3[25]                     : AC18      : output : 2.5 V             :         : 4         : N              
+fio10[34]                    : AC19      : output : 2.5 V             :         : 4         : N              
 GND                          : AC20      : gnd    :                   :         :           :                
-fio3[3]                      : AC21      : output : 2.5 V             :         : 4         : N              
-fio3[26]                     : AC22      : output : 2.5 V             :         : 4         : N              
+fio10[9]                     : AC21      : output : 2.5 V             :         : 4         : N              
+fio10[5]                     : AC22      : output : 2.5 V             :         : 4         : N              
 GND                          : AC23      : gnd    :                   :         :           :                
-fio11[7]                     : AC24      : output : 2.5 V             :         : 5         : N              
-fio2[28]                     : AC25      : output : 2.5 V             :         : 5         : N              
-fio9[86]                     : AC26      : output : 2.5 V             :         : 5         : N              
-fio10[33]                    : AC27      : output : 2.5 V             :         : 5         : N              
-fio11[30]                    : AC28      : output : 2.5 V             :         : 5         : N              
-fio8[1]                      : AD1       : output : 2.5 V             :         : 2         : N              
-fio9[11]                     : AD2       : output : 2.5 V             :         : 2         : N              
-fio9[12]                     : AD3       : output : 2.5 V             :         : 2         : N              
-fio8[60]                     : AD4       : output : 2.5 V             :         : 3         : N              
-fio8[57]                     : AD5       : output : 2.5 V             :         : 3         : N              
+fio3[8]                      : AC24      : output : 2.5 V             :         : 5         : N              
+fio9[81]                     : AC25      : output : 2.5 V             :         : 5         : N              
+fio1[14]                     : AC26      : output : 2.5 V             :         : 5         : N              
+fio11[21]                    : AC27      : output : 2.5 V             :         : 5         : N              
+fio9[88]                     : AC28      : output : 2.5 V             :         : 5         : N              
+fio9[58]                     : AD1       : output : 2.5 V             :         : 2         : N              
+fio10[1]                     : AD2       : output : 2.5 V             :         : 2         : N              
+fio4[2]                      : AD3       : output : 2.5 V             :         : 2         : N              
+fio10[70]                    : AD4       : output : 2.5 V             :         : 3         : N              
+fio10[63]                    : AD5       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
-fio8[53]                     : AD7       : output : 2.5 V             :         : 3         : N              
-fio8[34]                     : AD8       : output : 2.5 V             :         : 3         : N              
+fio11[1]                     : AD7       : output : 2.5 V             :         : 3         : N              
+fio11[29]                    : AD8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
-fio9[39]                     : AD10      : output : 2.5 V             :         : 3         : N              
-fio11[42]                    : AD11      : output : 2.5 V             :         : 3         : N              
-fio8[22]                     : AD12      : output : 2.5 V             :         : 3         : N              
+fio3[21]                     : AD10      : output : 2.5 V             :         : 3         : N              
+fio2[21]                     : AD11      : output : 2.5 V             :         : 3         : N              
+fio10[57]                    : AD12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
-fio9[30]                     : AD14      : output : 2.5 V             :         : 3         : N              
-fio7[4]                      : AD15      : output : 2.5 V             :         : 4         : N              
+fio10[37]                    : AD14      : output : 2.5 V             :         : 3         : N              
+fio9[72]                     : AD15      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
-fio9[19]                     : AD17      : output : 2.5 V             :         : 4         : N              
-fio2[4]                      : AD18      : output : 2.5 V             :         : 4         : N              
-fio10[53]                    : AD19      : output : 2.5 V             :         : 4         : N              
+fio9[44]                     : AD17      : output : 2.5 V             :         : 4         : N              
+fio9[54]                     : AD18      : output : 2.5 V             :         : 4         : N              
+fio3[4]                      : AD19      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
-fio3[16]                     : AD21      : output : 2.5 V             :         : 4         : N              
-fio3[22]                     : AD22      : output : 2.5 V             :         : 4         : N              
+fio10[45]                    : AD21      : output : 2.5 V             :         : 4         : N              
+fio2[26]                     : AD22      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
-fio10[31]                    : AD24      : output : 2.5 V             :         : 4         : N              
-fio3[1]                      : AD25      : output : 2.5 V             :         : 4         : N              
-fio10[34]                    : AD26      : output : 2.5 V             :         : 5         : N              
-fio11[14]                    : AD27      : output : 2.5 V             :         : 5         : N              
-fio11[23]                    : AD28      : output : 2.5 V             :         : 5         : N              
-fio10[90]                    : AE1       : output : 2.5 V             :         : 2         : N              
-fio9[124]                    : AE2       : output : 2.5 V             :         : 2         : N              
-fio9[135]                    : AE3       : output : 2.5 V             :         : 2         : N              
-fio8[44]                     : AE4       : output : 2.5 V             :         : 3         : N              
-fio8[49]                     : AE5       : output : 2.5 V             :         : 3         : N              
-fio8[56]                     : AE6       : output : 2.5 V             :         : 3         : N              
-fio1[28]                     : AE7       : output : 2.5 V             :         : 3         : N              
-fio1[22]                     : AE8       : output : 2.5 V             :         : 3         : N              
-fio10[71]                    : AE9       : output : 2.5 V             :         : 3         : N              
-fio11[64]                    : AE10      : output : 2.5 V             :         : 3         : N              
-fio11[45]                    : AE11      : output : 2.5 V             :         : 3         : N              
-fio11[2]                     : AE12      : output : 2.5 V             :         : 3         : N              
-fio7[2]                      : AE13      : output : 2.5 V             :         : 3         : N              
-fio8[6]                      : AE14      : output : 2.5 V             :         : 3         : N              
-fio11[51]                    : AE15      : output : 2.5 V             :         : 4         : N              
-fio9[28]                     : AE16      : output : 2.5 V             :         : 4         : N              
-fio1[8]                      : AE17      : output : 2.5 V             :         : 4         : N              
-fio11[68]                    : AE18      : output : 2.5 V             :         : 4         : N              
-fio9[4]                      : AE19      : output : 2.5 V             :         : 4         : N              
-fio11[39]                    : AE20      : output : 2.5 V             :         : 4         : N              
-fio11[54]                    : AE21      : output : 2.5 V             :         : 4         : N              
-fio9[46]                     : AE22      : output : 2.5 V             :         : 4         : N              
-fio10[18]                    : AE23      : output : 2.5 V             :         : 4         : N              
-fio3[31]                     : AE24      : output : 2.5 V             :         : 4         : N              
-fio10[9]                     : AE25      : output : 2.5 V             :         : 4         : N              
-fio10[26]                    : AE26      : output : 2.5 V             :         : 5         : N              
-fio10[35]                    : AE27      : output : 2.5 V             :         : 5         : N              
-fio11[21]                    : AE28      : output : 2.5 V             :         : 5         : N              
+fio9[42]                     : AD24      : output : 2.5 V             :         : 4         : N              
+fio2[12]                     : AD25      : output : 2.5 V             :         : 4         : N              
+fio2[13]                     : AD26      : output : 2.5 V             :         : 5         : N              
+fio3[11]                     : AD27      : output : 2.5 V             :         : 5         : N              
+fio9[80]                     : AD28      : output : 2.5 V             :         : 5         : N              
+fio9[98]                     : AE1       : output : 2.5 V             :         : 2         : N              
+fio2[22]                     : AE2       : output : 2.5 V             :         : 2         : N              
+fio11[66]                    : AE3       : output : 2.5 V             :         : 2         : N              
+fio7[4]                      : AE4       : output : 2.5 V             :         : 3         : N              
+fio7[0]                      : AE5       : output : 2.5 V             :         : 3         : N              
+fio11[56]                    : AE6       : output : 2.5 V             :         : 3         : N              
+fio9[96]                     : AE7       : output : 2.5 V             :         : 3         : N              
+fio11[24]                    : AE8       : output : 2.5 V             :         : 3         : N              
+fio10[56]                    : AE9       : output : 2.5 V             :         : 3         : N              
+fio1[21]                     : AE10      : output : 2.5 V             :         : 3         : N              
+fio11[33]                    : AE11      : output : 2.5 V             :         : 3         : N              
+fio5                         : AE12      : output : 2.5 V             :         : 3         : N              
+fio9[93]                     : AE13      : output : 2.5 V             :         : 3         : N              
+fio10[58]                    : AE14      : output : 2.5 V             :         : 3         : N              
+fio9[100]                    : AE15      : output : 2.5 V             :         : 4         : N              
+fio2[11]                     : AE16      : output : 2.5 V             :         : 4         : N              
+fio3[31]                     : AE17      : output : 2.5 V             :         : 4         : N              
+fio10[49]                    : AE18      : output : 2.5 V             :         : 4         : N              
+fio9[61]                     : AE19      : output : 2.5 V             :         : 4         : N              
+fio10[19]                    : AE20      : output : 2.5 V             :         : 4         : N              
+fio9[56]                     : AE21      : output : 2.5 V             :         : 4         : N              
+fio1[5]                      : AE22      : output : 2.5 V             :         : 4         : N              
+fio9[82]                     : AE23      : output : 2.5 V             :         : 4         : N              
+fio9[46]                     : AE24      : output : 2.5 V             :         : 4         : N              
+fio2[1]                      : AE25      : output : 2.5 V             :         : 4         : N              
+fio9[101]                    : AE26      : output : 2.5 V             :         : 5         : N              
+fio9[49]                     : AE27      : output : 2.5 V             :         : 5         : N              
+fio10[48]                    : AE28      : output : 2.5 V             :         : 5         : N              
 GND                          : AF1       : gnd    :                   :         :           :                
-fio9[128]                    : AF2       : output : 2.5 V             :         : 2         : N              
-fio8[46]                     : AF3       : output : 2.5 V             :         : 3         : N              
-fio8[35]                     : AF4       : output : 2.5 V             :         : 3         : N              
-fio8[63]                     : AF5       : output : 2.5 V             :         : 3         : N              
-fio8[41]                     : AF6       : output : 2.5 V             :         : 3         : N              
-fio1[20]                     : AF7       : output : 2.5 V             :         : 3         : N              
-fio8[31]                     : AF8       : output : 2.5 V             :         : 3         : N              
-fio10[4]                     : AF9       : output : 2.5 V             :         : 3         : N              
-fio11[46]                    : AF10      : output : 2.5 V             :         : 3         : N              
-fio9[36]                     : AF11      : output : 2.5 V             :         : 3         : N              
-fio9[33]                     : AF12      : output : 2.5 V             :         : 3         : N              
-fio9[16]                     : AF13      : output : 2.5 V             :         : 3         : N              
-fio8[16]                     : AF14      : output : 2.5 V             :         : 3         : N              
-fio9[8]                      : AF15      : output : 2.5 V             :         : 4         : N              
-fio1[2]                      : AF16      : output : 2.5 V             :         : 4         : N              
-fio1[23]                     : AF17      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF18      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF19      :        :                   :         : 4         :                
-fio8[26]                     : AF20      : output : 2.5 V             :         : 4         : N              
-fio10[52]                    : AF21      : output : 2.5 V             :         : 4         : N              
-fio10[41]                    : AF22      : output : 2.5 V             :         : 4         : N              
-fio3[19]                     : AF23      : output : 2.5 V             :         : 4         : N              
-fio8[10]                     : AF24      : output : 2.5 V             :         : 4         : N              
-fio4[1]                      : AF25      : output : 2.5 V             :         : 4         : N              
-fio11[6]                     : AF26      : output : 2.5 V             :         : 4         : N              
-fio2[19]                     : AF27      : output : 2.5 V             :         : 5         : N              
+fio9[34]                     : AF2       : output : 2.5 V             :         : 2         : N              
+fio9[31]                     : AF3       : output : 2.5 V             :         : 3         : N              
+fio11[0]                     : AF4       : output : 2.5 V             :         : 3         : N              
+fio4[3]                      : AF5       : output : 2.5 V             :         : 3         : N              
+fio3[23]                     : AF6       : output : 2.5 V             :         : 3         : N              
+fio1[0]                      : AF7       : output : 2.5 V             :         : 3         : N              
+fio9[66]                     : AF8       : output : 2.5 V             :         : 3         : N              
+fio9[59]                     : AF9       : output : 2.5 V             :         : 3         : N              
+fio1[19]                     : AF10      : output : 2.5 V             :         : 3         : N              
+fio1[27]                     : AF11      : output : 2.5 V             :         : 3         : N              
+fio3[22]                     : AF12      : output : 2.5 V             :         : 3         : N              
+fio9[104]                    : AF13      : output : 2.5 V             :         : 3         : N              
+fio3[28]                     : AF14      : output : 2.5 V             :         : 3         : N              
+fio11[70]                    : AF15      : output : 2.5 V             :         : 4         : N              
+fio11[13]                    : AF16      : output : 2.5 V             :         : 4         : N              
+fio9[69]                     : AF17      : output : 2.5 V             :         : 4         : N              
+fio11[9]                     : AF18      : output : 2.5 V             :         : 4         : N              
+fio9[83]                     : AF19      : output : 2.5 V             :         : 4         : N              
+fio9[87]                     : AF20      : output : 2.5 V             :         : 4         : N              
+fio9[55]                     : AF21      : output : 2.5 V             :         : 4         : N              
+fio1[4]                      : AF22      : output : 2.5 V             :         : 4         : N              
+fio10[20]                    : AF23      : output : 2.5 V             :         : 4         : N              
+fio11[32]                    : AF24      : output : 2.5 V             :         : 4         : N              
+fio9[45]                     : AF25      : output : 2.5 V             :         : 4         : N              
+fio9[85]                     : AF26      : output : 2.5 V             :         : 4         : N              
+fio10[38]                    : AF27      : output : 2.5 V             :         : 5         : N              
 GND                          : AF28      : gnd    :                   :         :           :                
 VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
 GND                          : AG2       : gnd    :                   :         :           :                
-fio8[43]                     : AG3       : output : 2.5 V             :         : 3         : N              
-fio8[39]                     : AG4       : output : 2.5 V             :         : 3         : N              
+fio11[57]                    : AG3       : output : 2.5 V             :         : 3         : N              
+fio3[30]                     : AG4       : output : 2.5 V             :         : 3         : N              
 GND                          : AG5       : gnd    :                   :         :           :                
-fio9[138]                    : AG6       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG7       :        :                   :         : 3         :                
-fio11[47]                    : AG8       : output : 2.5 V             :         : 3         : N              
+fio11[25]                    : AG6       : output : 2.5 V             :         : 3         : N              
+fio10[26]                    : AG7       : output : 2.5 V             :         : 3         : N              
+fio3[17]                     : AG8       : output : 2.5 V             :         : 3         : N              
 GND                          : AG9       : gnd    :                   :         :           :                
-fio1[4]                      : AG10      : output : 2.5 V             :         : 3         : N              
-fio11[63]                    : AG11      : output : 2.5 V             :         : 3         : N              
-fio1[29]                     : AG12      : output : 2.5 V             :         : 3         : N              
+fio10[29]                    : AG10      : output : 2.5 V             :         : 3         : N              
+fio9[105]                    : AG11      : output : 2.5 V             :         : 3         : N              
+fio10[60]                    : AG12      : output : 2.5 V             :         : 3         : N              
 GND                          : AG13      : gnd    :                   :         :           :                
 GND+                         : AG14      :        :                   :         : 3         :                
 GND+                         : AG15      :        :                   :         : 4         :                
 GND                          : AG16      : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG17      :        :                   :         : 4         :                
-fio9[17]                     : AG18      : output : 2.5 V             :         : 4         : N              
-fio9[5]                      : AG19      : output : 2.5 V             :         : 4         : N              
+fio9[99]                     : AG17      : output : 2.5 V             :         : 4         : N              
+fio11[69]                    : AG18      : output : 2.5 V             :         : 4         : N              
+fio11[36]                    : AG19      : output : 2.5 V             :         : 4         : N              
 GND                          : AG20      : gnd    :                   :         :           :                
-fio1[30]                     : AG21      : output : 2.5 V             :         : 4         : N              
-fio11[52]                    : AG22      : output : 2.5 V             :         : 4         : N              
-fio1[6]                      : AG23      : output : 2.5 V             :         : 4         : N              
+fio9[86]                     : AG21      : output : 2.5 V             :         : 4         : N              
+fio1[3]                      : AG22      : output : 2.5 V             :         : 4         : N              
+fio2[14]                     : AG23      : output : 2.5 V             :         : 4         : N              
 GND                          : AG24      : gnd    :                   :         :           :                
-fio2[27]                     : AG25      : output : 2.5 V             :         : 4         : N              
-fio9[37]                     : AG26      : output : 2.5 V             :         : 4         : N              
+fio10[68]                    : AG25      : output : 2.5 V             :         : 4         : N              
+fio9[43]                     : AG26      : output : 2.5 V             :         : 4         : N              
 GND                          : AG27      : gnd    :                   :         :           :                
 VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
 VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
-fio8[36]                     : AH3       : output : 2.5 V             :         : 3         : N              
-fio8[37]                     : AH4       : output : 2.5 V             :         : 3         : N              
+fio7[1]                      : AH3       : output : 2.5 V             :         : 3         : N              
+fio11[30]                    : AH4       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
-fio8[40]                     : AH6       : output : 2.5 V             :         : 3         : N              
-fio11[4]                     : AH7       : output : 2.5 V             :         : 3         : N              
-fio8[14]                     : AH8       : output : 2.5 V             :         : 3         : N              
+fio10[15]                    : AH6       : output : 2.5 V             :         : 3         : N              
+fio2[25]                     : AH7       : output : 2.5 V             :         : 3         : N              
+fio9[63]                     : AH8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
-fio11[41]                    : AH10      : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH11      :        :                   :         : 3         :                
-fio10[106]                   : AH12      : output : 2.5 V             :         : 3         : N              
+fio1[10]                     : AH10      : output : 2.5 V             :         : 3         : N              
+fio2[4]                      : AH11      : output : 2.5 V             :         : 3         : N              
+fio9[70]                     : AH12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
 GND+                         : AH14      :        :                   :         : 3         :                
 GND+                         : AH15      :        :                   :         : 4         :                
 VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
-fio1[12]                     : AH17      : output : 2.5 V             :         : 4         : N              
-fio4[3]                      : AH18      : output : 2.5 V             :         : 4         : N              
-fio9[41]                     : AH19      : output : 2.5 V             :         : 4         : N              
+fio9[91]                     : AH17      : output : 2.5 V             :         : 4         : N              
+fio9[47]                     : AH18      : output : 2.5 V             :         : 4         : N              
+fio9[89]                     : AH19      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
-fio9[26]                     : AH21      : output : 2.5 V             :         : 4         : N              
-fio8[9]                      : AH22      : output : 2.5 V             :         : 4         : N              
-fio9[9]                      : AH23      : output : 2.5 V             :         : 4         : N              
+fio3[7]                      : AH21      : output : 2.5 V             :         : 4         : N              
+fio10[50]                    : AH22      : output : 2.5 V             :         : 4         : N              
+fio9[53]                     : AH23      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
-fio10[21]                    : AH25      : output : 2.5 V             :         : 4         : N              
-fio11[60]                    : AH26      : output : 2.5 V             :         : 4         : N              
+fio10[62]                    : AH25      : output : 2.5 V             :         : 4         : N              
+fio10[18]                    : AH26      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
 VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
-fio1[25]                     : B3        : output : 2.5 V             :         : 8         : N              
-fio9[34]                     : B4        : output : 2.5 V             :         : 8         : N              
+fio8[38]                     : B3        : output : 2.5 V             :         : 8         : N              
+fio8[2]                      : B4        : output : 2.5 V             :         : 8         : N              
 GND                          : B5        : gnd    :                   :         :           :                
-fio11[57]                    : B6        : output : 2.5 V             :         : 8         : N              
-fio1[3]                      : B7        : output : 2.5 V             :         : 8         : N              
-fio7[3]                      : B8        : output : 2.5 V             :         : 8         : N              
+fio9[16]                     : B6        : output : 2.5 V             :         : 8         : N              
+fio8[6]                      : B7        : output : 2.5 V             :         : 8         : N              
+fio10[101]                   : B8        : output : 2.5 V             :         : 8         : N              
 GND                          : B9        : gnd    :                   :         :           :                
-fio10[105]                   : B10       : output : 2.5 V             :         : 8         : N              
-fio11[56]                    : B11       : output : 2.5 V             :         : 8         : N              
+fio11[43]                    : B10       : output : 2.5 V             :         : 8         : N              
+fio8[19]                     : B11       : output : 2.5 V             :         : 8         : N              
 GND                          : B12       : gnd    :                   :         :           :                
 GND                          : B13       : gnd    :                   :         :           :                
 GND+                         : B14       :        :                   :         : 8         :                
 GND+                         : B15       :        :                   :         : 7         :                
 GND                          : B16       : gnd    :                   :         :           :                
-fio10[67]                    : B17       : output : 2.5 V             :         : 7         : N              
-fio2[1]                      : B18       : output : 2.5 V             :         : 7         : N              
-fio9[101]                    : B19       : output : 2.5 V             :         : 7         : N              
+fio1[29]                     : B17       : output : 2.5 V             :         : 7         : N              
+fio9[3]                      : B18       : output : 2.5 V             :         : 7         : N              
+fio11[51]                    : B19       : output : 2.5 V             :         : 7         : N              
 GND                          : B20       : gnd    :                   :         :           :                
-fio11[22]                    : B21       : output : 2.5 V             :         : 7         : N              
-fio9[89]                     : B22       : output : 2.5 V             :         : 7         : N              
-fio9[103]                    : B23       : output : 2.5 V             :         : 7         : N              
+fio11[54]                    : B21       : output : 2.5 V             :         : 7         : N              
+fio12[4]                     : B22       : output : 2.5 V             :         : 7         : N              
+fio9[39]                     : B23       : output : 2.5 V             :         : 7         : N              
 GND                          : B24       : gnd    :                   :         :           :                
-fio10[12]                    : B25       : output : 2.5 V             :         : 7         : N              
-fio11[28]                    : B26       : output : 2.5 V             :         : 7         : N              
+fio9[106]                    : B25       : output : 2.5 V             :         : 7         : N              
+fio9[9]                      : B26       : output : 2.5 V             :         : 7         : N              
 GND                          : B27       : gnd    :                   :         :           :                
 VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
 GND                          : C1        : gnd    :                   :         :           :                
-fio1[7]                      : C2        : output : 2.5 V             :         : 1         : N              
-fio10[2]                     : C3        : output : 2.5 V             :         : 8         : N              
-fio6[0]                      : C4        : output : 2.5 V             :         : 8         : N              
-fio11[67]                    : C5        : output : 2.5 V             :         : 8         : N              
-fio8[18]                     : C6        : output : 2.5 V             :         : 8         : N              
-fio11[38]                    : C7        : output : 2.5 V             :         : 8         : N              
-fio1[10]                     : C8        : output : 2.5 V             :         : 8         : N              
-fio8[32]                     : C9        : output : 2.5 V             :         : 8         : N              
-fio1[19]                     : C10       : output : 2.5 V             :         : 8         : N              
-fio11[59]                    : C11       : output : 2.5 V             :         : 8         : N              
-fio10[68]                    : C12       : output : 2.5 V             :         : 8         : N              
-fio11[33]                    : C13       : output : 2.5 V             :         : 8         : N              
-fio8[7]                      : C14       : output : 2.5 V             :         : 8         : N              
-fio10[65]                    : C15       : output : 2.5 V             :         : 7         : N              
-fio11[29]                    : C16       : output : 2.5 V             :         : 7         : N              
-fio10[48]                    : C17       : output : 2.5 V             :         : 7         : N              
-fio9[44]                     : C18       : output : 2.5 V             :         : 7         : N              
-fio3[4]                      : C19       : output : 2.5 V             :         : 7         : N              
-fio9[77]                     : C20       : output : 2.5 V             :         : 7         : N              
-fio10[38]                    : C21       : output : 2.5 V             :         : 7         : N              
-fio2[13]                     : C22       : output : 2.5 V             :         : 7         : N              
-fio9[79]                     : C23       : output : 2.5 V             :         : 7         : N              
-fio3[20]                     : C24       : output : 2.5 V             :         : 7         : N              
-fio9[47]                     : C25       : output : 2.5 V             :         : 7         : N              
-fio10[28]                    : C26       : output : 2.5 V             :         : 7         : N              
-fio10[19]                    : C27       : output : 2.5 V             :         : 6         : N              
+fio10[99]                    : C2        : output : 2.5 V             :         : 1         : N              
+fio10[80]                    : C3        : output : 2.5 V             :         : 8         : N              
+fio9[115]                    : C4        : output : 2.5 V             :         : 8         : N              
+fio9[110]                    : C5        : output : 2.5 V             :         : 8         : N              
+fio8[39]                     : C6        : output : 2.5 V             :         : 8         : N              
+fio8[63]                     : C7        : output : 2.5 V             :         : 8         : N              
+fio9[131]                    : C8        : output : 2.5 V             :         : 8         : N              
+fio8[17]                     : C9        : output : 2.5 V             :         : 8         : N              
+fio11[61]                    : C10       : output : 2.5 V             :         : 8         : N              
+fio8[21]                     : C11       : output : 2.5 V             :         : 8         : N              
+fio10[103]                   : C12       : output : 2.5 V             :         : 8         : N              
+fio10[25]                    : C13       : output : 2.5 V             :         : 8         : N              
+fio10[59]                    : C14       : output : 2.5 V             :         : 8         : N              
+fio10[61]                    : C15       : output : 2.5 V             :         : 7         : N              
+fio11[12]                    : C16       : output : 2.5 V             :         : 7         : N              
+fio9[32]                     : C17       : output : 2.5 V             :         : 7         : N              
+fio8[18]                     : C18       : output : 2.5 V             :         : 7         : N              
+fio11[3]                     : C19       : output : 2.5 V             :         : 7         : N              
+fio9[41]                     : C20       : output : 2.5 V             :         : 7         : N              
+fio11[59]                    : C21       : output : 2.5 V             :         : 7         : N              
+fio7[3]                      : C22       : output : 2.5 V             :         : 7         : N              
+fio11[47]                    : C23       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C24       :        :                   :         : 7         :                
+fio6[0]                      : C25       : output : 2.5 V             :         : 7         : N              
+fio11[52]                    : C26       : output : 2.5 V             :         : 7         : N              
+fio9[40]                     : C27       : output : 2.5 V             :         : 6         : N              
 GND                          : C28       : gnd    :                   :         :           :                
-fio9[22]                     : D1        : output : 2.5 V             :         : 1         : N              
-fio9[6]                      : D2        : output : 2.5 V             :         : 1         : N              
+fio10[85]                    : D1        : output : 2.5 V             :         : 1         : N              
+fio9[122]                    : D2        : output : 2.5 V             :         : 1         : N              
 GND                          : D3        : gnd    :                   :         :           :                
-fio11[1]                     : D4        : output : 2.5 V             :         : 8         : N              
-fio9[24]                     : D5        : output : 2.5 V             :         : 8         : N              
-fio11[55]                    : D6        : output : 2.5 V             :         : 8         : N              
-fio1[16]                     : D7        : output : 2.5 V             :         : 8         : N              
-fio8[30]                     : D8        : output : 2.5 V             :         : 8         : N              
-fio9[20]                     : D9        : output : 2.5 V             :         : 8         : N              
-fio9[2]                      : D10       : output : 2.5 V             :         : 8         : N              
-fio1[17]                     : D11       : output : 2.5 V             :         : 8         : N              
-fio11[35]                    : D12       : output : 2.5 V             :         : 8         : N              
-fio11[34]                    : D13       : output : 2.5 V             :         : 8         : N              
-fio10[63]                    : D14       : output : 2.5 V             :         : 8         : N              
-fio11[31]                    : D15       : output : 2.5 V             :         : 7         : N              
-fio3[0]                      : D16       : output : 2.5 V             :         : 7         : N              
-fio9[87]                     : D17       : output : 2.5 V             :         : 7         : N              
-fio10[25]                    : D18       : output : 2.5 V             :         : 7         : N              
-fio9[104]                    : D19       : output : 2.5 V             :         : 7         : N              
-fio10[60]                    : D20       : output : 2.5 V             :         : 7         : N              
-fio2[10]                     : D21       : output : 2.5 V             :         : 7         : N              
-fio11[27]                    : D22       : output : 2.5 V             :         : 7         : N              
-fio9[43]                     : D23       : output : 2.5 V             :         : 7         : N              
-fio9[74]                     : D24       : output : 2.5 V             :         : 7         : N              
-fio9[88]                     : D25       : output : 2.5 V             :         : 7         : N              
-fio11[12]                    : D26       : output : 2.5 V             :         : 6         : N              
-fio10[22]                    : D27       : output : 2.5 V             :         : 6         : N              
-fio2[14]                     : D28       : output : 2.5 V             :         : 6         : N              
-fio8[17]                     : E1        : output : 2.5 V             :         : 1         : N              
+fio8[34]                     : D4        : output : 2.5 V             :         : 8         : N              
+fio8[36]                     : D5        : output : 2.5 V             :         : 8         : N              
+fio8[60]                     : D6        : output : 2.5 V             :         : 8         : N              
+fio8[58]                     : D7        : output : 2.5 V             :         : 8         : N              
+fio8[56]                     : D8        : output : 2.5 V             :         : 8         : N              
+fio8[12]                     : D9        : output : 2.5 V             :         : 8         : N              
+fio10[105]                   : D10       : output : 2.5 V             :         : 8         : N              
+fio8[11]                     : D11       : output : 2.5 V             :         : 8         : N              
+fio1[24]                     : D12       : output : 2.5 V             :         : 8         : N              
+fio2[17]                     : D13       : output : 2.5 V             :         : 8         : N              
+fio8[26]                     : D14       : output : 2.5 V             :         : 8         : N              
+fio1[23]                     : D15       : output : 2.5 V             :         : 7         : N              
+fio1[28]                     : D16       : output : 2.5 V             :         : 7         : N              
+fio11[42]                    : D17       : output : 2.5 V             :         : 7         : N              
+fio8[24]                     : D18       : output : 2.5 V             :         : 7         : N              
+fio9[27]                     : D19       : output : 2.5 V             :         : 7         : N              
+fio8[33]                     : D20       : output : 2.5 V             :         : 7         : N              
+fio11[60]                    : D21       : output : 2.5 V             :         : 7         : N              
+fio10[2]                     : D22       : output : 2.5 V             :         : 7         : N              
+fio11[45]                    : D23       : output : 2.5 V             :         : 7         : N              
+fio11[67]                    : D24       : output : 2.5 V             :         : 7         : N              
+fio8[7]                      : D25       : output : 2.5 V             :         : 7         : N              
+fio9[36]                     : D26       : output : 2.5 V             :         : 6         : N              
+fio8[25]                     : D27       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D28       :        :                   :         : 6         :                
+fio9[109]                    : E1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
-fio8[8]                      : E3        : output : 2.5 V             :         : 1         : N              
-fio11[37]                    : E4        : output : 2.5 V             :         : 8         : N              
-fio7[1]                      : E5        : output : 2.5 V             :         : 8         : N              
+fio10[76]                    : E3        : output : 2.5 V             :         : 1         : N              
+fio9[114]                    : E4        : output : 2.5 V             :         : 8         : N              
+fio10[73]                    : E5        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
-fio8[13]                     : E7        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : E8        :        :                   :         : 8         :                
+fio8[51]                     : E7        : output : 2.5 V             :         : 8         : N              
+fio8[62]                     : E8        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :         : 8         :                
-fio9[27]                     : E11       : output : 2.5 V             :         : 8         : N              
-fio1[27]                     : E12       : output : 2.5 V             :         : 8         : N              
+fio9[15]                     : E10       : output : 2.5 V             :         : 8         : N              
+fio8[23]                     : E11       : output : 2.5 V             :         : 8         : N              
+fio11[55]                    : E12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
-fio11[69]                    : E14       : output : 2.5 V             :         : 8         : N              
-fio11[36]                    : E15       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E14       :        :                   :         : 8         :                
+fio3[10]                     : E15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
-fio9[45]                     : E17       : output : 2.5 V             :         : 7         : N              
-fio10[54]                    : E18       : output : 2.5 V             :         : 7         : N              
-fio2[15]                     : E19       : output : 2.5 V             :         : 7         : N              
+fio10[10]                    : E17       : output : 2.5 V             :         : 7         : N              
+fio8[30]                     : E18       : output : 2.5 V             :         : 7         : N              
+fio11[53]                    : E19       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
-fio11[16]                    : E21       : output : 2.5 V             :         : 7         : N              
-fio10[59]                    : E22       : output : 2.5 V             :         : 7         : N              
+fio11[48]                    : E21       : output : 2.5 V             :         : 7         : N              
+fio11[49]                    : E22       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
-fio3[17]                     : E24       : output : 2.5 V             :         : 7         : N              
-fio9[96]                     : E25       : output : 2.5 V             :         : 7         : N              
-fio9[62]                     : E26       : output : 2.5 V             :         : 6         : N              
-fio2[24]                     : E27       : output : 2.5 V             :         : 6         : N              
-fio9[75]                     : E28       : output : 2.5 V             :         : 6         : N              
-fio8[12]                     : F1        : output : 2.5 V             :         : 1         : N              
-fio8[11]                     : F2        : output : 2.5 V             :         : 1         : N              
-fio8[24]                     : F3        : output : 2.5 V             :         : 1         : N              
+fio9[17]                     : E24       : output : 2.5 V             :         : 7         : N              
+fio8[10]                     : E25       : output : 2.5 V             :         : 7         : N              
+fio8[20]                     : E26       : output : 2.5 V             :         : 6         : N              
+fio9[28]                     : E27       : output : 2.5 V             :         : 6         : N              
+fio9[30]                     : E28       : output : 2.5 V             :         : 6         : N              
+fio8[42]                     : F1        : output : 2.5 V             :         : 1         : N              
+fio9[120]                    : F2        : output : 2.5 V             :         : 1         : N              
+fio10[83]                    : F3        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :         : 1         :                
+fio10[86]                    : F5        : output : 2.5 V             :         : 1         : N              
 GND                          : F6        : gnd    :                   :         :           :                
-fio1[14]                     : F7        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8         :                
+fio8[57]                     : F7        : output : 2.5 V             :         : 8         : N              
+fio8[52]                     : F8        : output : 2.5 V             :         : 8         : N              
 GND                          : F9        : gnd    :                   :         :           :                
-fio11[62]                    : F10       : output : 2.5 V             :         : 8         : N              
-fio1[9]                      : F11       : output : 2.5 V             :         : 8         : N              
-fio8[20]                     : F12       : output : 2.5 V             :         : 8         : N              
+fio8[37]                     : F10       : output : 2.5 V             :         : 8         : N              
+fio9[139]                    : F11       : output : 2.5 V             :         : 8         : N              
+fio8[16]                     : F12       : output : 2.5 V             :         : 8         : N              
 GND                          : F13       : gnd    :                   :         :           :                
-fio11[48]                    : F14       : output : 2.5 V             :         : 8         : N              
-fio10[66]                    : F15       : output : 2.5 V             :         : 7         : N              
+fio9[38]                     : F14       : output : 2.5 V             :         : 8         : N              
+fio1[20]                     : F15       : output : 2.5 V             :         : 7         : N              
 GND                          : F16       : gnd    :                   :         :           :                
-fio2[2]                      : F17       : output : 2.5 V             :         : 7         : N              
-fio3[5]                      : F18       : output : 2.5 V             :         : 7         : N              
-fio2[22]                     : F19       : output : 2.5 V             :         : 7         : N              
+fio10[54]                    : F17       : output : 2.5 V             :         : 7         : N              
+fio8[13]                     : F18       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F19       :        :                   :         : 7         :                
 GND                          : F20       : gnd    :                   :         :           :                
-fio3[14]                     : F21       : output : 2.5 V             :         : 7         : N              
-fio9[81]                     : F22       : output : 2.5 V             :         : 7         : N              
+fio8[4]                      : F21       : output : 2.5 V             :         : 7         : N              
+fio9[29]                     : F22       : output : 2.5 V             :         : 7         : N              
 GND                          : F23       : gnd    :                   :         :           :                
-fio2[25]                     : F24       : output : 2.5 V             :         : 6         : N              
-fio10[11]                    : F25       : output : 2.5 V             :         : 6         : N              
-fio3[7]                      : F26       : output : 2.5 V             :         : 6         : N              
-fio10[57]                    : F27       : output : 2.5 V             :         : 6         : N              
-fio9[92]                     : F28       : output : 2.5 V             :         : 6         : N              
-fio9[146]                    : G1        : output : 2.5 V             :         : 1         : N              
-fio9[139]                    : G2        : output : 2.5 V             :         : 1         : N              
-fio11[66]                    : G3        : output : 2.5 V             :         : 1         : N              
-fio1[26]                     : G4        : output : 2.5 V             :         : 1         : N              
-fio9[0]                      : G5        : output : 2.5 V             :         : 1         : N              
-fio10[3]                     : G6        : output : 2.5 V             :         : 1         : N              
-fio1[1]                      : G7        : output : 2.5 V             :         : 8         : N              
-fio8[25]                     : G8        : output : 2.5 V             :         : 8         : N              
-fio11[50]                    : G9        : output : 2.5 V             :         : 8         : N              
-fio8[19]                     : G10       : output : 2.5 V             :         : 8         : N              
-fio9[3]                      : G11       : output : 2.5 V             :         : 8         : N              
-fio9[31]                     : G12       : output : 2.5 V             :         : 8         : N              
-fio9[29]                     : G13       : output : 2.5 V             :         : 8         : N              
-fio9[142]                    : G14       : output : 2.5 V             :         : 8         : N              
-fio11[8]                     : G15       : output : 2.5 V             :         : 7         : N              
-fio10[8]                     : G16       : output : 2.5 V             :         : 7         : N              
-fio9[100]                    : G17       : output : 2.5 V             :         : 7         : N              
-fio10[36]                    : G18       : output : 2.5 V             :         : 7         : N              
-fio9[73]                     : G19       : output : 2.5 V             :         : 7         : N              
-fio2[29]                     : G20       : output : 2.5 V             :         : 7         : N              
-fio2[23]                     : G21       : output : 2.5 V             :         : 7         : N              
-fio2[26]                     : G22       : output : 2.5 V             :         : 7         : N              
-fio9[65]                     : G23       : output : 2.5 V             :         : 6         : N              
-fio10[43]                    : G24       : output : 2.5 V             :         : 6         : N              
-fio3[15]                     : G25       : output : 2.5 V             :         : 6         : N              
-fio3[6]                      : G26       : output : 2.5 V             :         : 6         : N              
-fio9[97]                     : G27       : output : 2.5 V             :         : 6         : N              
-fio9[63]                     : G28       : output : 2.5 V             :         : 6         : N              
+fio9[7]                      : F24       : output : 2.5 V             :         : 6         : N              
+fio9[144]                    : F25       : output : 2.5 V             :         : 6         : N              
+fio9[8]                      : F26       : output : 2.5 V             :         : 6         : N              
+fio11[44]                    : F27       : output : 2.5 V             :         : 6         : N              
+fio9[18]                     : F28       : output : 2.5 V             :         : 6         : N              
+fio8[48]                     : G1        : output : 2.5 V             :         : 1         : N              
+fio8[45]                     : G2        : output : 2.5 V             :         : 1         : N              
+fio8[40]                     : G3        : output : 2.5 V             :         : 1         : N              
+fio8[47]                     : G4        : output : 2.5 V             :         : 1         : N              
+fio8[43]                     : G5        : output : 2.5 V             :         : 1         : N              
+fio9[108]                    : G6        : output : 2.5 V             :         : 1         : N              
+fio8[55]                     : G7        : output : 2.5 V             :         : 8         : N              
+fio8[59]                     : G8        : output : 2.5 V             :         : 8         : N              
+fio8[53]                     : G9        : output : 2.5 V             :         : 8         : N              
+fio10[100]                   : G10       : output : 2.5 V             :         : 8         : N              
+fio8[5]                      : G11       : output : 2.5 V             :         : 8         : N              
+fio8[8]                      : G12       : output : 2.5 V             :         : 8         : N              
+fio10[71]                    : G13       : output : 2.5 V             :         : 8         : N              
+fio9[37]                     : G14       : output : 2.5 V             :         : 8         : N              
+fio10[31]                    : G15       : output : 2.5 V             :         : 7         : N              
+fio1[18]                     : G16       : output : 2.5 V             :         : 7         : N              
+fio11[37]                    : G17       : output : 2.5 V             :         : 7         : N              
+fio10[40]                    : G18       : output : 2.5 V             :         : 7         : N              
+fio10[24]                    : G19       : output : 2.5 V             :         : 7         : N              
+fio10[21]                    : G20       : output : 2.5 V             :         : 7         : N              
+fio3[16]                     : G21       : output : 2.5 V             :         : 7         : N              
+fio11[34]                    : G22       : output : 2.5 V             :         : 7         : N              
+fio9[142]                    : G23       : output : 2.5 V             :         : 6         : N              
+fio9[140]                    : G24       : output : 2.5 V             :         : 6         : N              
+fio8[32]                     : G25       : output : 2.5 V             :         : 6         : N              
+fio9[5]                      : G26       : output : 2.5 V             :         : 6         : N              
+fio9[2]                      : G27       : output : 2.5 V             :         : 6         : N              
+fio9[20]                     : G28       : output : 2.5 V             :         : 6         : N              
 VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
 GND                          : H2        : gnd    :                   :         :           :                
-fio1[31]                     : H3        : output : 2.5 V             :         : 1         : N              
-fio9[1]                      : H4        : output : 2.5 V             :         : 1         : N              
-fio8[21]                     : H5        : output : 2.5 V             :         : 1         : N              
-fio8[29]                     : H6        : output : 2.5 V             :         : 1         : N              
-fio9[21]                     : H7        : output : 2.5 V             :         : 1         : N              
-fio1[18]                     : H8        : output : 2.5 V             :         : 8         : N              
+fio10[77]                    : H3        : output : 2.5 V             :         : 1         : N              
+fio10[84]                    : H4        : output : 2.5 V             :         : 1         : N              
+fio8[35]                     : H5        : output : 2.5 V             :         : 1         : N              
+fio9[121]                    : H6        : output : 2.5 V             :         : 1         : N              
+fio9[112]                    : H7        : output : 2.5 V             :         : 1         : N              
+fio8[41]                     : H8        : output : 2.5 V             :         : 8         : N              
 GNDA3                        : H9        : gnd    :                   :         :           :                
-fio9[35]                     : H10       : output : 2.5 V             :         : 8         : N              
+fio9[21]                     : H10       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
-fio9[14]                     : H12       : output : 2.5 V             :         : 8         : N              
-fio9[32]                     : H13       : output : 2.5 V             :         : 8         : N              
-fio10[20]                    : H14       : output : 2.5 V             :         : 8         : N              
-fio2[21]                     : H15       : output : 2.5 V             :         : 7         : N              
-fio10[61]                    : H16       : output : 2.5 V             :         : 7         : N              
-fio10[40]                    : H17       : output : 2.5 V             :         : 7         : N              
+fio10[74]                    : H12       : output : 2.5 V             :         : 8         : N              
+fio11[46]                    : H13       : output : 2.5 V             :         : 8         : N              
+fio10[3]                     : H14       : output : 2.5 V             :         : 8         : N              
+fio10[47]                    : H15       : output : 2.5 V             :         : 7         : N              
+fio3[26]                     : H16       : output : 2.5 V             :         : 7         : N              
+fio1[2]                      : H17       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
-fio2[30]                     : H19       : output : 2.5 V             :         : 7         : N              
+fio11[11]                    : H19       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : H20       : gnd    :                   :         :           :                
 fio2[16]                     : H21       : output : 2.5 V             :         : 7         : N              
-fio10[45]                    : H22       : output : 2.5 V             :         : 6         : N              
-fio3[18]                     : H23       : output : 2.5 V             :         : 6         : N              
-fio11[24]                    : H24       : output : 2.5 V             :         : 6         : N              
-fio9[99]                     : H25       : output : 2.5 V             :         : 6         : N              
-fio10[10]                    : H26       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H22       :        :                   :         : 6         :                
+fio11[62]                    : H23       : output : 2.5 V             :         : 6         : N              
+fio11[63]                    : H24       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H25       :        :                   :         : 6         :                
+fio8[14]                     : H26       : output : 2.5 V             :         : 6         : N              
 GND                          : H27       : gnd    :                   :         :           :                
 VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
 clk                          : J1        : input  : 2.5 V             :         : 1         : N              
 GND                          : J2        : gnd    :                   :         :           :                
-fio11[49]                    : J3        : output : 2.5 V             :         : 1         : N              
-fio10[80]                    : J4        : output : 2.5 V             :         : 1         : N              
-fio10[23]                    : J5        : output : 2.5 V             :         : 1         : N              
-fio9[113]                    : J6        : output : 2.5 V             :         : 1         : N              
-fio10[83]                    : J7        : output : 2.5 V             :         : 1         : N              
+fio9[118]                    : J3        : output : 2.5 V             :         : 1         : N              
+fio9[113]                    : J4        : output : 2.5 V             :         : 1         : N              
+fio10[75]                    : J5        : output : 2.5 V             :         : 1         : N              
+fio10[82]                    : J6        : output : 2.5 V             :         : 1         : N              
+fio10[98]                    : J7        : output : 2.5 V             :         : 1         : N              
 VCCA3                        : J8        : power  :                   : 2.5V    :           :                
 VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
-fio9[15]                     : J10       : output : 2.5 V             :         : 8         : N              
+fio9[6]                      : J10       : output : 2.5 V             :         : 8         : N              
 GND                          : J11       : gnd    :                   :         :           :                
-fio9[25]                     : J12       : output : 2.5 V             :         : 8         : N              
-fio10[102]                   : J13       : output : 2.5 V             :         : 8         : N              
-fio11[53]                    : J14       : output : 2.5 V             :         : 8         : N              
-fio11[32]                    : J15       : output : 2.5 V             :         : 7         : N              
-fio9[56]                     : J16       : output : 2.5 V             :         : 7         : N              
-fio9[78]                     : J17       : output : 2.5 V             :         : 7         : N              
+fio9[146]                    : J12       : output : 2.5 V             :         : 8         : N              
+fio9[145]                    : J13       : output : 2.5 V             :         : 8         : N              
+fio11[39]                    : J14       : output : 2.5 V             :         : 8         : N              
+fio11[15]                    : J15       : output : 2.5 V             :         : 7         : N              
+fio11[5]                     : J16       : output : 2.5 V             :         : 7         : N              
+fio10[52]                    : J17       : output : 2.5 V             :         : 7         : N              
 GND                          : J18       : gnd    :                   :         :           :                
-fio10[37]                    : J19       : output : 2.5 V             :         : 7         : N              
+fio10[8]                     : J19       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
 VCCA2                        : J21       : power  :                   : 2.5V    :           :                
-fio11[13]                    : J22       : output : 2.5 V             :         : 6         : N              
-fio2[6]                      : J23       : output : 2.5 V             :         : 6         : N              
-fio2[0]                      : J24       : output : 2.5 V             :         : 6         : N              
-fio9[60]                     : J25       : output : 2.5 V             :         : 6         : N              
-fio9[98]                     : J26       : output : 2.5 V             :         : 6         : N              
+fio10[4]                     : J22       : output : 2.5 V             :         : 6         : N              
+fio9[25]                     : J23       : output : 2.5 V             :         : 6         : N              
+fio8[28]                     : J24       : output : 2.5 V             :         : 6         : N              
+fio7[2]                      : J25       : output : 2.5 V             :         : 6         : N              
+fio11[58]                    : J26       : output : 2.5 V             :         : 6         : N              
 GND+                         : J27       :        :                   :         : 6         :                
 GND+                         : J28       :        :                   :         : 6         :                
-fio10[103]                   : K1        : output : 2.5 V             :         : 1         : N              
-fio10[1]                     : K2        : output : 2.5 V             :         : 1         : N              
-fio10[0]                     : K3        : output : 2.5 V             :         : 1         : N              
-fio9[145]                    : K4        : output : 2.5 V             :         : 1         : N              
+fio10[78]                    : K1        : output : 2.5 V             :         : 1         : N              
+fio8[44]                     : K2        : output : 2.5 V             :         : 1         : N              
+fio9[128]                    : K3        : output : 2.5 V             :         : 1         : N              
+fio9[123]                    : K4        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
 GND                          : K6        : gnd    :                   :         :           :                
-fio8[27]                     : K7        : output : 2.5 V             :         : 1         : N              
-fio9[112]                    : K8        : output : 2.5 V             :         : 1         : N              
+fio10[90]                    : K7        : output : 2.5 V             :         : 1         : N              
+fio9[136]                    : K8        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : K9        : power  :                   : 1.2V    :           :                
 GND                          : K10       : gnd    :                   :         :           :                
 VCCINT                       : K11       : power  :                   : 1.2V    :           :                
@@ -560,22 +560,22 @@ VCCINT                       : K17       : power  :                   : 1.2V    
 GND                          : K18       : gnd    :                   :         :           :                
 VCCINT                       : K19       : power  :                   : 1.2V    :           :                
 GND                          : K20       : gnd    :                   :         :           :                
-fio10[29]                    : K21       : output : 2.5 V             :         : 6         : N              
-fio2[18]                     : K22       : output : 2.5 V             :         : 6         : N              
+fio8[29]                     : K21       : output : 2.5 V             :         : 6         : N              
+fio9[143]                    : K22       : output : 2.5 V             :         : 6         : N              
 GND                          : K23       : gnd    :                   :         :           :                
 VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
-fio9[95]                     : K25       : output : 2.5 V             :         : 6         : N              
-fio9[59]                     : K26       : output : 2.5 V             :         : 6         : N              
-fio9[94]                     : K27       : output : 2.5 V             :         : 6         : N              
-fio9[48]                     : K28       : output : 2.5 V             :         : 6         : N              
-fio8[45]                     : L1        : output : 2.5 V             :         : 1         : N              
-fio10[75]                    : L2        : output : 2.5 V             :         : 1         : N              
-fio6[1]                      : L3        : output : 2.5 V             :         : 1         : N              
-fio11[0]                     : L4        : output : 2.5 V             :         : 1         : N              
-fio8[15]                     : L5        : output : 2.5 V             :         : 1         : N              
-fio9[117]                    : L6        : output : 2.5 V             :         : 1         : N              
-fio10[72]                    : L7        : output : 2.5 V             :         : 1         : N              
-fio9[111]                    : L8        : output : 2.5 V             :         : 1         : N              
+fio9[4]                      : K25       : output : 2.5 V             :         : 6         : N              
+fio9[141]                    : K26       : output : 2.5 V             :         : 6         : N              
+fio8[31]                     : K27       : output : 2.5 V             :         : 6         : N              
+fio3[5]                      : K28       : output : 2.5 V             :         : 6         : N              
+fio9[137]                    : L1        : output : 2.5 V             :         : 1         : N              
+fio9[129]                    : L2        : output : 2.5 V             :         : 1         : N              
+fio9[135]                    : L3        : output : 2.5 V             :         : 1         : N              
+fio9[117]                    : L4        : output : 2.5 V             :         : 1         : N              
+fio9[119]                    : L5        : output : 2.5 V             :         : 1         : N              
+fio8[50]                     : L6        : output : 2.5 V             :         : 1         : N              
+fio8[54]                     : L7        : output : 2.5 V             :         : 1         : N              
+fio9[130]                    : L8        : output : 2.5 V             :         : 1         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 VCCINT                       : L10       : power  :                   : 1.2V    :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -588,22 +588,22 @@ GND                          : L17       : gnd    :                   :         
 VCCINT                       : L18       : power  :                   : 1.2V    :           :                
 GND                          : L19       : gnd    :                   :         :           :                
 VCCINT                       : L20       : power  :                   : 1.2V    :           :                
-fio11[19]                    : L21       : output : 2.5 V             :         : 6         : N              
-fio10[51]                    : L22       : output : 2.5 V             :         : 6         : N              
-fio9[66]                     : L23       : output : 2.5 V             :         : 6         : N              
-fio10[7]                     : L24       : output : 2.5 V             :         : 6         : N              
-fio10[44]                    : L25       : output : 2.5 V             :         : 6         : N              
-fio9[57]                     : L26       : output : 2.5 V             :         : 6         : N              
-fio9[76]                     : L27       : output : 2.5 V             :         : 6         : N              
-fio9[82]                     : L28       : output : 2.5 V             :         : 6         : N              
-fio8[48]                     : M1        : output : 2.5 V             :         : 1         : N              
-fio8[38]                     : M2        : output : 2.5 V             :         : 1         : N              
-fio11[70]                    : M3        : output : 2.5 V             :         : 1         : N              
-fio7[0]                      : M4        : output : 2.5 V             :         : 1         : N              
-fio9[109]                    : M5        : output : 2.5 V             :         : 1         : N              
+fio11[4]                     : L21       : output : 2.5 V             :         : 6         : N              
+fio10[104]                   : L22       : output : 2.5 V             :         : 6         : N              
+fio9[24]                     : L23       : output : 2.5 V             :         : 6         : N              
+fio10[106]                   : L24       : output : 2.5 V             :         : 6         : N              
+fio8[9]                      : L25       : output : 2.5 V             :         : 6         : N              
+fio10[39]                    : L26       : output : 2.5 V             :         : 6         : N              
+fio3[3]                      : L27       : output : 2.5 V             :         : 6         : N              
+fio2[18]                     : L28       : output : 2.5 V             :         : 6         : N              
+fio9[132]                    : M1        : output : 2.5 V             :         : 1         : N              
+fio9[126]                    : M2        : output : 2.5 V             :         : 1         : N              
+fio8[61]                     : M3        : output : 2.5 V             :         : 1         : N              
+fio9[111]                    : M4        : output : 2.5 V             :         : 1         : N              
+fio10[72]                    : M5        : output : 2.5 V             :         : 1         : N              
 nSTATUS                      : M6        :        :                   :         : 1         :                
-fio10[77]                    : M7        : output : 2.5 V             :         : 1         : N              
-fio10[81]                    : M8        : output : 2.5 V             :         : 1         : N              
+fio10[89]                    : M7        : output : 2.5 V             :         : 1         : N              
+fio10[97]                    : M8        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
 GND                          : M10       : gnd    :                   :         :           :                
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
@@ -616,22 +616,22 @@ VCCINT                       : M17       : power  :                   : 1.2V    
 GND                          : M18       : gnd    :                   :         :           :                
 VCCINT                       : M19       : power  :                   : 1.2V    :           :                
 GND                          : M20       : gnd    :                   :         :           :                
-fio3[24]                     : M21       : output : 2.5 V             :         : 6         : N              
+fio11[50]                    : M21       : output : 2.5 V             :         : 6         : N              
 MSEL2                        : M22       :        :                   :         : 6         :                
-fio3[9]                      : M23       : output : 2.5 V             :         : 6         : N              
-fio2[12]                     : M24       : output : 2.5 V             :         : 6         : N              
-fio3[25]                     : M25       : output : 2.5 V             :         : 6         : N              
-fio9[72]                     : M26       : output : 2.5 V             :         : 6         : N              
-fio9[67]                     : M27       : output : 2.5 V             :         : 6         : N              
-fio9[53]                     : M28       : output : 2.5 V             :         : 6         : N              
+fio9[84]                     : M23       : output : 2.5 V             :         : 6         : N              
+fio9[60]                     : M24       : output : 2.5 V             :         : 6         : N              
+fio3[18]                     : M25       : output : 2.5 V             :         : 6         : N              
+fio10[44]                    : M26       : output : 2.5 V             :         : 6         : N              
+fio10[69]                    : M27       : output : 2.5 V             :         : 6         : N              
+fio1[25]                     : M28       : output : 2.5 V             :         : 6         : N              
 VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
 GND                          : N2        : gnd    :                   :         :           :                
-fio9[116]                    : N3        : output : 2.5 V             :         : 1         : N              
-fio9[122]                    : N4        : output : 2.5 V             :         : 1         : N              
+fio10[92]                    : N3        : output : 2.5 V             :         : 1         : N              
+fio10[87]                    : N4        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
 GND                          : N6        : gnd    :                   :         :           :                
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
-fio10[78]                    : N8        : output : 2.5 V             :         : 1         : N              
+fio10[96]                    : N8        : output : 2.5 V             :         : 1         : N              
 GND                          : N9        : gnd    :                   :         :           :                
 VCCINT                       : N10       : power  :                   : 1.2V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
@@ -644,16 +644,16 @@ GND                          : N17       : gnd    :                   :         
 VCCINT                       : N18       : power  :                   : 1.2V    :           :                
 GND                          : N19       : gnd    :                   :         :           :                
 VCCINT                       : N20       : power  :                   : 1.2V    :           :                
-fio3[12]                     : N21       : output : 2.5 V             :         : 6         : N              
+fio2[7]                      : N21       : output : 2.5 V             :         : 6         : N              
 MSEL0                        : N22       :        :                   :         : 6         :                
 GND                          : N23       : gnd    :                   :         :           :                
 VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
-fio9[71]                     : N25       : output : 2.5 V             :         : 6         : N              
-fio10[55]                    : N26       : output : 2.5 V             :         : 6         : N              
+fio3[29]                     : N25       : output : 2.5 V             :         : 6         : N              
+fio3[2]                      : N26       : output : 2.5 V             :         : 6         : N              
 GND                          : N27       : gnd    :                   :         :           :                
 VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
-fio9[13]                     : P1        : output : 2.5 V             :         : 1         : N              
-fio10[86]                    : P2        : output : 2.5 V             :         : 1         : N              
+fio10[95]                    : P1        : output : 2.5 V             :         : 1         : N              
+fio9[134]                    : P2        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
 nCONFIG                      : P4        :        :                   :         : 1         :                
 TCK                          : P5        : input  :                   :         : 1         :                
@@ -672,21 +672,21 @@ VCCINT                       : P17       : power  :                   : 1.2V    
 GND                          : P18       : gnd    :                   :         :           :                
 VCCINT                       : P19       : power  :                   : 1.2V    :           :                
 GND                          : P20       : gnd    :                   :         :           :                
-fio10[47]                    : P21       : output : 2.5 V             :         : 5         : N              
+fio10[66]                    : P21       : output : 2.5 V             :         : 5         : N              
 MSEL3                        : P22       :        :                   :         : 6         :                
 MSEL1                        : P23       :        :                   :         : 6         :                
 CONF_DONE                    : P24       :        :                   :         : 6         :                
-fio10[39]                    : P25       : output : 2.5 V             :         : 6         : N              
-fio3[29]                     : P26       : output : 2.5 V             :         : 6         : N              
-fio10[62]                    : P27       : output : 2.5 V             :         : 6         : N              
+fio10[65]                    : P25       : output : 2.5 V             :         : 6         : N              
+fio1[31]                     : P26       : output : 2.5 V             :         : 6         : N              
+fio11[31]                    : P27       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
-fio10[84]                    : R1        : output : 2.5 V             :         : 2         : N              
+fio10[93]                    : R1        : output : 2.5 V             :         : 2         : N              
 fio10[94]                    : R2        : output : 2.5 V             :         : 2         : N              
-fio10[76]                    : R3        : output : 2.5 V             :         : 2         : N              
-fio9[10]                     : R4        : output : 2.5 V             :         : 2         : N              
-fio10[85]                    : R5        : output : 2.5 V             :         : 2         : N              
-fio9[110]                    : R6        : output : 2.5 V             :         : 2         : N              
-fio10[101]                   : R7        : output : 2.5 V             :         : 2         : N              
+fio9[125]                    : R3        : output : 2.5 V             :         : 2         : N              
+fio8[27]                     : R4        : output : 2.5 V             :         : 2         : N              
+fio8[49]                     : R5        : output : 2.5 V             :         : 2         : N              
+fio10[88]                    : R6        : output : 2.5 V             :         : 2         : N              
+fio10[91]                    : R7        : output : 2.5 V             :         : 2         : N              
 nCE                          : R8        :        :                   :         : 1         :                
 GND                          : R9        : gnd    :                   :         :           :                
 VCCINT                       : R10       : power  :                   : 1.2V    :           :                
@@ -700,22 +700,22 @@ GND                          : R17       : gnd    :                   :         
 VCCINT                       : R18       : power  :                   : 1.2V    :           :                
 GND                          : R19       : gnd    :                   :         :           :                
 VCCINT                       : R20       : power  :                   : 1.2V    :           :                
-fio9[50]                     : R21       : output : 2.5 V             :         : 5         : N              
-fio9[52]                     : R22       : output : 2.5 V             :         : 5         : N              
-fio9[64]                     : R23       : output : 2.5 V             :         : 5         : N              
-fio3[11]                     : R24       : output : 2.5 V             :         : 5         : N              
-fio10[42]                    : R25       : output : 2.5 V             :         : 5         : N              
-fio10[13]                    : R26       : output : 2.5 V             :         : 5         : N              
-fio10[58]                    : R27       : output : 2.5 V             :         : 5         : N              
-fio3[23]                     : R28       : output : 2.5 V             :         : 5         : N              
+fio10[64]                    : R21       : output : 2.5 V             :         : 5         : N              
+fio2[10]                     : R22       : output : 2.5 V             :         : 5         : N              
+fio10[23]                    : R23       : output : 2.5 V             :         : 5         : N              
+fio11[22]                    : R24       : output : 2.5 V             :         : 5         : N              
+fio1[8]                      : R25       : output : 2.5 V             :         : 5         : N              
+fio2[0]                      : R26       : output : 2.5 V             :         : 5         : N              
+fio3[27]                     : R27       : output : 2.5 V             :         : 5         : N              
+fio1[26]                     : R28       : output : 2.5 V             :         : 5         : N              
 VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
 GND                          : T2        : gnd    :                   :         :           :                
-fio9[119]                    : T3        : output : 2.5 V             :         : 2         : N              
-fio10[74]                    : T4        : output : 2.5 V             :         : 2         : N              
+fio6[1]                      : T3        : output : 2.5 V             :         : 2         : N              
+fio9[124]                    : T4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
 GND                          : T6        : gnd    :                   :         :           :                
-fio10[97]                    : T7        : output : 2.5 V             :         : 2         : N              
-fio8[62]                     : T8        : output : 2.5 V             :         : 2         : N              
+fio12[2]                     : T7        : output : 2.5 V             :         : 2         : N              
+fio4[1]                      : T8        : output : 2.5 V             :         : 2         : N              
 VCCINT                       : T9        : power  :                   : 1.2V    :           :                
 GND                          : T10       : gnd    :                   :         :           :                
 VCCINT                       : T11       : power  :                   : 1.2V    :           :                
@@ -728,22 +728,22 @@ VCCINT                       : T17       : power  :                   : 1.2V    
 GND                          : T18       : gnd    :                   :         :           :                
 VCCINT                       : T19       : power  :                   : 1.2V    :           :                
 GND                          : T20       : gnd    :                   :         :           :                
-fio3[8]                      : T21       : output : 2.5 V             :         : 5         : N              
-fio9[55]                     : T22       : output : 2.5 V             :         : 5         : N              
+fio10[7]                     : T21       : output : 2.5 V             :         : 5         : N              
+fio2[6]                      : T22       : output : 2.5 V             :         : 5         : N              
 GND                          : T23       : gnd    :                   :         :           :                
 VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
-fio10[50]                    : T25       : output : 2.5 V             :         : 5         : N              
-fio9[69]                     : T26       : output : 2.5 V             :         : 5         : N              
+fio10[53]                    : T25       : output : 2.5 V             :         : 5         : N              
+fio1[6]                      : T26       : output : 2.5 V             :         : 5         : N              
 GND                          : T27       : gnd    :                   :         :           :                
 VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
-fio10[79]                    : U1        : output : 2.5 V             :         : 2         : N              
-fio9[114]                    : U2        : output : 2.5 V             :         : 2         : N              
-fio9[121]                    : U3        : output : 2.5 V             :         : 2         : N              
-fio9[118]                    : U4        : output : 2.5 V             :         : 2         : N              
-fio9[123]                    : U5        : output : 2.5 V             :         : 2         : N              
-fio9[108]                    : U6        : output : 2.5 V             :         : 2         : N              
-fio9[125]                    : U7        : output : 2.5 V             :         : 2         : N              
-fio9[132]                    : U8        : output : 2.5 V             :         : 2         : N              
+fio9[127]                    : U1        : output : 2.5 V             :         : 2         : N              
+fio8[1]                      : U2        : output : 2.5 V             :         : 2         : N              
+fio9[133]                    : U3        : output : 2.5 V             :         : 2         : N              
+fio10[79]                    : U4        : output : 2.5 V             :         : 2         : N              
+fio10[0]                     : U5        : output : 2.5 V             :         : 2         : N              
+fio9[10]                     : U6        : output : 2.5 V             :         : 2         : N              
+fio2[24]                     : U7        : output : 2.5 V             :         : 2         : N              
+fio1[30]                     : U8        : output : 2.5 V             :         : 2         : N              
 GND                          : U9        : gnd    :                   :         :           :                
 VCCINT                       : U10       : power  :                   : 1.2V    :           :                
 GND                          : U11       : gnd    :                   :         :           :                
@@ -756,22 +756,22 @@ GND                          : U17       : gnd    :                   :         
 VCCINT                       : U18       : power  :                   : 1.2V    :           :                
 GND                          : U19       : gnd    :                   :         :           :                
 VCCINT                       : U20       : power  :                   : 1.2V    :           :                
-fio10[14]                    : U21       : output : 2.5 V             :         : 5         : N              
-fio3[28]                     : U22       : output : 2.5 V             :         : 5         : N              
-fio9[58]                     : U23       : output : 2.5 V             :         : 5         : N              
-fio2[11]                     : U24       : output : 2.5 V             :         : 5         : N              
-fio9[80]                     : U25       : output : 2.5 V             :         : 5         : N              
-fio2[9]                      : U26       : output : 2.5 V             :         : 5         : N              
-fio10[17]                    : U27       : output : 2.5 V             :         : 5         : N              
-fio10[49]                    : U28       : output : 2.5 V             :         : 5         : N              
-fio10[96]                    : V1        : output : 2.5 V             :         : 2         : N              
-fio10[91]                    : V2        : output : 2.5 V             :         : 2         : N              
-fio10[82]                    : V3        : output : 2.5 V             :         : 2         : N              
-fio10[73]                    : V4        : output : 2.5 V             :         : 2         : N              
-fio8[50]                     : V5        : output : 2.5 V             :         : 2         : N              
-fio8[59]                     : V6        : output : 2.5 V             :         : 2         : N              
-fio8[3]                      : V7        : output : 2.5 V             :         : 2         : N              
-fio8[54]                     : V8        : output : 2.5 V             :         : 2         : N              
+fio9[48]                     : U21       : output : 2.5 V             :         : 5         : N              
+fio11[8]                     : U22       : output : 2.5 V             :         : 5         : N              
+fio11[14]                    : U23       : output : 2.5 V             :         : 5         : N              
+fio11[7]                     : U24       : output : 2.5 V             :         : 5         : N              
+fio10[42]                    : U25       : output : 2.5 V             :         : 5         : N              
+fio2[19]                     : U26       : output : 2.5 V             :         : 5         : N              
+fio9[51]                     : U27       : output : 2.5 V             :         : 5         : N              
+fio3[19]                     : U28       : output : 2.5 V             :         : 5         : N              
+fio9[11]                     : V1        : output : 2.5 V             :         : 2         : N              
+fio12[1]                     : V2        : output : 2.5 V             :         : 2         : N              
+fio12[5]                     : V3        : output : 2.5 V             :         : 2         : N              
+fio8[3]                      : V4        : output : 2.5 V             :         : 2         : N              
+fio2[9]                      : V5        : output : 2.5 V             :         : 2         : N              
+fio3[9]                      : V6        : output : 2.5 V             :         : 2         : N              
+fio10[35]                    : V7        : output : 2.5 V             :         : 2         : N              
+fio11[23]                    : V8        : output : 2.5 V             :         : 2         : N              
 VCCINT                       : V9        : power  :                   : 1.2V    :           :                
 GND                          : V10       : gnd    :                   :         :           :                
 VCCINT                       : V11       : power  :                   : 1.2V    :           :                
@@ -784,22 +784,22 @@ VCCINT                       : V17       : power  :                   : 1.2V    
 GND                          : V18       : gnd    :                   :         :           :                
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
 GND                          : V20       : gnd    :                   :         :           :                
-fio9[68]                     : V21       : output : 2.5 V             :         : 5         : N              
-fio9[102]                    : V22       : output : 2.5 V             :         : 5         : N              
-fio9[51]                     : V23       : output : 2.5 V             :         : 5         : N              
-fio2[8]                      : V24       : output : 2.5 V             :         : 5         : N              
-fio10[30]                    : V25       : output : 2.5 V             :         : 5         : N              
-fio9[54]                     : V26       : output : 2.5 V             :         : 5         : N              
-fio3[13]                     : V27       : output : 2.5 V             :         : 5         : N              
-fio9[85]                     : V28       : output : 2.5 V             :         : 5         : N              
-fio9[120]                    : W1        : output : 2.5 V             :         : 2         : N              
-fio9[115]                    : W2        : output : 2.5 V             :         : 2         : N              
-fio8[55]                     : W3        : output : 2.5 V             :         : 2         : N              
-fio8[61]                     : W4        : output : 2.5 V             :         : 2         : N              
+fio11[10]                    : V21       : output : 2.5 V             :         : 5         : N              
+fio10[43]                    : V22       : output : 2.5 V             :         : 5         : N              
+fio10[32]                    : V23       : output : 2.5 V             :         : 5         : N              
+fio9[78]                     : V24       : output : 2.5 V             :         : 5         : N              
+fio11[6]                     : V25       : output : 2.5 V             :         : 5         : N              
+fio10[22]                    : V26       : output : 2.5 V             :         : 5         : N              
+fio3[14]                     : V27       : output : 2.5 V             :         : 5         : N              
+fio1[12]                     : V28       : output : 2.5 V             :         : 5         : N              
+fio12[0]                     : W1        : output : 2.5 V             :         : 2         : N              
+fio9[26]                     : W2        : output : 2.5 V             :         : 2         : N              
+fio10[12]                    : W3        : output : 2.5 V             :         : 2         : N              
+fio9[74]                     : W4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
 GND                          : W6        : gnd    :                   :         :           :                
-fio8[51]                     : W7        : output : 2.5 V             :         : 2         : N              
-fio9[129]                    : W8        : output : 2.5 V             :         : 2         : N              
+fio9[64]                     : W7        : output : 2.5 V             :         : 2         : N              
+fio1[22]                     : W8        : output : 2.5 V             :         : 2         : N              
 GND                          : W9        : gnd    :                   :         :           :                
 VCCINT                       : W10       : power  :                   : 1.2V    :           :                
 GND                          : W11       : gnd    :                   :         :           :                
@@ -812,39 +812,39 @@ GND                          : W17       : gnd    :                   :         
 VCCINT                       : W18       : power  :                   : 1.2V    :           :                
 GND                          : W19       : gnd    :                   :         :           :                
 VCCINT                       : W20       : power  :                   : 1.2V    :           :                
-fio11[10]                    : W21       : output : 2.5 V             :         : 5         : N              
-fio10[46]                    : W22       : output : 2.5 V             :         : 5         : N              
+fio3[1]                      : W21       : output : 2.5 V             :         : 5         : N              
+fio10[11]                    : W22       : output : 2.5 V             :         : 5         : N              
 GND                          : W23       : gnd    :                   :         :           :                
 VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
-fio11[25]                    : W25       : output : 2.5 V             :         : 5         : N              
-fio5                         : W26       : output : 2.5 V             :         : 5         : N              
-fio9[61]                     : W27       : output : 2.5 V             :         : 5         : N              
-fio11[18]                    : W28       : output : 2.5 V             :         : 5         : N              
+fio9[90]                     : W25       : output : 2.5 V             :         : 5         : N              
+fio1[15]                     : W26       : output : 2.5 V             :         : 5         : N              
+fio9[76]                     : W27       : output : 2.5 V             :         : 5         : N              
+fio9[79]                     : W28       : output : 2.5 V             :         : 5         : N              
 GND+                         : Y1        :        :                   :         : 2         :                
 GND+                         : Y2        :        :                   :         : 2         :                
-fio10[89]                    : Y3        : output : 2.5 V             :         : 2         : N              
-fio10[92]                    : Y4        : output : 2.5 V             :         : 2         : N              
-fio8[52]                     : Y5        : output : 2.5 V             :         : 2         : N              
-fio8[58]                     : Y6        : output : 2.5 V             :         : 2         : N              
-fio9[131]                    : Y7        : output : 2.5 V             :         : 2         : N              
+fio9[22]                     : Y3        : output : 2.5 V             :         : 2         : N              
+fio9[13]                     : Y4        : output : 2.5 V             :         : 2         : N              
+fio9[103]                    : Y5        : output : 2.5 V             :         : 2         : N              
+fio9[71]                     : Y6        : output : 2.5 V             :         : 2         : N              
+fio9[14]                     : Y7        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
 VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
-fio9[127]                    : Y10       : output : 2.5 V             :         : 3         : N              
+fio2[31]                     : Y10       : output : 2.5 V             :         : 3         : N              
 GND                          : Y11       : gnd    :                   :         :           :                
-fio1[13]                     : Y12       : output : 2.5 V             :         : 3         : N              
-fio9[38]                     : Y13       : output : 2.5 V             :         : 3         : N              
-fio4[2]                      : Y14       : output : 2.5 V             :         : 3         : N              
-fio4[0]                      : Y15       : output : 2.5 V             :         : 3         : N              
-fio9[90]                     : Y16       : output : 2.5 V             :         : 4         : N              
-fio2[31]                     : Y17       : output : 2.5 V             :         : 4         : N              
+fio2[30]                     : Y12       : output : 2.5 V             :         : 3         : N              
+fio9[95]                     : Y13       : output : 2.5 V             :         : 3         : N              
+fio9[102]                    : Y14       : output : 2.5 V             :         : 3         : N              
+fio11[28]                    : Y15       : output : 2.5 V             :         : 3         : N              
+fio3[6]                      : Y16       : output : 2.5 V             :         : 4         : N              
+fio10[41]                    : Y17       : output : 2.5 V             :         : 4         : N              
 GND                          : Y18       : gnd    :                   :         :           :                
-fio3[10]                     : Y19       : output : 2.5 V             :         : 4         : N              
+fio2[23]                     : Y19       : output : 2.5 V             :         : 4         : N              
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
 VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
-fio10[6]                     : Y22       : output : 2.5 V             :         : 5         : N              
-fio3[30]                     : Y23       : output : 2.5 V             :         : 5         : N              
-fio2[20]                     : Y24       : output : 2.5 V             :         : 5         : N              
-fio11[17]                    : Y25       : output : 2.5 V             :         : 5         : N              
-fio10[5]                     : Y26       : output : 2.5 V             :         : 5         : N              
+fio10[14]                    : Y22       : output : 2.5 V             :         : 5         : N              
+fio9[68]                     : Y23       : output : 2.5 V             :         : 5         : N              
+fio3[15]                     : Y24       : output : 2.5 V             :         : 5         : N              
+fio1[16]                     : Y25       : output : 2.5 V             :         : 5         : N              
+fio9[77]                     : Y26       : output : 2.5 V             :         : 5         : N              
 GND+                         : Y27       :        :                   :         : 5         :                
 GND+                         : Y28       :        :                   :         : 5         :                

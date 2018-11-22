@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/22/2018 15:17:23"
+-- Generated on "11/22/2018 17:08:31"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          mips
 -- 
@@ -45,6 +45,7 @@ SIGNAL fio8 : STD_LOGIC_VECTOR(63 DOWNTO 0);
 SIGNAL fio9 : STD_LOGIC_VECTOR(146 DOWNTO 0);
 SIGNAL fio10 : STD_LOGIC_VECTOR(106 DOWNTO 0);
 SIGNAL fio11 : STD_LOGIC_VECTOR(70 DOWNTO 0);
+SIGNAL fio12 : STD_LOGIC_VECTOR(5 DOWNTO 0);
 COMPONENT mips
 	PORT (
 	clk : IN STD_LOGIC;
@@ -58,7 +59,8 @@ COMPONENT mips
 	fio8 : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
 	fio9 : OUT STD_LOGIC_VECTOR(146 DOWNTO 0);
 	fio10 : OUT STD_LOGIC_VECTOR(106 DOWNTO 0);
-	fio11 : OUT STD_LOGIC_VECTOR(70 DOWNTO 0)
+	fio11 : OUT STD_LOGIC_VECTOR(70 DOWNTO 0);
+	fio12 : OUT STD_LOGIC_VECTOR(5 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
@@ -76,7 +78,8 @@ BEGIN
 	fio8 => fio8,
 	fio9 => fio9,
 	fio10 => fio10,
-	fio11 => fio11
+	fio11 => fio11,
+	fio12 => fio12
 	);
 
 -- clk

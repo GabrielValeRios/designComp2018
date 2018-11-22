@@ -17,7 +17,8 @@ entity mips is
 		 fio8 : out std_logic_vector(63 downto 0);
 		 fio9 : out std_logic_vector(146 downto 0);
 		 fio10 : out std_logic_vector(106 downto 0);
-		 fio11 : out std_logic_vector(70 downto 0)
+		 fio11 : out std_logic_vector(70 downto 0);
+		 fio12 : out std_logic_vector(5 downto 0)
 	);
 
 end entity;
@@ -34,6 +35,7 @@ architecture comportamento of mips is
 	signal pipeline2 : std_logic_vector(146 downto 0);
 	signal pipeline3 : std_logic_vector(106 downto 0);
 	signal pipeline4 : std_logic_vector(70 downto 0);
+	signal functOut : std_logic_vector(5 downto 0);
 	signal MIADDR : natural;
   
 begin
@@ -61,7 +63,8 @@ begin
 		pipeline1=>pipeline1,
 		pipeline2=>pipeline2,
 		pipeline3=>pipeline3,
-		pipeline4=>pipeline4
+		pipeline4=>pipeline4,
+		functOut => functOut
 	);
 	
 	fio1 <= dmOUT;
@@ -75,5 +78,6 @@ begin
 	fio9 <= pipeline2;
 	fio10 <= pipeline3;
 	fio11 <= pipeline4;
+	fio12 <= functOut;
 	 
 end architecture;

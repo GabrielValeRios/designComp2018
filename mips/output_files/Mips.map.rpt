@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Mips
-Thu Nov 22 15:14:44 2018
+Thu Nov 22 17:06:59 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -14,39 +14,41 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Registers Added for RAM Pass-Through Logic
- 14. Source assignments for fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_0|altsyncram_n8h1:auto_generated
- 15. Source assignments for fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_1|altsyncram_n8h1:auto_generated
- 16. Parameter Settings for User Entity Instance: fluxoDados:FD|instruction_memory:MI
- 17. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MBR
- 18. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MALU
- 19. Parameter Settings for User Entity Instance: fluxoDados:FD|data_memory:DM
- 20. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MDM
- 21. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MuxBEQ
- 22. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MuxProxPC
- 23. Parameter Settings for User Entity Instance: fluxoDados:FD|genregister:Reg1
- 24. Parameter Settings for User Entity Instance: fluxoDados:FD|genregister:Reg2
- 25. Parameter Settings for User Entity Instance: fluxoDados:FD|genregister:Reg3
- 26. Parameter Settings for User Entity Instance: fluxoDados:FD|genregister:Reg4
- 27. Parameter Settings for Inferred Entity Instance: fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_0
- 28. Parameter Settings for Inferred Entity Instance: fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_1
- 29. altsyncram Parameter Settings by Entity Instance
- 30. Port Connectivity Checks: "fluxoDados:FD|genregister:Reg4"
- 31. Port Connectivity Checks: "fluxoDados:FD|genregister:Reg3"
- 32. Port Connectivity Checks: "fluxoDados:FD|genregister:Reg2"
- 33. Port Connectivity Checks: "fluxoDados:FD|genregister:Reg1"
- 34. Port Connectivity Checks: "fluxoDados:FD|mux2way:MuxProxPC"
- 35. Port Connectivity Checks: "fluxoDados:FD|somador_simples:BEQAdder"
- 36. Port Connectivity Checks: "fluxoDados:FD|somador_simples:PCAdder"
- 37. Port Connectivity Checks: "fluxoDados:FD|fluxoDadosALU:ALU|muxALU:MuxAlu"
- 38. Port Connectivity Checks: "fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32"
- 39. Post-Synthesis Netlist Statistics for Top Partition
- 40. Elapsed Time Per Partition
- 41. Analysis & Synthesis Messages
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Registers Added for RAM Pass-Through Logic
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Source assignments for fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_0|altsyncram_n8h1:auto_generated
+ 17. Source assignments for fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_1|altsyncram_n8h1:auto_generated
+ 18. Parameter Settings for User Entity Instance: fluxoDados:FD|instruction_memory:MI
+ 19. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MBR
+ 20. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MALU
+ 21. Parameter Settings for User Entity Instance: fluxoDados:FD|data_memory:DM
+ 22. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MDM
+ 23. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MuxBEQ
+ 24. Parameter Settings for User Entity Instance: fluxoDados:FD|mux2way:MuxProxPC
+ 25. Parameter Settings for User Entity Instance: fluxoDados:FD|genregister:Reg1
+ 26. Parameter Settings for User Entity Instance: fluxoDados:FD|genregister:Reg2
+ 27. Parameter Settings for User Entity Instance: fluxoDados:FD|genregister:Reg3
+ 28. Parameter Settings for User Entity Instance: fluxoDados:FD|genregister:Reg4
+ 29. Parameter Settings for Inferred Entity Instance: fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_0
+ 30. Parameter Settings for Inferred Entity Instance: fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_1
+ 31. altsyncram Parameter Settings by Entity Instance
+ 32. Port Connectivity Checks: "fluxoDados:FD|genregister:Reg4"
+ 33. Port Connectivity Checks: "fluxoDados:FD|genregister:Reg3"
+ 34. Port Connectivity Checks: "fluxoDados:FD|genregister:Reg2"
+ 35. Port Connectivity Checks: "fluxoDados:FD|genregister:Reg1"
+ 36. Port Connectivity Checks: "fluxoDados:FD|mux2way:MuxProxPC"
+ 37. Port Connectivity Checks: "fluxoDados:FD|somador_simples:BEQAdder"
+ 38. Port Connectivity Checks: "fluxoDados:FD|somador_simples:PCAdder"
+ 39. Port Connectivity Checks: "fluxoDados:FD|fluxoDadosALU:ALU|muxALU:MuxAlu"
+ 40. Port Connectivity Checks: "fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32"
+ 41. Post-Synthesis Netlist Statistics for Top Partition
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
 
 
 
@@ -72,16 +74,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 22 15:14:44 2018       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 22 17:06:59 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Mips                                        ;
 ; Top-level Entity Name              ; mips                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 417                                         ;
-;     Total combinational functions  ; 240                                         ;
-;     Dedicated logic registers      ; 368                                         ;
-; Total registers                    ; 368                                         ;
-; Total pins                         ; 498                                         ;
+; Total logic elements               ; 519                                         ;
+;     Total combinational functions  ; 310                                         ;
+;     Dedicated logic registers      ; 431                                         ;
+; Total registers                    ; 431                                         ;
+; Total pins                         ; 504                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 256                                         ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -234,31 +236,31 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 417       ;
+; Estimated Total logic elements              ; 519       ;
 ;                                             ;           ;
-; Total combinational functions               ; 240       ;
+; Total combinational functions               ; 310       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 42        ;
-;     -- 3 input functions                    ; 96        ;
-;     -- <=2 input functions                  ; 102       ;
+;     -- 4 input functions                    ; 174       ;
+;     -- 3 input functions                    ; 26        ;
+;     -- <=2 input functions                  ; 110       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 182       ;
+;     -- normal mode                          ; 252       ;
 ;     -- arithmetic mode                      ; 58        ;
 ;                                             ;           ;
-; Total registers                             ; 368       ;
-;     -- Dedicated logic registers            ; 368       ;
+; Total registers                             ; 431       ;
+;     -- Dedicated logic registers            ; 431       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 498       ;
+; I/O pins                                    ; 504       ;
 ; Total memory bits                           ; 256       ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 432       ;
-; Total fan-out                               ; 2554      ;
-; Average fan-out                             ; 1.53      ;
+; Maximum fan-out                             ; 495       ;
+; Total fan-out                               ; 3130      ;
+; Average fan-out                             ; 1.73      ;
 +---------------------------------------------+-----------+
 
 
@@ -267,57 +269,58 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                           ; Entity Name        ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+--------------------+--------------+
-; |mips                                        ; 240 (1)             ; 368 (0)                   ; 256         ; 0            ; 0       ; 0         ; 498  ; 0            ; |mips                                                                                         ; mips               ; work         ;
-;    |fluxoDados:FD|                           ; 239 (0)             ; 368 (0)                   ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD                                                                           ; fluxoDados         ; work         ;
-;       |bankregister:BR|                      ; 66 (66)             ; 72 (72)                   ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|bankregister:BR                                                           ; bankregister       ; work         ;
+; |mips                                        ; 310 (1)             ; 431 (0)                   ; 256         ; 0            ; 0       ; 0         ; 504  ; 0            ; |mips                                                                                         ; mips               ; work         ;
+;    |fluxoDados:FD|                           ; 309 (0)             ; 431 (0)                   ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD                                                                           ; fluxoDados         ; work         ;
+;       |bankregister:BR|                      ; 66 (66)             ; 136 (136)                 ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|bankregister:BR                                                           ; bankregister       ; work         ;
 ;          |altsyncram:registers_rtl_0|        ; 0 (0)               ; 0 (0)                     ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_0                                ; altsyncram         ; work         ;
 ;             |altsyncram_n8h1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_0|altsyncram_n8h1:auto_generated ; altsyncram_n8h1    ; work         ;
 ;          |altsyncram:registers_rtl_1|        ; 0 (0)               ; 0 (0)                     ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_1                                ; altsyncram         ; work         ;
 ;             |altsyncram_n8h1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_1|altsyncram_n8h1:auto_generated ; altsyncram_n8h1    ; work         ;
-;       |fluxoDadosALU:ALU|                    ; 79 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU                                                         ; fluxoDadosALU      ; work         ;
-;          |fullAdder32:Fulladder32|           ; 78 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32                                 ; fullAdder32        ; work         ;
+;       |fluxoDadosALU:ALU|                    ; 104 (1)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU                                                         ; fluxoDadosALU      ; work         ;
+;          |fullAdder32:Fulladder32|           ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32                                 ; fullAdder32        ; work         ;
 ;             |fullAdder:fulladder0|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder0            ; fullAdder          ; work         ;
-;             |fullAdder:fulladder10|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder10           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder10|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder10           ; fullAdder          ; work         ;
 ;             |fullAdder:fulladder11|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder11           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder12|          ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder12           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder12|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder12           ; fullAdder          ; work         ;
 ;             |fullAdder:fulladder13|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder13           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder14|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder14           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder14|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder14           ; fullAdder          ; work         ;
 ;             |fullAdder:fulladder15|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder15           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder16|          ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder16           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder17|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder17           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder16|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder16           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder17|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder17           ; fullAdder          ; work         ;
 ;             |fullAdder:fulladder18|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder18           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder19|          ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder19           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder1|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder1            ; fullAdder          ; work         ;
-;             |fullAdder:fulladder20|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder20           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder19|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder19           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder1            ; fullAdder          ; work         ;
+;             |fullAdder:fulladder20|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder20           ; fullAdder          ; work         ;
 ;             |fullAdder:fulladder21|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder21           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder22|          ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder22           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder23|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder23           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder22|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder22           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder23|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder23           ; fullAdder          ; work         ;
 ;             |fullAdder:fulladder24|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder24           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder25|          ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder25           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder26|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder26           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder25|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder25           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder26|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder26           ; fullAdder          ; work         ;
 ;             |fullAdder:fulladder27|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder27           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder28|          ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder28           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder29|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder29           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder2|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder2            ; fullAdder          ; work         ;
-;             |fullAdder:fulladder30|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder30           ; fullAdder          ; work         ;
-;             |fullAdder:fulladder31|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder31           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder28|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder28           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder29|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder29           ; fullAdder          ; work         ;
+;             |fullAdder:fulladder2|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder2            ; fullAdder          ; work         ;
+;             |fullAdder:fulladder30|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder30           ; fullAdder          ; work         ;
 ;             |fullAdder:fulladder3|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder3            ; fullAdder          ; work         ;
-;             |fullAdder:fulladder4|           ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder4            ; fullAdder          ; work         ;
-;             |fullAdder:fulladder5|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder5            ; fullAdder          ; work         ;
-;             |fullAdder:fulladder6|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder6            ; fullAdder          ; work         ;
-;             |fullAdder:fulladder7|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder7            ; fullAdder          ; work         ;
+;             |fullAdder:fulladder4|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder4            ; fullAdder          ; work         ;
+;             |fullAdder:fulladder5|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder5            ; fullAdder          ; work         ;
+;             |fullAdder:fulladder6|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder6            ; fullAdder          ; work         ;
+;             |fullAdder:fulladder7|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder7            ; fullAdder          ; work         ;
 ;             |fullAdder:fulladder8|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder8            ; fullAdder          ; work         ;
-;             |fullAdder:fulladder9|           ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder9            ; fullAdder          ; work         ;
-;          |muxALU:MuxAlu|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|muxALU:MuxAlu                                           ; muxALU             ; work         ;
+;             |fullAdder:fulladder9|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder9            ; fullAdder          ; work         ;
+;          |muxALU:MuxAlu|                     ; 71 (71)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|muxALU:MuxAlu                                           ; muxALU             ; work         ;
 ;       |genregister:Reg1|                     ; 0 (0)               ; 36 (36)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|genregister:Reg1                                                          ; genregister        ; work         ;
-;       |genregister:Reg2|                     ; 2 (2)               ; 101 (101)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|genregister:Reg2                                                          ; genregister        ; work         ;
+;       |genregister:Reg2|                     ; 1 (1)               ; 100 (100)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|genregister:Reg2                                                          ; genregister        ; work         ;
 ;       |genregister:Reg3|                     ; 30 (30)             ; 98 (98)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|genregister:Reg3                                                          ; genregister        ; work         ;
 ;       |genregister:Reg4|                     ; 0 (0)               ; 35 (35)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|genregister:Reg4                                                          ; genregister        ; work         ;
 ;       |instruction_memory:MI|                ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|instruction_memory:MI                                                     ; instruction_memory ; work         ;
 ;       |mux2way:MBR|                          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|mux2way:MBR                                                               ; mux2way            ; work         ;
+;       |mux2way:MDM|                          ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|mux2way:MDM                                                               ; mux2way            ; work         ;
 ;       |mux2way:MuxProxPC|                    ; 26 (26)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|mux2way:MuxProxPC                                                         ; mux2way            ; work         ;
 ;       |pc:PC|                                ; 0 (0)               ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|pc:PC                                                                     ; pc                 ; work         ;
 ;       |somador_simples:PCAdder|              ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|somador_simples:PCAdder                                                   ; somador_simples    ; work         ;
+;       |unidadeControleALU:UCALU|             ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|fluxoDados:FD|unidadeControleALU:UCALU                                                  ; unidadeControleALU ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -332,102 +335,112 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+-------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                  ;
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+
-; Register name                                                                                                                                              ; Reason for Removal                                     ;
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+
-; fluxoDados:FD|genregister:Reg2|output[26..41]                                                                                                              ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|genregister:Reg2|output[4]                                                                                                                   ; Merged with fluxoDados:FD|genregister:Reg2|output[25]  ;
-; fluxoDados:FD|genregister:Reg2|output[3]                                                                                                                   ; Merged with fluxoDados:FD|genregister:Reg2|output[24]  ;
-; fluxoDados:FD|genregister:Reg2|output[2]                                                                                                                   ; Merged with fluxoDados:FD|genregister:Reg2|output[23]  ;
-; fluxoDados:FD|genregister:Reg2|output[1]                                                                                                                   ; Merged with fluxoDados:FD|genregister:Reg2|output[22]  ;
-; fluxoDados:FD|genregister:Reg2|output[0]                                                                                                                   ; Merged with fluxoDados:FD|genregister:Reg2|output[21]  ;
-; fluxoDados:FD|genregister:Reg2|output[5,7..9,15..20,23..25]                                                                                                ; Merged with fluxoDados:FD|genregister:Reg2|output[14]  ;
-; fluxoDados:FD|genregister:Reg2|output[6,22]                                                                                                                ; Merged with fluxoDados:FD|genregister:Reg2|output[21]  ;
-; fluxoDados:FD|genregister:Reg4|output[3,4]                                                                                                                 ; Merged with fluxoDados:FD|genregister:Reg4|output[2]   ;
-; fluxoDados:FD|genregister:Reg1|output[4..9,13..16,18..20,22..26,28..31]                                                                                    ; Merged with fluxoDados:FD|genregister:Reg1|output[10]  ;
-; fluxoDados:FD|genregister:Reg1|output[12,17,21]                                                                                                            ; Merged with fluxoDados:FD|genregister:Reg1|output[11]  ;
-; fluxoDados:FD|genregister:Reg1|output[33]                                                                                                                  ; Merged with fluxoDados:FD|genregister:Reg1|output[32]  ;
-; fluxoDados:FD|genregister:Reg2|output[107]                                                                                                                 ; Merged with fluxoDados:FD|genregister:Reg2|output[106] ;
-; fluxoDados:FD|genregister:Reg3|output[3,4]                                                                                                                 ; Merged with fluxoDados:FD|genregister:Reg3|output[2]   ;
-; fluxoDados:FD|genregister:Reg3|output[71]                                                                                                                  ; Merged with fluxoDados:FD|genregister:Reg3|output[70]  ;
-; fluxoDados:FD|pc:PC|q[1]                                                                                                                                   ; Merged with fluxoDados:FD|pc:PC|q[0]                   ;
-; fluxoDados:FD|genregister:Reg2|output[138,140..143]                                                                                                        ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|genregister:Reg3|output[102,104..106]                                                                                                        ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|genregister:Reg2|output[144]                                                                                                                 ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|genregister:Reg4|output[37..69]                                                                                                              ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|genregister:Reg1|output[10]                                                                                                                  ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|genregister:Reg2|output[14]                                                                                                                  ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|genregister:Reg3|output[2]                                                                                                                   ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|genregister:Reg4|output[2]                                                                                                                   ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|pc:PC|q[0]                                                                                                                                   ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|genregister:Reg1|output[32]                                                                                                                  ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|genregister:Reg2|output[106]                                                                                                                 ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|genregister:Reg3|output[70]                                                                                                                  ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|pc:PC|q[31]                                                                                                                                  ; Merged with fluxoDados:FD|genregister:Reg1|output[63]  ;
-; fluxoDados:FD|pc:PC|q[30]                                                                                                                                  ; Merged with fluxoDados:FD|genregister:Reg1|output[62]  ;
-; fluxoDados:FD|pc:PC|q[29]                                                                                                                                  ; Merged with fluxoDados:FD|genregister:Reg1|output[61]  ;
-; fluxoDados:FD|pc:PC|q[28]                                                                                                                                  ; Merged with fluxoDados:FD|genregister:Reg1|output[60]  ;
-; fluxoDados:FD|bankregister:BR|registers_rtl_0_bypass[4..11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69,71,73]   ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|bankregister:BR|registers_rtl_1_bypass[2,5..11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69,71,73] ; Stuck at GND due to stuck port data_in                 ;
-; fluxoDados:FD|genregister:Reg2|output[146]                                                                                                                 ; Merged with fluxoDados:FD|genregister:Reg2|output[139] ;
-; Total Number of Removed Registers = 203                                                                                                                    ;                                                        ;
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; fluxoDados:FD|unidadeControleALU:UCALU|instr[1]    ; GND                 ; yes                    ;
+; fluxoDados:FD|unidadeControleALU:UCALU|instr[2]    ; GND                 ; yes                    ;
+; fluxoDados:FD|unidadeControleALU:UCALU|instr[0]    ; GND                 ; yes                    ;
+; Number of user-specified and inferred latches = 3  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                    ;
-+--------------------------------------------+---------------------------+-----------------------------------------------------------------------+
-; Register name                              ; Reason for Removal        ; Registers Removed due to This Register                                ;
-+--------------------------------------------+---------------------------+-----------------------------------------------------------------------+
-; fluxoDados:FD|genregister:Reg2|output[141] ; Stuck at GND              ; fluxoDados:FD|genregister:Reg3|output[105],                           ;
-;                                            ; due to stuck port data_in ; fluxoDados:FD|genregister:Reg4|output[68],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[67],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[66],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[65],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[64],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[63],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[62],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[61],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[60],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[59],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[58],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[57],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[56],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[55],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[54],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[53],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[52],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[50],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[49],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[48],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[47],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[46],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[45],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[44],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[43],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[42],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[41],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[40],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[39],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[38],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[37]                             ;
-; fluxoDados:FD|genregister:Reg2|output[142] ; Stuck at GND              ; fluxoDados:FD|genregister:Reg3|output[106], fluxoDados:FD|pc:PC|q[0], ;
-;                                            ; due to stuck port data_in ; fluxoDados:FD|genregister:Reg1|output[32],                            ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg2|output[106],                           ;
-;                                            ;                           ; fluxoDados:FD|genregister:Reg3|output[70]                             ;
-; fluxoDados:FD|genregister:Reg2|output[138] ; Stuck at GND              ; fluxoDados:FD|genregister:Reg3|output[102],                           ;
-;                                            ; due to stuck port data_in ; fluxoDados:FD|genregister:Reg4|output[69]                             ;
-; fluxoDados:FD|genregister:Reg1|output[10]  ; Stuck at GND              ; fluxoDados:FD|genregister:Reg2|output[14],                            ;
-;                                            ; due to stuck port data_in ; fluxoDados:FD|genregister:Reg3|output[2]                              ;
-; fluxoDados:FD|genregister:Reg2|output[41]  ; Stuck at GND              ; fluxoDados:FD|genregister:Reg4|output[51]                             ;
-;                                            ; due to stuck port data_in ;                                                                       ;
-; fluxoDados:FD|genregister:Reg2|output[26]  ; Stuck at GND              ; fluxoDados:FD|genregister:Reg4|output[2]                              ;
-;                                            ; due to stuck port data_in ;                                                                       ;
-; fluxoDados:FD|genregister:Reg2|output[140] ; Stuck at GND              ; fluxoDados:FD|genregister:Reg3|output[104]                            ;
-;                                            ; due to stuck port data_in ;                                                                       ;
-+--------------------------------------------+---------------------------+-----------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                 ;
++---------------------------------------------------------------------------+--------------------------------------------------------+
+; Register name                                                             ; Reason for Removal                                     ;
++---------------------------------------------------------------------------+--------------------------------------------------------+
+; fluxoDados:FD|genregister:Reg2|output[26..41]                             ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|genregister:Reg2|output[4]                                  ; Merged with fluxoDados:FD|genregister:Reg2|output[25]  ;
+; fluxoDados:FD|genregister:Reg2|output[3]                                  ; Merged with fluxoDados:FD|genregister:Reg2|output[24]  ;
+; fluxoDados:FD|genregister:Reg2|output[2]                                  ; Merged with fluxoDados:FD|genregister:Reg2|output[23]  ;
+; fluxoDados:FD|genregister:Reg2|output[1]                                  ; Merged with fluxoDados:FD|genregister:Reg2|output[22]  ;
+; fluxoDados:FD|genregister:Reg2|output[0]                                  ; Merged with fluxoDados:FD|genregister:Reg2|output[21]  ;
+; fluxoDados:FD|genregister:Reg2|output[5,7..9,16..20,23..25]               ; Merged with fluxoDados:FD|genregister:Reg2|output[14]  ;
+; fluxoDados:FD|genregister:Reg2|output[6,21,22]                            ; Merged with fluxoDados:FD|genregister:Reg2|output[15]  ;
+; fluxoDados:FD|genregister:Reg4|output[3,4]                                ; Merged with fluxoDados:FD|genregister:Reg4|output[2]   ;
+; fluxoDados:FD|genregister:Reg1|output[4,6..9,13..16,18..20,22..26,28..31] ; Merged with fluxoDados:FD|genregister:Reg1|output[10]  ;
+; fluxoDados:FD|genregister:Reg1|output[5,12,17,21]                         ; Merged with fluxoDados:FD|genregister:Reg1|output[11]  ;
+; fluxoDados:FD|genregister:Reg1|output[33]                                 ; Merged with fluxoDados:FD|genregister:Reg1|output[32]  ;
+; fluxoDados:FD|genregister:Reg2|output[107]                                ; Merged with fluxoDados:FD|genregister:Reg2|output[106] ;
+; fluxoDados:FD|genregister:Reg3|output[3,4]                                ; Merged with fluxoDados:FD|genregister:Reg3|output[2]   ;
+; fluxoDados:FD|genregister:Reg3|output[71]                                 ; Merged with fluxoDados:FD|genregister:Reg3|output[70]  ;
+; fluxoDados:FD|pc:PC|q[1]                                                  ; Merged with fluxoDados:FD|pc:PC|q[0]                   ;
+; fluxoDados:FD|genregister:Reg2|output[140..143]                           ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|genregister:Reg3|output[104..106]                           ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|genregister:Reg2|output[144]                                ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|genregister:Reg4|output[37..68]                             ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|genregister:Reg1|output[10]                                 ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|genregister:Reg2|output[14]                                 ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|genregister:Reg3|output[2]                                  ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|genregister:Reg4|output[2]                                  ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|pc:PC|q[0]                                                  ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|genregister:Reg1|output[32]                                 ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|genregister:Reg2|output[106]                                ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|genregister:Reg3|output[70]                                 ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|pc:PC|q[31]                                                 ; Merged with fluxoDados:FD|genregister:Reg1|output[63]  ;
+; fluxoDados:FD|pc:PC|q[30]                                                 ; Merged with fluxoDados:FD|genregister:Reg1|output[62]  ;
+; fluxoDados:FD|pc:PC|q[29]                                                 ; Merged with fluxoDados:FD|genregister:Reg1|output[61]  ;
+; fluxoDados:FD|pc:PC|q[28]                                                 ; Merged with fluxoDados:FD|genregister:Reg1|output[60]  ;
+; fluxoDados:FD|bankregister:BR|registers_rtl_0_bypass[4..10]               ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|bankregister:BR|registers_rtl_1_bypass[2,5..10]             ; Stuck at GND due to stuck port data_in                 ;
+; fluxoDados:FD|genregister:Reg2|output[139,145,146]                        ; Merged with fluxoDados:FD|genregister:Reg2|output[138] ;
+; fluxoDados:FD|genregister:Reg3|output[103]                                ; Merged with fluxoDados:FD|genregister:Reg3|output[102] ;
+; fluxoDados:FD|genregister:Reg4|output[70]                                 ; Merged with fluxoDados:FD|genregister:Reg4|output[69]  ;
+; Total Number of Removed Registers = 140                                   ;                                                        ;
++---------------------------------------------------------------------------+--------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                 ;
++--------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
+; Register name                              ; Reason for Removal        ; Registers Removed due to This Register                                             ;
++--------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
+; fluxoDados:FD|genregister:Reg2|output[141] ; Stuck at GND              ; fluxoDados:FD|genregister:Reg3|output[105],                                        ;
+;                                            ; due to stuck port data_in ; fluxoDados:FD|genregister:Reg4|output[68],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[67],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[66],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[65],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[64],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[63],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[62],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[61],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[60],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[59],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[58],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[57],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[56],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[55],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[54],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[53],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[52],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[51],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[50],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[49],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[48],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[47],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[46],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[45],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[44],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[43],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[42],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[41],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[40],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[39],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[38],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg4|output[37]                                          ;
+; fluxoDados:FD|genregister:Reg2|output[142] ; Stuck at GND              ; fluxoDados:FD|genregister:Reg3|output[106], fluxoDados:FD|pc:PC|q[0],              ;
+;                                            ; due to stuck port data_in ; fluxoDados:FD|genregister:Reg1|output[32],                                         ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg2|output[106],                                        ;
+;                                            ;                           ; fluxoDados:FD|genregister:Reg3|output[70]                                          ;
+; fluxoDados:FD|genregister:Reg1|output[10]  ; Stuck at GND              ; fluxoDados:FD|genregister:Reg2|output[14],                                         ;
+;                                            ; due to stuck port data_in ; fluxoDados:FD|genregister:Reg3|output[2], fluxoDados:FD|genregister:Reg4|output[2] ;
+; fluxoDados:FD|genregister:Reg2|output[140] ; Stuck at GND              ; fluxoDados:FD|genregister:Reg3|output[104]                                         ;
+;                                            ; due to stuck port data_in ;                                                                                    ;
++--------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -435,7 +448,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 368   ;
+; Total registers                              ; 431   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -674,6 +687,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; fluxoDados:FD|bankregister:BR|registers_rtl_1_bypass[73] ; fluxoDados:FD|bankregister:BR|registers_rtl_1 ;
 ; fluxoDados:FD|bankregister:BR|registers_rtl_1_bypass[74] ; fluxoDados:FD|bankregister:BR|registers_rtl_1 ;
 +----------------------------------------------------------+-----------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |mips|fluxoDados:FD|fluxoDadosALU:ALU|muxALU:MuxAlu|Mux27 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -1047,23 +1069,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 498                         ;
-; cycloneiii_ff         ; 368                         ;
-;     plain             ; 368                         ;
-; cycloneiii_lcell_comb ; 242                         ;
+; boundary_port         ; 504                         ;
+; cycloneiii_ff         ; 431                         ;
+;     plain             ; 431                         ;
+; cycloneiii_lcell_comb ; 311                         ;
 ;     arith             ; 58                          ;
-;         2 data inputs ; 52                          ;
-;         3 data inputs ; 6                           ;
-;     normal            ; 184                         ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 45                          ;
-;         3 data inputs ; 90                          ;
-;         4 data inputs ; 42                          ;
+;         2 data inputs ; 51                          ;
+;         3 data inputs ; 7                           ;
+;     normal            ; 253                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 55                          ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 174                         ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 22.00                       ;
-; Average LUT depth     ; 3.77                        ;
+; Max LUT depth         ; 33.00                       ;
+; Average LUT depth     ; 5.24                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1072,7 +1094,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1082,7 +1104,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Nov 22 15:14:23 2018
+    Info: Processing started: Thu Nov 22 17:06:37 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mips -c Mips
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1123,7 +1145,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
     Info (12022): Found design unit 1: pc-arch File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/pc.vhd Line: 18
     Info (12023): Found entity 1: pc File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/pc.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fluxodados.vhd
-    Info (12022): Found design unit 1: fluxoDados-behaviour File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 26
+    Info (12022): Found design unit 1: fluxoDados-behaviour File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 27
     Info (12023): Found entity 1: fluxoDados File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file somador_simples.vhd
     Info (12022): Found design unit 1: somador_simples-comportamento File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/somador_simples.vhd Line: 16
@@ -1132,13 +1154,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file unidade
     Info (12022): Found design unit 1: unidadeControle-behaviour File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 14
     Info (12023): Found entity 1: unidadeControle File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mips.vhd
-    Info (12022): Found design unit 1: mips-comportamento File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 25
+    Info (12022): Found design unit 1: mips-comportamento File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 26
     Info (12023): Found entity 1: mips File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file genregister.vhd
     Info (12022): Found design unit 1: genregister-rtl File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/genregister.vhd Line: 23
     Info (12023): Found entity 1: genregister File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/genregister.vhd Line: 7
 Info (12127): Elaborating entity "mips" for the top level hierarchy
-Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 41
+Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 43
 Info (10041): Inferred latch for "cntrlWord[0]" at unidadeControle.vhd(17) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
 Info (10041): Inferred latch for "cntrlWord[1]" at unidadeControle.vhd(17) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
 Info (10041): Inferred latch for "cntrlWord[2]" at unidadeControle.vhd(17) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
@@ -1149,25 +1171,25 @@ Info (10041): Inferred latch for "cntrlWord[6]" at unidadeControle.vhd(17) File:
 Info (10041): Inferred latch for "cntrlWord[7]" at unidadeControle.vhd(17) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
 Info (10041): Inferred latch for "cntrlWord[8]" at unidadeControle.vhd(17) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
 Info (10041): Inferred latch for "cntrlWord[9]" at unidadeControle.vhd(17) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControle.vhd Line: 17
-Info (12128): Elaborating entity "fluxoDados" for hierarchy "fluxoDados:FD" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 42
-Info (12128): Elaborating entity "pc" for hierarchy "fluxoDados:FD|pc:PC" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 54
-Info (12128): Elaborating entity "instruction_memory" for hierarchy "fluxoDados:FD|instruction_memory:MI" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 57
-Info (12128): Elaborating entity "mux2way" for hierarchy "fluxoDados:FD|mux2way:MBR" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 59
-Info (12128): Elaborating entity "bankregister" for hierarchy "fluxoDados:FD|bankregister:BR" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 61
-Info (12128): Elaborating entity "extensor" for hierarchy "fluxoDados:FD|extensor:Ext" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 73
-Info (12128): Elaborating entity "mux2way" for hierarchy "fluxoDados:FD|mux2way:MALU" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 74
-Info (12128): Elaborating entity "unidadeControleALU" for hierarchy "fluxoDados:FD|unidadeControleALU:UCALU" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 76
+Info (12128): Elaborating entity "fluxoDados" for hierarchy "fluxoDados:FD" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 44
+Info (12128): Elaborating entity "pc" for hierarchy "fluxoDados:FD|pc:PC" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 55
+Info (12128): Elaborating entity "instruction_memory" for hierarchy "fluxoDados:FD|instruction_memory:MI" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 58
+Info (12128): Elaborating entity "mux2way" for hierarchy "fluxoDados:FD|mux2way:MBR" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 60
+Info (12128): Elaborating entity "bankregister" for hierarchy "fluxoDados:FD|bankregister:BR" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 62
+Info (12128): Elaborating entity "extensor" for hierarchy "fluxoDados:FD|extensor:Ext" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 74
+Info (12128): Elaborating entity "mux2way" for hierarchy "fluxoDados:FD|mux2way:MALU" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 75
+Info (12128): Elaborating entity "unidadeControleALU" for hierarchy "fluxoDados:FD|unidadeControleALU:UCALU" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 77
 Info (10041): Inferred latch for "instr[0]" at unidadeControleALU.vhd(19) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd Line: 19
 Info (10041): Inferred latch for "instr[1]" at unidadeControleALU.vhd(19) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd Line: 19
 Info (10041): Inferred latch for "instr[2]" at unidadeControleALU.vhd(19) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd Line: 19
 Info (10041): Inferred latch for "instr[3]" at unidadeControleALU.vhd(19) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd Line: 19
-Info (12128): Elaborating entity "fluxoDadosALU" for hierarchy "fluxoDados:FD|fluxoDadosALU:ALU" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 78
+Info (12128): Elaborating entity "fluxoDadosALU" for hierarchy "fluxoDados:FD|fluxoDadosALU:ALU" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 79
 Warning (10036): Verilog HDL or VHDL warning at fluxoDadosALU.vhd(35): object "saida_last_Cout" assigned a value but never read File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDadosALU.vhd Line: 35
 Info (12128): Elaborating entity "muxIverteEntrada" for hierarchy "fluxoDados:FD|fluxoDadosALU:ALU|muxIverteEntrada:MuxGenA" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDadosALU.vhd Line: 40
 Info (12128): Elaborating entity "fullAdder32" for hierarchy "fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDadosALU.vhd Line: 42
 Info (12128): Elaborating entity "fullAdder" for hierarchy "fluxoDados:FD|fluxoDadosALU:ALU|fullAdder32:Fulladder32|fullAdder:fulladder0" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fullAdder32.vhd Line: 25
 Info (12128): Elaborating entity "muxALU" for hierarchy "fluxoDados:FD|fluxoDadosALU:ALU|muxALU:MuxAlu" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDadosALU.vhd Line: 46
-Info (12128): Elaborating entity "data_memory" for hierarchy "fluxoDados:FD|data_memory:DM" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 81
+Info (12128): Elaborating entity "data_memory" for hierarchy "fluxoDados:FD|data_memory:DM" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 82
 Info (10041): Inferred latch for "q[0]" at data_memory.vhd(55) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 55
 Info (10041): Inferred latch for "q[1]" at data_memory.vhd(55) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 55
 Info (10041): Inferred latch for "q[2]" at data_memory.vhd(55) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 55
@@ -1200,12 +1222,11 @@ Info (10041): Inferred latch for "q[28]" at data_memory.vhd(55) File: C:/Users/c
 Info (10041): Inferred latch for "q[29]" at data_memory.vhd(55) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 55
 Info (10041): Inferred latch for "q[30]" at data_memory.vhd(55) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 55
 Info (10041): Inferred latch for "q[31]" at data_memory.vhd(55) File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 55
-Info (12128): Elaborating entity "somador_simples" for hierarchy "fluxoDados:FD|somador_simples:PCAdder" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 85
-Info (12128): Elaborating entity "genregister" for hierarchy "fluxoDados:FD|genregister:Reg1" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 99
-Info (12128): Elaborating entity "genregister" for hierarchy "fluxoDados:FD|genregister:Reg2" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 106
-Info (12128): Elaborating entity "genregister" for hierarchy "fluxoDados:FD|genregister:Reg3" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 113
-Info (12128): Elaborating entity "genregister" for hierarchy "fluxoDados:FD|genregister:Reg4" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 120
-Warning (14025): LATCH primitive "fluxoDados:FD|unidadeControleALU:UCALU|instr[1]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/unidadeControleALU.vhd Line: 19
+Info (12128): Elaborating entity "somador_simples" for hierarchy "fluxoDados:FD|somador_simples:PCAdder" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 86
+Info (12128): Elaborating entity "genregister" for hierarchy "fluxoDados:FD|genregister:Reg1" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 100
+Info (12128): Elaborating entity "genregister" for hierarchy "fluxoDados:FD|genregister:Reg2" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 107
+Info (12128): Elaborating entity "genregister" for hierarchy "fluxoDados:FD|genregister:Reg3" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 114
+Info (12128): Elaborating entity "genregister" for hierarchy "fluxoDados:FD|genregister:Reg4" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/fluxoDados.vhd Line: 121
 Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[1]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 55
 Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[2]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 55
 Warning (14025): LATCH primitive "fluxoDados:FD|data_memory:DM|q[3]" is permanently disabled File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/data_memory.vhd Line: 55
@@ -1310,48 +1331,12 @@ Info (12133): Instantiated megafunction "fluxoDados:FD|bankregister:BR|altsyncra
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "INIT_FILE" = "db/Mips.ram0_bankregister_b26caca.hdl.mif"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "fio1[0]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[1]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[2]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[3]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[4]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[5]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[6]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[7]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[8]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[9]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[10]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[11]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[12]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[13]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[14]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[15]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[16]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[17]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[18]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[19]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[20]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[21]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[22]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[23]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[24]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[25]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[26]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[27]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[28]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[29]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[30]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio1[31]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 12
-    Warning (13410): Pin "fio4[0]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 13
-    Warning (13410): Pin "fio4[1]" is stuck at VCC File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 13
-    Warning (13410): Pin "fio4[2]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 13
     Warning (13410): Pin "fio4[3]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 13
     Warning (13410): Pin "fio6[0]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 15
     Warning (13410): Pin "fio7[2]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 16
     Warning (13410): Pin "fio7[3]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 16
     Warning (13410): Pin "fio7[4]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 16
     Warning (13410): Pin "fio8[4]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 17
-    Warning (13410): Pin "fio8[5]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 17
     Warning (13410): Pin "fio8[6]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 17
     Warning (13410): Pin "fio8[7]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 17
     Warning (13410): Pin "fio8[8]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 17
@@ -1383,7 +1368,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "fio9[8]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
     Warning (13410): Pin "fio9[9]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
     Warning (13410): Pin "fio9[14]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
-    Warning (13410): Pin "fio9[15]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
     Warning (13410): Pin "fio9[16]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
     Warning (13410): Pin "fio9[17]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
     Warning (13410): Pin "fio9[18]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
@@ -1410,7 +1394,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "fio9[41]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
     Warning (13410): Pin "fio9[106]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
     Warning (13410): Pin "fio9[107]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
-    Warning (13410): Pin "fio9[138]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
     Warning (13410): Pin "fio9[140]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
     Warning (13410): Pin "fio9[141]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
     Warning (13410): Pin "fio9[142]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 18
@@ -1421,7 +1404,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "fio10[4]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 19
     Warning (13410): Pin "fio10[70]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 19
     Warning (13410): Pin "fio10[71]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 19
-    Warning (13410): Pin "fio10[102]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 19
     Warning (13410): Pin "fio10[104]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 19
     Warning (13410): Pin "fio10[105]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 19
     Warning (13410): Pin "fio10[106]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 19
@@ -1460,21 +1442,21 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "fio11[66]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 20
     Warning (13410): Pin "fio11[67]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 20
     Warning (13410): Pin "fio11[68]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 20
-    Warning (13410): Pin "fio11[69]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 20
+    Warning (13410): Pin "fio12[4]" is stuck at GND File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/mips.vhd Line: 21
 Info (286030): Timing-Driven Synthesis is running
 Info (17036): Removed 3 MSB VCC or GND address nodes from RAM block "fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_0|altsyncram_n8h1:auto_generated|ALTSYNCRAM" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_n8h1.tdf Line: 37
 Info (17036): Removed 3 MSB VCC or GND address nodes from RAM block "fluxoDados:FD|bankregister:BR|altsyncram:registers_rtl_1|altsyncram_n8h1:auto_generated|ALTSYNCRAM" File: C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/db/altsyncram_n8h1.tdf Line: 37
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1074 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1246 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 497 output pins
-    Info (21061): Implemented 512 logic cells
+    Info (21059): Implemented 503 output pins
+    Info (21061): Implemented 678 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 189 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 149 warnings
     Info: Peak virtual memory: 4839 megabytes
-    Info: Processing ended: Thu Nov 22 15:14:44 2018
-    Info: Elapsed time: 00:00:21
+    Info: Processing ended: Thu Nov 22 17:07:00 2018
+    Info: Elapsed time: 00:00:23
     Info: Total CPU time (on all processors): 00:00:43
 
 

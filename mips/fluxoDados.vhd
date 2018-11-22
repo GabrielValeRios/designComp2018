@@ -13,6 +13,7 @@ entity fluxoDados is
 		DM_out,REG1_OUT,REG2_OUT : out std_logic_vector(31 downto 0);
 		instrCntrl : out std_logic_vector(3 downto 0);
 		addrReg3 : out std_logic_vector(4 downto 0);
+		functOut : out std_logic_vector(5 downto 0);
 		pipeline1 : out std_logic_vector (63 downto 0);
 		pipeline2 : out std_logic_vector (146 downto 0);
 		pipeline3 : out std_logic_vector (106 downto 0);
@@ -73,7 +74,7 @@ begin
 	Ext  : entity work.extensor port map(s16=>FioRegPipe1(15 downto 0),s32=>FioExtendeSinal);
 	MALU : entity work.mux2way port map(SEL=>FioRegPipe2(143),A=>FioRegPipe2(73 downto 42),B=>FioRegPipe2(41 downto 10),X=>FioMuxALU);
 	-- UCALU
-	UCALU : entity work.unidadeControleALU port map(funct=>FioRegPipe2(41 downto 36),ulaOP=>FioRegPipe2(145 downto 144),instr=>FioULACntrl);
+	UCALU : entity work.unidadeControleALU port map(funct=>FioRegPipe2(15 downto 10),ulaOP=>FioRegPipe2(145 downto 144),instr=>FioULACntrl);
 	-- ALU
 	ALU  : entity work.fluxoDadosALU port map(entradaA=>FioRegPipe2(105 downto 74),entradaB=>FioMuxALU,SEL_ULA=>FioULACntrl,resposta=>FioALU,Z=>FioZeroALU);
 	-- dataMemory
@@ -124,7 +125,7 @@ begin
 	output => FioRegPipe4
 	);
 	
-	DM_out <= FioDadoEscritoBR;
+	DM_out <= FioALU;
 	instrCntrl <= FioULACntrl;
 	REG1_OUT <= FioDadoLido1;
 	REG2_OUT <= FioDadoLido2;
@@ -134,5 +135,6 @@ begin
 	pipeline2 <= FioRegPipe2;
 	pipeline3 <= FioRegPipe3;
 	pipeline4 <= FioRegPipe4;
+	functOut <= FioRegPipe2(15 downto 10);
 	
 	end architecture;

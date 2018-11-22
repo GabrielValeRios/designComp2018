@@ -4,6 +4,134 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "fio1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[10]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[11]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[12]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[13]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[14]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[15]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[16]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[17]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[18]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[19]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[20]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[21]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[22]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[23]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[24]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[25]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[26]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[27]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[28]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[29]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[30]",
+					"strict" : false
+				},
+				{
+					"name" : "fio1[31]",
+					"strict" : false
+				},
+				{
 					"name" : "fio2[0]",
 					"strict" : false
 				},
@@ -260,6 +388,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "fio4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "fio4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "fio4[2]",
+					"strict" : false
+				},
+				{
 					"name" : "fio5",
 					"strict" : false
 				},
@@ -289,6 +429,10 @@
 				},
 				{
 					"name" : "fio8[3]",
+					"strict" : false
+				},
+				{
+					"name" : "fio8[5]",
 					"strict" : false
 				},
 				{
@@ -457,6 +601,10 @@
 				},
 				{
 					"name" : "fio9[13]",
+					"strict" : false
+				},
+				{
+					"name" : "fio9[15]",
 					"strict" : false
 				},
 				{
@@ -841,6 +989,10 @@
 				},
 				{
 					"name" : "fio9[137]",
+					"strict" : false
+				},
+				{
+					"name" : "fio9[138]",
 					"strict" : false
 				},
 				{
@@ -1244,6 +1396,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "fio10[102]",
+					"strict" : false
+				},
+				{
 					"name" : "fio10[103]",
 					"strict" : false
 				},
@@ -1384,7 +1540,31 @@
 					"strict" : false
 				},
 				{
+					"name" : "fio11[69]",
+					"strict" : false
+				},
+				{
 					"name" : "fio11[70]",
+					"strict" : false
+				},
+				{
+					"name" : "fio12[0]",
+					"strict" : false
+				},
+				{
+					"name" : "fio12[1]",
+					"strict" : false
+				},
+				{
+					"name" : "fio12[2]",
+					"strict" : false
+				},
+				{
+					"name" : "fio12[3]",
+					"strict" : false
+				},
+				{
+					"name" : "fio12[5]",
 					"strict" : false
 				},
 				{

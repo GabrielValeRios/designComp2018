@@ -14,7 +14,7 @@ end entity;
 architecture behaviour of unidadeControle is
 begin
 
-	cntrlWord   <= "0110000010" when opcode = "000000"  else	  -- tipo R
+	cntrlWord   <= "0110100010" when opcode = "000000"  else	  -- tipo R
 						"0011101000" when opcode = "100011"  else	  -- LW
 						"0001000100" when opcode = "101011"  else   -- SW
 						"0000010001" when opcode = "000100"  else   -- BEQ
