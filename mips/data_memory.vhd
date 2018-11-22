@@ -46,11 +46,11 @@ begin
 			ram(addr) <= data;
 		end if;
 
-		-- Register the address for reading
-		addr_reg <= addr;
 	end if;
 	
 	end process;
+	-- Register the address for reading
+	addr_reg <= addr;
 		
 	q <= ram(addr_reg) when re = '1';
 

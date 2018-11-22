@@ -25,11 +25,17 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Nov 06 15:11:49 2018
+    Info: Processing started: Thu Nov 22 15:17:21 2018
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Mips -c Mips --vector_source=C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/Waveform1.vwf --testbench_file=C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim/Waveform1.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-ch files
+r source file when writing test bench files
+
+rtus Prime EDA Netlist Writer was successful. 0 errors, 508 warnings
+    Info: Peak virtual memory: 4658 megabytes
+    Info: Processing ended: Thu Nov 22 15:17:23 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 Completed successfully. 
 
@@ -53,15 +59,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Nov 06 15:11:51 2018
+    Info: Processing started: Thu Nov 22 15:17:23 2018
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim/ Mips -c Mips
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Mips.vho in folder "C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4663 megabytes
-    Info: Processing ended: Tue Nov 06 15:11:52 2018
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4667 megabytes
+    Info: Processing ended: Thu Nov 22 15:17:25 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 Completed successfully. 
 
@@ -79,14 +85,13 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
+
 # do Mips.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:11:54 on Nov 06,2018
+# Start time: 15:17:26 on Nov 22,2018
 # vcom -work work Mips.vho 
-
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -95,29 +100,30 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package cycloneive_atom_pack
 # -- Loading package cycloneive_components
 # -- Compiling entity hard_block
+
 # -- Compiling architecture structure of hard_block
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
 # -- Compiling entity mips
 # -- Compiling architecture structure of mips
 
-# End time: 15:11:54 on Nov 06,2018, Elapsed time: 0:00:00
+# End time: 15:17:26 on Nov 22,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:11:54 on Nov 06,2018
+# Start time: 15:17:26 on Nov 22,2018
 # vcom -work work Waveform1.vwf.vht 
+
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mips_vhd_vec_tst
 # -- Compiling architecture mips_arch of mips_vhd_vec_tst
 
-# End time: 15:11:54 on Nov 06,2018, Elapsed time: 0:00:00
+# End time: 15:17:26 on Nov 22,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.mips_vhd_vec_tst 
-# Start time: 15:11:54 on Nov 06,2018
+# Start time: 15:17:26 on Nov 22,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -137,11 +143,14 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cycloneive.cycloneive_ena_reg(behave)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
-# ** Warning: Design size of 27030 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Loading cycloneive.cycloneive_ram_block(block_arch)
+# Loading cycloneive.cycloneive_ram_register(reg_arch)
+# Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)
+# ** Warning: Design size of 139693 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#35
 
-# End time: 15:11:55 on Nov 06,2018, Elapsed time: 0:00:01
+# End time: 15:17:27 on Nov 22,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -154,7 +163,7 @@ Reading C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim/Mips_20181106151155.sim.vwf
+Writing the resulting VWF to C:/Users/conta/Documents/Insper/7semestre/designComp/entregas/designComp2018/mips/simulation/qsim/Mips_20181122151728.sim.vwf
 
 Finished VCD to VWF conversion.
 

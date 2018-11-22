@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/06/2018 15:11:50"
+-- Generated on "11/22/2018 15:17:23"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          mips
 -- 
@@ -40,6 +40,11 @@ SIGNAL fio3 : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL fio4 : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL fio5 : STD_LOGIC;
 SIGNAL fio6 : STD_LOGIC_VECTOR(1 DOWNTO 0);
+SIGNAL fio7 : STD_LOGIC_VECTOR(4 DOWNTO 0);
+SIGNAL fio8 : STD_LOGIC_VECTOR(63 DOWNTO 0);
+SIGNAL fio9 : STD_LOGIC_VECTOR(146 DOWNTO 0);
+SIGNAL fio10 : STD_LOGIC_VECTOR(106 DOWNTO 0);
+SIGNAL fio11 : STD_LOGIC_VECTOR(70 DOWNTO 0);
 COMPONENT mips
 	PORT (
 	clk : IN STD_LOGIC;
@@ -48,7 +53,12 @@ COMPONENT mips
 	fio3 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	fio4 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
 	fio5 : OUT STD_LOGIC;
-	fio6 : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+	fio6 : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+	fio7 : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
+	fio8 : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
+	fio9 : OUT STD_LOGIC_VECTOR(146 DOWNTO 0);
+	fio10 : OUT STD_LOGIC_VECTOR(106 DOWNTO 0);
+	fio11 : OUT STD_LOGIC_VECTOR(70 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
@@ -61,7 +71,12 @@ BEGIN
 	fio3 => fio3,
 	fio4 => fio4,
 	fio5 => fio5,
-	fio6 => fio6
+	fio6 => fio6,
+	fio7 => fio7,
+	fio8 => fio8,
+	fio9 => fio9,
+	fio10 => fio10,
+	fio11 => fio11
 	);
 
 -- clk
@@ -69,9 +84,9 @@ t_prcs_clk: PROCESS
 BEGIN
 LOOP
 	clk <= '0';
-	WAIT FOR 25000 ps;
+	WAIT FOR 125000 ps;
 	clk <= '1';
-	WAIT FOR 25000 ps;
+	WAIT FOR 125000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_clk;

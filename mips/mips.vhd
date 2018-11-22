@@ -12,7 +12,12 @@ entity mips is
 		 fio1,fio2,fio3 : out std_logic_vector(31 downto 0);
 		 fio4 : out std_logic_vector(3 downto 0);
 		 fio5 : out std_logic;
-		 fio6 : out std_logic_vector(1 downto 0)
+		 fio6 : out std_logic_vector(1 downto 0);
+		 fio7 : out std_logic_vector(4 downto 0);
+		 fio8 : out std_logic_vector(63 downto 0);
+		 fio9 : out std_logic_vector(146 downto 0);
+		 fio10 : out std_logic_vector(106 downto 0);
+		 fio11 : out std_logic_vector(70 downto 0)
 	);
 
 end entity;
@@ -24,6 +29,11 @@ architecture comportamento of mips is
 	signal dmOUT,r1,r2 : std_logic_vector(31 downto 0);
 	signal instrULA : std_logic_vector(3 downto 0);
 	signal zero : std_logic;
+	signal addrReg3 : std_logic_vector(4 downto 0);
+	signal pipeline1 : std_logic_vector(63 downto 0);
+	signal pipeline2 : std_logic_vector(146 downto 0);
+	signal pipeline3 : std_logic_vector(106 downto 0);
+	signal pipeline4 : std_logic_vector(70 downto 0);
 	signal MIADDR : natural;
   
 begin
@@ -46,7 +56,12 @@ begin
 		instrCntrl => instrULA,
 		REG1_OUT => r1,
 		REG2_OUT => r2,
-		zero => zero
+		zero => zero,
+		addrReg3=>addrReg3,
+		pipeline1=>pipeline1,
+		pipeline2=>pipeline2,
+		pipeline3=>pipeline3,
+		pipeline4=>pipeline4
 	);
 	
 	fio1 <= dmOUT;
@@ -55,5 +70,10 @@ begin
 	fio4 <= instrULA;
 	fio5 <= zero;
 	fio6 <= w(1 downto 0);
+	fio7 <= addrReg3;
+	fio8 <= pipeline1;
+	fio9 <= pipeline2;
+	fio10 <= pipeline3;
+	fio11 <= pipeline4;
 	 
 end architecture;

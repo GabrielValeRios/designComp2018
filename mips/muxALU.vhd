@@ -37,6 +37,6 @@ begin
 			end loop;		
 	end process;
 	
-	Z <= result;
+	Z <= not(result);
 	
 end architecture;

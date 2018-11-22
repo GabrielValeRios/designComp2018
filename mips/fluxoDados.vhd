@@ -12,6 +12,11 @@ entity fluxoDados is
 		
 		DM_out,REG1_OUT,REG2_OUT : out std_logic_vector(31 downto 0);
 		instrCntrl : out std_logic_vector(3 downto 0);
+		addrReg3 : out std_logic_vector(4 downto 0);
+		pipeline1 : out std_logic_vector (63 downto 0);
+		pipeline2 : out std_logic_vector (146 downto 0);
+		pipeline3 : out std_logic_vector (106 downto 0);
+		pipeline4 : out std_logic_vector (70 downto 0);
 		zero : out std_logic
 
 	);
@@ -51,7 +56,7 @@ begin
 	MIaddr <= to_integer(unsigned(FioFromPc));
 	MI : entity work.instruction_memory port map(addr=>MIaddr,q=>FioInstrMemory);
 	--MBR
-	MBR : entity work.mux2way generic map(DATA_WIDTH=>5) port map(SEL=>FioRegPipe2(146),A=>FioRegPipe2(9 downto 5),B=>FioInstrMemory(4 downto 0),X=>FioReg3BR);
+	MBR : entity work.mux2way generic map(DATA_WIDTH=>5) port map(SEL=>FioRegPipe2(146),A=>FioRegPipe2(9 downto 5),B=>FioRegPipe2(4 downto 0),X=>FioReg3BR);
 	-- BR
 	BR : entity work.bankregister port map
 	(
@@ -119,9 +124,15 @@ begin
 	output => FioRegPipe4
 	);
 	
-	DM_out <= FioALU;
+	DM_out <= FioDadoEscritoBR;
 	instrCntrl <= FioULACntrl;
 	REG1_OUT <= FioDadoLido1;
 	REG2_OUT <= FioDadoLido2;
 	zero <= FioZeroALU;
+	addrReg3 <= FioRegPipe4(4 downto 0);
+	pipeline1 <= FioRegPipe1;
+	pipeline2 <= FioRegPipe2;
+	pipeline3 <= FioRegPipe3;
+	pipeline4 <= FioRegPipe4;
+	
 	end architecture;
